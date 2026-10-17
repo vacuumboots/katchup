@@ -54,7 +54,9 @@ All content lives in `questions.json`, a flat array:
 ```
 
 - `id`: `qNNNN`, unique and never reused. Append with the next free number.
-- `era`: `childhood` `teens` `young-adult` `career` `family` `now`
+  Deleted ids are never recycled.
+- `era`: `childhood` `teens` `young-adult` `career` `midlife` `now`. Tag it by
+  when the remembered event happened; present-tense questions are `now`.
 - `topic`: `music` `food` `cars` `work` `school` `places` `home` `firsts`
   `people` `money` `hobbies` `media` `advice`
 - `weight`: `light` (fine to ask cold) `medium` `heavy` (regret, loss, the

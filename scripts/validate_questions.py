@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Validate questions.json for katchup.
 
-Checks shape (ids, enums, followups, punctuation), flags yes/no openers and
-near-duplicates, prints the distributions against the spec targets, and writes
-review.html: one page with every question, for a single human read-through.
+Shape checks (ids, enums, follow-ups, punctuation), content rules (yes/no
+openers, opener variety, the word "first", dialect), duplicate and
+near-duplicate detection, distribution targets, and review.html output.
 
-Exit code 1 on hard errors, 0 otherwise (warnings allowed).
+Exit code 1 on errors, 0 otherwise (warnings allowed).
 """
 
 from __future__ import annotations
@@ -14,13 +14,14 @@ import html
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 QUESTIONS = ROOT / "questions.json"
 REVIEW = ROOT / "review.html"
 
-ERAS = ["childhood", "teens", "young-adult", "career", "family", "now"]
+ERAS = ["childhood", "teens", "young-adult", "career", "midlife", "now"]
 TOPICS = [
     "music", "food", "cars", "work", "school", "places", "home",
     "firsts", "people", "money", "hobbies", "media", "advice",
@@ -32,10 +33,22 @@ TARGET_TOTAL = 300
 TARGET_LIGHT = 195
 TARGET_MEDIUM = 90
 TARGET_HEAVY = 15
-TARGET_MEMORY_MIN = 180
-TARGET_PER_ERA_MIN = 10
-TARGET_PER_TOPIC_MIN = 10
+MIN_PER_ERA = 15
+MIN_PER_TOPIC = 10
 MAX_LEN = 120
+
+OPENER_CAP_SHARE = 0.15       # no two-word opener above this share of the deck
+MAX_WHAT_WAS_THE_FIRST = 10
+MAX_FIRST_WORD = 30
+MAX_WHO_FOLLOWUP_SHARE = 0.25
+FOLLOWUPS_PER_QUESTION = 2
+HEAVY_SHARE = (0.05, 0.10)
+
+# Canadian audience: these read as British or Australian, not Canadian
+DIALECT_BLOCK = [
+    "fortnight", "payslip", "petrol", "lorry", "telly", "mum", "whilst",
+    "amongst", "learnt", "spelt", "programme", "cosy", "nappy", "pram",
+]
 
 ID_RE = re.compile(r"^q\d{4}$")
 YES_NO_RE = re.compile(
@@ -43,7 +56,7 @@ YES_NO_RE = re.compile(
     r"shall|may|might|am)\b",
     re.IGNORECASE,
 )
-
+FIRST_RE = re.compile(r"\bfirst\b", re.IGNORECASE)
 STOP = set(
     """a an the and or but if then than that this these those to of in on for with
     at by from as is are was were be been being you your yours we our us i me my
@@ -58,6 +71,10 @@ def significant_words(text: str) -> set[str]:
 
 def normalise(text: str) -> str:
     return re.sub(r"[^a-z0-9 ]", "", text.lower()).strip()
+
+
+def opener(text: str) -> str:
+    return " ".join(text.split()[:2])
 
 
 def main() -> int:
@@ -80,11 +97,15 @@ def main() -> int:
 
     ids: set[str] = set()
     texts: dict[str, str] = {}
-    weight: dict[str, int] = {w: 0 for w in WEIGHTS}
-    kind: dict[str, int] = {k: 0 for k in KINDS}
-    era: dict[str, int] = {e: 0 for e in ERAS}
-    topic: dict[str, int] = {t: 0 for t in TOPICS}
+    weight: Counter = Counter()
+    kind: Counter = Counter()
+    era: Counter = Counter()
+    topic: Counter = Counter()
+    openers: Counter = Counter()
+    was_the_first: list[str] = []
+    dialect_hits: list[str] = []
     word_sets: list[tuple[str, str, set[str]]] = []
+    followups: list[str] = []
 
     for index, item in enumerate(data):
         where = f"item {index} ({item.get('id', 'no id') if isinstance(item, dict) else type(item).__name__})"
@@ -122,6 +143,10 @@ def main() -> int:
         if YES_NO_RE.match(text):
             errors.append(f"{where}: yes/no opener -> {text!r}")
 
+        openers[opener(text)] += 1
+        if text.lower().startswith("what was the first"):
+            was_the_first.append(qid)
+
         norm = normalise(text)
         if norm in texts:
             errors.append(f"{where}: duplicate text of {texts[norm]} -> {text!r}")
@@ -148,15 +173,30 @@ def main() -> int:
         else:
             kind[item["kind"]] += 1
 
-        followups = item["followups"]
-        if not isinstance(followups, list) or not 1 <= len(followups) <= 3:
-            errors.append(f"{where}: followups must be a list of 1 to 3 entries")
-        else:
-            for followup in followups:
-                if not isinstance(followup, str) or not followup.strip():
-                    errors.append(f"{where}: empty followup")
-                elif not followup.strip().endswith("?"):
-                    errors.append(f"{where}: followup must end with '?' -> {followup!r}")
+        raw_followups = item["followups"]
+        if not isinstance(raw_followups, list) or len(raw_followups) != FOLLOWUPS_PER_QUESTION:
+            errors.append(f"{where}: followups must be a list of exactly {FOLLOWUPS_PER_QUESTION}")
+            raw_followups = raw_followups if isinstance(raw_followups, list) else []
+
+        for followup in raw_followups:
+            if not isinstance(followup, str) or not followup.strip():
+                errors.append(f"{where}: empty followup")
+                continue
+            followup = followup.strip()
+            if not followup.endswith("?"):
+                errors.append(f"{where}: followup must end with '?' -> {followup!r}")
+            if YES_NO_RE.match(followup):
+                errors.append(f"{where}: yes/no followup -> {followup!r}")
+            followups.append(followup)
+
+        if len(raw_followups) == FOLLOWUPS_PER_QUESTION and all(isinstance(f, str) for f in raw_followups):
+            firsts = [f.strip().split()[0].lower() for f in raw_followups if f.strip()]
+            if len(firsts) == 2 and firsts[0] == firsts[1]:
+                errors.append(f"{where}: both followups start with {firsts[0]!r}")
+
+        for term in DIALECT_BLOCK:
+            if re.search(r"\b" + term, text + " " + " ".join(raw_followups), re.I):
+                dialect_hits.append(f"{qid}: {term}")
 
         word_sets.append((qid, text, significant_words(text)))
 
@@ -174,33 +214,70 @@ def main() -> int:
                     f"{a_text!r} vs {b_text!r}"
                 )
 
-    # distribution report
     total = len(data)
-    lines: list[str] = []
-    lines.append(f"Total questions: {total}/{TARGET_TOTAL}")
 
-    lines.append("")
-    lines.append("Weight")
+    # opener variety
+    for key, count in openers.items():
+        share = count / total if total else 0
+        if share > OPENER_CAP_SHARE:
+            errors.append(
+                f"opener {key!r} used {count} times ({share:.1%}), cap is {OPENER_CAP_SHARE:.0%}"
+            )
+    if len(was_the_first) > MAX_WHAT_WAS_THE_FIRST:
+        errors.append(
+            f'"What was the first" starts {len(was_the_first)} questions, '
+            f"cap is {MAX_WHAT_WAS_THE_FIRST}: {was_the_first}"
+        )
+
+    first_count = sum(
+        1 for q in data
+        if isinstance(q, dict) and isinstance(q.get("text"), str) and FIRST_RE.search(q["text"])
+    )
+    if first_count > MAX_FIRST_WORD:
+        errors.append(f"the word 'first' appears in {first_count} questions, cap is {MAX_FIRST_WORD}")
+
+    who_followups = sum(1 for f in followups if f.lower().startswith("who"))
+    if followups and who_followups / len(followups) > MAX_WHO_FOLLOWUP_SHARE:
+        errors.append(
+            f"'Who' followups are {who_followups}/{len(followups)} = "
+            f"{who_followups / len(followups):.1%}, cap is {MAX_WHO_FOLLOWUP_SHARE:.0%}"
+        )
+
+    if dialect_hits:
+        errors.append("non-Canadian wording: " + ", ".join(dialect_hits))
+
+    # distribution report
+    lines = [f"Total questions: {total}/{TARGET_TOTAL}", "", "Weight"]
     for key, target in (("light", TARGET_LIGHT), ("medium", TARGET_MEDIUM), ("heavy", TARGET_HEAVY)):
         lines.append(f"  {key:7} {weight[key]:4}  target {target}")
 
-    lines.append("")
-    lines.append("Kind")
+    lines += ["", "Kind"]
     for key in KINDS:
-        note = f"  target at least {TARGET_MEMORY_MIN}" if key == "memory" else ""
-        lines.append(f"  {key:12} {kind[key]:4}{note}")
+        lines.append(f"  {key:12} {kind[key]:4}")
 
-    lines.append("")
-    lines.append("Era")
+    lines += ["", "Era"]
     for key in ERAS:
-        lines.append(f"  {key:12} {era[key]:4}  target at least {TARGET_PER_ERA_MIN}")
+        lines.append(f"  {key:12} {era[key]:4}  minimum {MIN_PER_ERA}")
 
-    lines.append("")
-    lines.append("Topic")
+    lines += ["", "Topic"]
     for key in TOPICS:
-        lines.append(f"  {key:9} {topic[key]:4}  target at least {TARGET_PER_TOPIC_MIN}")
+        lines.append(f"  {key:9} {topic[key]:4}  minimum {MIN_PER_TOPIC}")
 
-    # target enforcement only once the deck is complete
+    lines += ["", "Openers (two words)"]
+    for key, count in openers.most_common(10):
+        lines.append(f"  {key:16} {count:4}  {count / total:5.1%}")
+    lines.append(f"  distinct openers: {len(openers)}")
+    lines.append(f"  'What was the first' starts: {len(was_the_first)}  cap {MAX_WHAT_WAS_THE_FIRST}")
+    lines.append(f"  questions containing 'first': {first_count}  cap {MAX_FIRST_WORD}")
+
+    lines += ["", "Follow-ups"]
+    lines.append(
+        f"  total {len(followups)}, 'Who' {who_followups} "
+        f"({who_followups / max(1, len(followups)):.1%})"
+    )
+
+    print("\n".join(lines))
+
     target_problems: list[str] = []
     if weight["light"] != TARGET_LIGHT:
         target_problems.append(f"light is {weight['light']}, want {TARGET_LIGHT}")
@@ -208,18 +285,20 @@ def main() -> int:
         target_problems.append(f"medium is {weight['medium']}, want {TARGET_MEDIUM}")
     if weight["heavy"] != TARGET_HEAVY:
         target_problems.append(f"heavy is {weight['heavy']}, want {TARGET_HEAVY}")
-    if kind["memory"] < TARGET_MEMORY_MIN:
-        target_problems.append(f"memory is {kind['memory']}, want at least {TARGET_MEMORY_MIN}")
-    for key, value in era.items():
-        if value < TARGET_PER_ERA_MIN:
-            target_problems.append(f"era {key} has {value}, want at least {TARGET_PER_ERA_MIN}")
-    for key, value in topic.items():
-        if value < TARGET_PER_TOPIC_MIN:
-            target_problems.append(f"topic {key} has {value}, want at least {TARGET_PER_TOPIC_MIN}")
+    if total:
+        heavy_share = weight["heavy"] / total
+        if not HEAVY_SHARE[0] <= heavy_share <= HEAVY_SHARE[1]:
+            target_problems.append(
+                f"heavy is {heavy_share:.1%} of the deck, want {HEAVY_SHARE[0]:.0%} to {HEAVY_SHARE[1]:.0%}"
+            )
+    for key in ERAS:
+        if era[key] < MIN_PER_ERA:
+            target_problems.append(f"era {key} has {era[key]}, want at least {MIN_PER_ERA}")
+    for key in TOPICS:
+        if topic[key] < MIN_PER_TOPIC:
+            target_problems.append(f"topic {key} has {topic[key]}, want at least {MIN_PER_TOPIC}")
     if total != TARGET_TOTAL:
         target_problems.append(f"deck has {total} questions, want {TARGET_TOTAL}")
-
-    print("\n".join(lines))
 
     if target_problems:
         status = "INCOMPLETE" if total != TARGET_TOTAL else "FAILED"
@@ -249,7 +328,7 @@ def main() -> int:
 
 def write_review(data: list[dict]) -> None:
     rows = []
-    for number, item in enumerate(data, start=1):
+    for item in data:
         if not isinstance(item, dict):
             continue
         tags = " · ".join(
@@ -260,7 +339,7 @@ def write_review(data: list[dict]) -> None:
         )
         rows.append(
             f'<li><p class="q">{html.escape(str(item.get("text", "")))}</p>'
-            f'<p class="tags">{html.escape(tags)}</p>'
+            f'<p class="tags">{html.escape(str(item.get("id", "")))} · {html.escape(tags)}</p>'
             f"<ul class=\"fu\">{followups}</ul></li>"
         )
 

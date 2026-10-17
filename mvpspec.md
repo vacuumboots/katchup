@@ -74,7 +74,10 @@ Field rules:
 
 - `id`: unique, stable, never reused. Format `q0001`.
 - `text`: one sentence, ends with a question mark, under 120 characters where possible. Must not be answerable with yes or no.
-- `era`: one of `childhood`, `teens`, `young-adult`, `career`, `family`, `now`.
+- `era`: one of `childhood`, `teens`, `young-adult`, `career`, `midlife`, `now`.
+  Tag by when the remembered event happened. Present-tense questions are `now`.
+  `midlife` covers roughly the thirties to fifties: settling in, raising kids,
+  mid-career.
 - `topic`: one of `music`, `food`, `cars`, `work`, `school`, `places`, `home`, `firsts`, `people`, `money`, `hobbies`, `media`, `advice`.
 - `weight`: `light`, `medium`, or `heavy`.
   - light: easy, concrete, low emotional cost. Fine to ask cold.
@@ -91,7 +94,8 @@ Distribution targets:
 
 - Weight: 195 light (65%), 90 medium (30%), 15 heavy (5%). Heavy is the scarcest thing in the deck on purpose: it is hidden by default, so a large heavy pool is dead weight.
 - Kind: at least 180 `memory` (60%). Concrete past specifics beat abstract opinions. The proven example: "What was the last concert you went to?" led to stories about the 1970s.
-- Every era and topic value is represented by at least 10 questions.
+- Every era value is represented by at least 15 questions and every topic by at
+  least 10. Counts should look natural, not uniform.
 - No near-duplicates: no two questions may share more than roughly 60 percent of their significant words, or open the same door in different words.
 
 Quality rules for writing questions:
@@ -112,6 +116,15 @@ Quality rules for writing questions:
 - `followups` present, 1 to 3 entries, each ending with `?`
 - `text` ends with `?`, is not empty, and prints a warning above 120 characters
 - `text` does not open with a yes/no construction (regex list above)
+- no two-word opener ("What did", "Tell me", ...) covers more than 15 percent of
+  the deck
+- at most 10 questions start "What was the first", and at most 30 contain "first"
+- no yes/no follow-up, at most 25 percent of follow-ups start with "Who", and the
+  two follow-ups on a question never start with the same word
+- every follow-up pair is exactly two entries
+- a dialect blocklist rejects British and Australian wording (fortnight, payslip,
+  petrol, lorry, telly, mum, whilst, programme, and similar); Canadian spellings
+  stay
 - no duplicate text (case and punctuation-insensitive)
 - near-duplicate pairs flagged as warnings (Jaccard word overlap above 50 percent)
 - distribution printout for weight, kind, era, and topic, with a pass/fail line per target
