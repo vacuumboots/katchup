@@ -3,6 +3,8 @@
 One good conversation question at a time. A phone-first static page for when you
 are sitting with someone you know well and the conversation has stalled.
 
+Live: <https://vacuumboots.github.io/katchup/>
+
 300 questions, written by hand, tagged by era, topic, weight, and kind. One card
 on screen, three buttons: **Asked it**, **Skip**, **Never**. **Back** undoes the
 last action. Follow-up prompts are one tap away if the answer starts a story.
