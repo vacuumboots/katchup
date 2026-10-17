@@ -5,7 +5,7 @@ are sitting with someone you know well and the conversation has stalled.
 
 Live: <https://vacuumboots.github.io/katchup/>
 
-300 questions, written by hand, tagged by era, topic, weight, and kind. One card
+309 questions, written by hand, tagged by era, topic, weight, kind, and hook. One card
 on screen, three buttons: **Asked it**, **Skip**, **Never**. **Back** undoes the
 last action. Follow-up prompts are one tap away if the answer starts a story.
 
@@ -44,12 +44,13 @@ All content lives in `questions.json`, a flat array:
 ```json
 {
   "id": "q0001",
-  "text": "What was the last concert you went to?",
-  "era": "young-adult",
-  "topic": "music",
+  "text": "Tell me about the kitchen you grew up in?",
+  "era": "childhood",
+  "topic": "home",
   "weight": "light",
   "kind": "memory",
-  "followups": ["Who did you go with?", "What was the best one you ever saw?"]
+  "hook": "scene",
+  "followups": ["Where did everyone sit?", "What was always on the counter?"]
 }
 ```
 
@@ -62,6 +63,16 @@ All content lives in `questions.json`, a flat array:
 - `weight`: `light` (fine to ask cold) `medium` `heavy` (regret, loss, the
   relationship itself). Heavy is hidden by default.
 - `kind`: `memory` `opinion` `hypothetical`
+- `hook`: the mechanism the question trades on. `extreme` and `measure` ask for a
+  superlative or a number (longest, furthest, how many), and the number pulls the
+  story out. `artifact` asks about a specific object. `relational` is about a
+  person. `scene` asks you to stand somewhere again. `debate` is an opinion people
+  will defend, tagged and kept rare because it plays better in groups than one to
+  one. `plain` is everything else.
+  Caps the validator enforces: extreme + measure + artifact + relational + scene at
+  40 percent or more of the deck, extreme + measure at 10 percent or more, debate
+  at 5 percent or less, and "favourite" questions at 5 percent or less (only use
+  one when everyone has an opinion on the thing, or when a story comes attached).
 - `followups`: 1 to 3 prompts, each ending in a question mark.
 
 Then run the validator:

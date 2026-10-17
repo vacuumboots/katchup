@@ -28,16 +28,23 @@ TOPICS = [
 ]
 WEIGHTS = ["light", "medium", "heavy"]
 KINDS = ["memory", "opinion", "hypothetical"]
+HOOKS = ["extreme", "measure", "artifact", "relational", "scene", "debate", "plain"]
 
-TARGET_TOTAL = 300
-TARGET_LIGHT = 195
-TARGET_MEDIUM = 90
+TARGET_TOTAL = 309
+TARGET_LIGHT = 203
+TARGET_MEDIUM = 91
 TARGET_HEAVY = 15
 MIN_PER_ERA = 15
 MIN_PER_TOPIC = 10
 MAX_LEN = 120
 
-OPENER_CAP_SHARE = 0.15       # no two-word opener above this share of the deck
+OPENER_CAP_SHARE = 0.15
+MIN_STRONG_HOOK_SHARE = 0.40   # extreme + measure + artifact + relational + scene
+MIN_MEASURED_SHARE = 0.10      # extreme + measure
+MAX_DEBATE_SHARE = 0.05
+MAX_FAVOURITE_SHARE = 0.05
+STRONG_HOOKS = ("extreme", "measure", "artifact", "relational", "scene")
+BANNED_PHRASES = ["biggest impact", "most influential"]       # no two-word opener above this share of the deck
 MAX_WHAT_WAS_THE_FIRST = 10
 MAX_FIRST_WORD = 30
 MAX_WHO_FOLLOWUP_SHARE = 0.25
@@ -102,6 +109,8 @@ def main() -> int:
     era: Counter = Counter()
     topic: Counter = Counter()
     openers: Counter = Counter()
+    hooks: Counter = Counter()
+    hook_errors: list[str] = []
     was_the_first: list[str] = []
     dialect_hits: list[str] = []
     word_sets: list[tuple[str, str, set[str]]] = []
@@ -172,6 +181,15 @@ def main() -> int:
             errors.append(f"{where}: bad kind {item['kind']!r}")
         else:
             kind[item["kind"]] += 1
+
+        if item.get("hook") not in HOOKS:
+            errors.append(f"{where}: bad hook {item.get('hook')!r}")
+        else:
+            hooks[item["hook"]] += 1
+
+        for phrase in BANNED_PHRASES:
+            if phrase in text.lower():
+                hook_errors.append(f"{qid}: banned phrasing {phrase!r}")
 
         raw_followups = item["followups"]
         if not isinstance(raw_followups, list) or len(raw_followups) != FOLLOWUPS_PER_QUESTION:
@@ -246,6 +264,38 @@ def main() -> int:
     if dialect_hits:
         errors.append("non-Canadian wording: " + ", ".join(dialect_hits))
 
+    if hook_errors:
+        errors.append("hook phrasing: " + "; ".join(hook_errors))
+
+    strong_hooks = sum(hooks[k] for k in STRONG_HOOKS)
+    measured = hooks["extreme"] + hooks["measure"]
+    favourite = sum(
+        1 for q in data
+        if isinstance(q, dict) and isinstance(q.get("text"), str)
+        and re.search(r"favou?rite", q["text"], re.I)
+    )
+    if total:
+        if strong_hooks / total < MIN_STRONG_HOOK_SHARE:
+            errors.append(
+                f"strong hooks are {strong_hooks}/{total} = {strong_hooks / total:.1%}, "
+                f"want at least {MIN_STRONG_HOOK_SHARE:.0%}"
+            )
+        if measured / total < MIN_MEASURED_SHARE:
+            errors.append(
+                f"measurable extremes are {measured}/{total} = {measured / total:.1%}, "
+                f"want at least {MIN_MEASURED_SHARE:.0%}"
+            )
+        if hooks["debate"] / total > MAX_DEBATE_SHARE:
+            errors.append(
+                f"debate is {hooks['debate']}/{total} = {hooks['debate'] / total:.1%}, "
+                f"cap is {MAX_DEBATE_SHARE:.0%}"
+            )
+        if favourite / total > MAX_FAVOURITE_SHARE:
+            errors.append(
+                f"'favourite' questions are {favourite}/{total} = {favourite / total:.1%}, "
+                f"cap is {MAX_FAVOURITE_SHARE:.0%}"
+            )
+
     # distribution report
     lines = [f"Total questions: {total}/{TARGET_TOTAL}", "", "Weight"]
     for key, target in (("light", TARGET_LIGHT), ("medium", TARGET_MEDIUM), ("heavy", TARGET_HEAVY)):
@@ -276,6 +326,21 @@ def main() -> int:
         f"({who_followups / max(1, len(followups)):.1%})"
     )
 
+    lines += ["", "Hooks"]
+    for key in HOOKS:
+        share = hooks[key] / total if total else 0
+        lines.append(f"  {key:12} {hooks[key]:4}  {share:6.1%}")
+    lines.append(
+        f"  strong (extreme+measure+artifact+relational+scene): "
+        f"{sum(hooks[k] for k in STRONG_HOOKS)} "
+        f"({sum(hooks[k] for k in STRONG_HOOKS) / total:.1%})"
+    )
+    lines.append(
+        f"  measurable extremes (extreme+measure): {hooks['extreme'] + hooks['measure']} "
+        f"({(hooks['extreme'] + hooks['measure']) / total:.1%})"
+    )
+    lines.append(f"  'favourite' questions: {favourite if total else 0}")
+
     print("\n".join(lines))
 
     target_problems: list[str] = []
@@ -287,9 +352,11 @@ def main() -> int:
         target_problems.append(f"heavy is {weight['heavy']}, want {TARGET_HEAVY}")
     if total:
         heavy_share = weight["heavy"] / total
-        if not HEAVY_SHARE[0] <= heavy_share <= HEAVY_SHARE[1]:
+        # the tier is held at 15 questions, which is about 5% and drifts under it as the deck grows
+        if weight["heavy"] < TARGET_HEAVY or heavy_share > HEAVY_SHARE[1]:
             target_problems.append(
-                f"heavy is {heavy_share:.1%} of the deck, want {HEAVY_SHARE[0]:.0%} to {HEAVY_SHARE[1]:.0%}"
+                f"heavy is {weight['heavy']} ({heavy_share:.1%} of the deck), want at least "
+                f"{TARGET_HEAVY} questions and no more than {HEAVY_SHARE[1]:.0%}"
             )
     for key in ERAS:
         if era[key] < MIN_PER_ERA:

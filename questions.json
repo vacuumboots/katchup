@@ -9,7 +9,8 @@
     "followups": [
       "Where did everyone sit?",
       "What was always on the counter?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0002",
@@ -21,7 +22,8 @@
     "followups": [
       "How did they make it?",
       "What made theirs different?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0003",
@@ -33,7 +35,8 @@
     "followups": [
       "Who chose the station?",
       "Which part did everyone sing?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0004",
@@ -45,7 +48,8 @@
     "followups": [
       "What did you carry your lunch in?",
       "Who did you look for every morning?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0005",
@@ -57,7 +61,8 @@
     "followups": [
       "What could you see from there?",
       "How did you get away with it?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0006",
@@ -69,7 +74,8 @@
     "followups": [
       "What did they do that made them famous on the street?",
       "How did you end up at their house?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0007",
@@ -81,7 +87,8 @@
     "followups": [
       "How long did it take?",
       "Where is it now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0008",
@@ -93,7 +100,8 @@
     "followups": [
       "Who else was in it?",
       "What did the teacher do that worked?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0009",
@@ -105,7 +113,8 @@
     "followups": [
       "How did they teach you?",
       "Where did you practise?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0010",
@@ -117,7 +126,8 @@
     "followups": [
       "Where did you buy it?",
       "Who else knew about it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0011",
@@ -129,7 +139,8 @@
     "followups": [
       "Who was usually with you?",
       "What did you do once you got there?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0012",
@@ -141,7 +152,8 @@
     "followups": [
       "Where did you watch it?",
       "Who else was in the room?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0013",
@@ -153,11 +165,12 @@
     "followups": [
       "Where did you meet?",
       "What kept you friends?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0014",
-    "text": "What was your first job, and what did they actually pay you?",
+    "text": "How much did your first job actually pay you?",
     "era": "young-adult",
     "topic": "work",
     "weight": "light",
@@ -165,7 +178,8 @@
     "followups": [
       "What did you spend it on?",
       "Who trained you?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0015",
@@ -177,7 +191,8 @@
     "followups": [
       "What went on the wall?",
       "How did you get it wrong?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0016",
@@ -189,7 +204,8 @@
     "followups": [
       "Who ate it anyway?",
       "When did you get it right?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0017",
@@ -201,7 +217,8 @@
     "followups": [
       "What was playing?",
       "Which road did you take?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0018",
@@ -213,7 +230,8 @@
     "followups": [
       "How long did you keep it?",
       "What did you do with it in the end?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0019",
@@ -225,7 +243,8 @@
     "followups": [
       "Which friend went with you?",
       "What was the best one you ever saw?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0020",
@@ -237,7 +256,8 @@
     "followups": [
       "What did the two of you do on a normal evening?",
       "When did it stop?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0021",
@@ -249,7 +269,8 @@
     "followups": [
       "Who decided you were ready?",
       "What did it take to get right?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0023",
@@ -261,7 +282,8 @@
     "followups": [
       "How did you use it?",
       "What did it cost you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0024",
@@ -273,7 +295,8 @@
     "followups": [
       "What could you see at lunch?",
       "Who else watched it with you?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0025",
@@ -285,7 +308,8 @@
     "followups": [
       "How long did that ritual last?",
       "What was on the radio?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0026",
@@ -297,7 +321,8 @@
     "followups": [
       "What did you copy from them?",
       "When did you tell them?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0027",
@@ -309,7 +334,8 @@
     "followups": [
       "Where did it sit?",
       "What happened to it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0028",
@@ -321,7 +347,8 @@
     "followups": [
       "How did they make it?",
       "What made theirs different?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0029",
@@ -333,7 +360,8 @@
     "followups": [
       "What was their best one?",
       "How did the family react to it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0030",
@@ -345,7 +373,8 @@
     "followups": [
       "Who controlled the remote?",
       "What did you actually want to watch?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0031",
@@ -357,7 +386,8 @@
     "followups": [
       "What changed your mind about it?",
       "Which of theirs can you still not stand?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0032",
@@ -369,19 +399,21 @@
     "followups": [
       "How many times did you go?",
       "What did you do there?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0033",
-    "text": "What was the last thing you fixed in your house by yourself?",
+    "text": "What is the longest you have put off fixing something at home?",
     "era": "now",
     "topic": "home",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Where did you learn how?",
-      "What went wrong doing it?"
-    ]
+      "What finally made you do it?",
+      "How long did it sit there?"
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0034",
@@ -393,19 +425,21 @@
     "followups": [
       "Who noticed first?",
       "What would you still like to learn?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0035",
-    "text": "What was the last meal you ate that was worth the drive?",
+    "text": "What is the longest drive you have made for a meal?",
     "era": "now",
     "topic": "food",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who was there?",
-      "What made it worth the drive?"
-    ]
+      "What did you order there?",
+      "How was it the second time?"
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0036",
@@ -417,7 +451,8 @@
     "followups": [
       "How often do you manage it?",
       "What do you do once you are there?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0037",
@@ -429,7 +464,8 @@
     "followups": [
       "How did it finally click?",
       "Who would have told you if you had asked?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0038",
@@ -441,7 +477,8 @@
     "followups": [
       "What changed your mind?",
       "Which thing do you still refuse to pay for?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0039",
@@ -453,7 +490,8 @@
     "followups": [
       "What made it good?",
       "Who else was there?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0040",
@@ -465,7 +503,8 @@
     "followups": [
       "What did you talk about?",
       "How did they seem?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0041",
@@ -477,7 +516,8 @@
     "followups": [
       "What would you ask first?",
       "How do you remember their voice?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0042",
@@ -489,7 +529,8 @@
     "followups": [
       "What made you let go of it?",
       "Where does it still show up?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0043",
@@ -501,7 +542,8 @@
     "followups": [
       "Where would you go first if you walked in?",
       "What do you remember most clearly about it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0044",
@@ -513,7 +555,8 @@
     "followups": [
       "What went on the walls?",
       "Where did you hide things when people came over?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0045",
@@ -525,7 +568,8 @@
     "followups": [
       "Who made fun of them?",
       "When did you finally replace them?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0046",
@@ -537,7 +581,8 @@
     "followups": [
       "Who took you?",
       "What did you make of it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0047",
@@ -549,7 +594,8 @@
     "followups": [
       "What made you stop?",
       "How often do you think about going back?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0048",
@@ -561,7 +607,8 @@
     "followups": [
       "Who approved it?",
       "What did you do with it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0049",
@@ -573,7 +620,8 @@
     "followups": [
       "What made it the right thing that morning?",
       "How did the rest of the day go?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0050",
@@ -585,7 +633,8 @@
     "followups": [
       "Where is it now?",
       "Who else knew what you were looking for?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0051",
@@ -597,7 +646,8 @@
     "followups": [
       "Who sent you?",
       "What did it smell like inside?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0052",
@@ -609,7 +659,8 @@
     "followups": [
       "Where did you get it?",
       "How did they react to the smell?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0053",
@@ -621,7 +672,8 @@
     "followups": [
       "Where did you read it?",
       "Who gave it to you?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0054",
@@ -633,11 +685,12 @@
     "followups": [
       "Where did you sit in it?",
       "What was wrong with it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0055",
-    "text": "What game did you play outside until someone called you in?",
+    "text": "What is the latest you were ever out playing as a kid?",
     "era": "childhood",
     "topic": "hobbies",
     "weight": "light",
@@ -645,7 +698,8 @@
     "followups": [
       "Who made up the rules?",
       "What time did you have to be in?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0056",
@@ -657,7 +711,8 @@
     "followups": [
       "What did they say to you?",
       "How did you get their attention?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0057",
@@ -669,7 +724,8 @@
     "followups": [
       "What did you talk about?",
       "Which way did you take home?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0058",
@@ -681,7 +737,8 @@
     "followups": [
       "How did you get there?",
       "Who never showed up?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0059",
@@ -693,7 +750,8 @@
     "followups": [
       "What did you love about them?",
       "Which song of theirs did you defend hardest?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0060",
@@ -705,7 +763,8 @@
     "followups": [
       "What happened that day?",
       "How did it compare to what you imagined?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0061",
@@ -717,7 +776,8 @@
     "followups": [
       "What was the subject?",
       "Where does it show up in your explanations?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0062",
@@ -729,7 +789,8 @@
     "followups": [
       "Where did you get it?",
       "Who always paid?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0063",
@@ -741,7 +802,8 @@
     "followups": [
       "How did you find your way?",
       "What did you get wrong there?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0064",
@@ -753,7 +815,8 @@
     "followups": [
       "How long did it last?",
       "Who else was in it with you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0065",
@@ -765,7 +828,8 @@
     "followups": [
       "Who was next door?",
       "How did you get out?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0066",
@@ -777,7 +841,8 @@
     "followups": [
       "Who said it?",
       "When did it finally make sense?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0067",
@@ -789,7 +854,8 @@
     "followups": [
       "What did you learn to spot early?",
       "Who was the best at it?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0068",
@@ -801,7 +867,8 @@
     "followups": [
       "What did you always notice on it?",
       "How did the route finally change?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0069",
@@ -813,11 +880,12 @@
     "followups": [
       "How did they spell it?",
       "Who did you show first?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0070",
-    "text": "How did you spend a lunch break that had nothing to do with work?",
+    "text": "What is the longest break you have taken in the middle of a working day?",
     "era": "career",
     "topic": "hobbies",
     "weight": "light",
@@ -825,7 +893,8 @@
     "followups": [
       "Who joined you?",
       "What did you get out of it?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0071",
@@ -837,7 +906,8 @@
     "followups": [
       "What happened in there?",
       "Who claimed the best chair?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0072",
@@ -849,7 +919,8 @@
     "followups": [
       "How did the idea come up?",
       "Which night was the usual one?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0073",
@@ -861,7 +932,8 @@
     "followups": [
       "How did it start?",
       "Where does it still turn up?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0074",
@@ -873,7 +945,8 @@
     "followups": [
       "Who started dancing first?",
       "What did the older ones think of it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0075",
@@ -885,7 +958,8 @@
     "followups": [
       "Where did it come from?",
       "What would you replace it with?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0076",
@@ -897,7 +971,8 @@
     "followups": [
       "What would you do with it first?",
       "Which one have you driven?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0077",
@@ -909,7 +984,8 @@
     "followups": [
       "How long have you known them?",
       "What do they always say?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0078",
@@ -921,7 +997,8 @@
     "followups": [
       "Who asked you first?",
       "How did you learn to make it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0079",
@@ -933,7 +1010,8 @@
     "followups": [
       "When did you last do it?",
       "What interrupts you most?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0080",
@@ -945,7 +1023,8 @@
     "followups": [
       "Who else likes it?",
       "What did you notice the second time?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0081",
@@ -957,7 +1036,8 @@
     "followups": [
       "How often do you get there?",
       "What do you do when you arrive?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0082",
@@ -969,7 +1049,8 @@
     "followups": [
       "Who else notices it?",
       "What would you tell a young person about it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0083",
@@ -981,7 +1062,8 @@
     "followups": [
       "What made you try it?",
       "How did it go?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0084",
@@ -993,7 +1075,8 @@
     "followups": [
       "What gave it away?",
       "When did you tell them?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0085",
@@ -1005,7 +1088,8 @@
     "followups": [
       "What did you do about it?",
       "Where did the idea go?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0086",
@@ -1017,7 +1101,8 @@
     "followups": [
       "What did it cost?",
       "How did they find out?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0087",
@@ -1029,7 +1114,8 @@
     "followups": [
       "What would you say first?",
       "Where would you look for them now?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0088",
@@ -1041,7 +1127,8 @@
     "followups": [
       "How did you settle it?",
       "What changed between you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0089",
@@ -1053,7 +1140,8 @@
     "followups": [
       "Who helped you see it?",
       "What did it cost you at the start?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0090",
@@ -1065,7 +1153,8 @@
     "followups": [
       "How did they take it?",
       "What would you say differently now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0091",
@@ -1077,7 +1166,8 @@
     "followups": [
       "What started it?",
       "Who was right?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0092",
@@ -1089,7 +1179,8 @@
     "followups": [
       "When did it stop?",
       "Who would restart it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0093",
@@ -1101,7 +1192,8 @@
     "followups": [
       "What did they do?",
       "How did you change after that?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0094",
@@ -1113,7 +1205,8 @@
     "followups": [
       "What stops you?",
       "Which part would you keep exactly as it is?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0095",
@@ -1125,7 +1218,8 @@
     "followups": [
       "Why have you let it go?",
       "What would happen if you brought it up?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0096",
@@ -1137,7 +1231,8 @@
     "followups": [
       "What would you start with?",
       "Which part would you miss most?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0097",
@@ -1149,7 +1244,8 @@
     "followups": [
       "What made it worth it?",
       "Which argument won you over?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0098",
@@ -1161,7 +1257,8 @@
     "followups": [
       "Which teacher saw it?",
       "What would you fix first?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0099",
@@ -1173,7 +1270,8 @@
     "followups": [
       "What was the occasion?",
       "Which words would not come?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0100",
@@ -1185,7 +1283,8 @@
     "followups": [
       "Who knows about it?",
       "What would happen if you said it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0101",
@@ -1197,7 +1296,8 @@
     "followups": [
       "What did you build or dig?",
       "How did they find out?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0102",
@@ -1209,7 +1309,8 @@
     "followups": [
       "What was the rule about the front seat?",
       "Where did you go on a long drive?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0103",
@@ -1221,11 +1322,12 @@
     "followups": [
       "How did you get caught?",
       "What did your parents say?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0104",
-    "text": "What was the pocket money arrangement in your house?",
+    "text": "How much pocket money did you get, and what did it buy?",
     "era": "childhood",
     "topic": "money",
     "weight": "light",
@@ -1233,7 +1335,8 @@
     "followups": [
       "What did you have to do for it?",
       "Where did it go?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0105",
@@ -1245,7 +1348,8 @@
     "followups": [
       "Who made you practise?",
       "What could you play by the end?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0106",
@@ -1257,7 +1361,8 @@
     "followups": [
       "Who enforced it?",
       "What did you watch anyway?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0107",
@@ -1269,7 +1374,8 @@
     "followups": [
       "How did you get there?",
       "What did you eat on the way?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0108",
@@ -1281,7 +1387,8 @@
     "followups": [
       "What did you get for it?",
       "Who checked your work?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0109",
@@ -1293,7 +1400,8 @@
     "followups": [
       "How did you get caught?",
       "What did you say to get out of it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0110",
@@ -1305,7 +1413,8 @@
     "followups": [
       "Where did you take it?",
       "What did you do wrong?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0111",
@@ -1317,7 +1426,8 @@
     "followups": [
       "Who was in it with you?",
       "How good did you get?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0112",
@@ -1329,7 +1439,8 @@
     "followups": [
       "What did their parents say about it?",
       "Where did everyone end up sitting?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0113",
@@ -1341,11 +1452,12 @@
     "followups": [
       "What did it pay?",
       "Which part of it do you still use?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0114",
-    "text": "What subject did you get out of the way as fast as possible?",
+    "text": "What is the fastest you have finished a course you hated?",
     "era": "teens",
     "topic": "school",
     "weight": "light",
@@ -1353,7 +1465,8 @@
     "followups": [
       "How did you pass it?",
       "Which trick saved you?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0116",
@@ -1365,7 +1478,8 @@
     "followups": [
       "How did you get home?",
       "Who covered for you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0117",
@@ -1377,11 +1491,12 @@
     "followups": [
       "How did you find it?",
       "Who did you finally take there?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0118",
-    "text": "Which job put you in charge of other people?",
+    "text": "How many people have you been in charge of at once?",
     "era": "young-adult",
     "topic": "work",
     "weight": "medium",
@@ -1389,7 +1504,8 @@
     "followups": [
       "How did you learn to run things?",
       "What did you get wrong?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0119",
@@ -1401,11 +1517,12 @@
     "followups": [
       "Where did you get it?",
       "What became of it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0120",
-    "text": "Which meal got you through when money was short?",
+    "text": "What is the cheapest meal you have lived on for a week?",
     "era": "young-adult",
     "topic": "food",
     "weight": "light",
@@ -1413,7 +1530,8 @@
     "followups": [
       "Who ate it with you?",
       "What do you think of it now?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0121",
@@ -1425,7 +1543,8 @@
     "followups": [
       "How long before someone chased it?",
       "Which part did you sort out first?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0122",
@@ -1437,19 +1556,21 @@
     "followups": [
       "What was the rule nobody said out loud?",
       "How did it end?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0123",
-    "text": "Where did you go on the trip you paid for yourself?",
+    "text": "What is the most you have ever spent on a trip?",
     "era": "young-adult",
     "topic": "places",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Which friend came too?",
+      "Where did the money go?",
       "What went wrong?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0124",
@@ -1461,7 +1582,8 @@
     "followups": [
       "Who fixed it?",
       "Where did it finally give up?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0125",
@@ -1473,7 +1595,8 @@
     "followups": [
       "When did they find out?",
       "How did they take it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0126",
@@ -1485,7 +1608,8 @@
     "followups": [
       "How did it work out for them?",
       "Where does that leave you now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0127",
@@ -1497,7 +1621,8 @@
     "followups": [
       "What was the trick?",
       "Who else picked it up?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0128",
@@ -1509,7 +1634,8 @@
     "followups": [
       "What set them off?",
       "How would you work with them now?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0129",
@@ -1521,7 +1647,8 @@
     "followups": [
       "What did they say when you asked?",
       "How would you ask now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0130",
@@ -1533,7 +1660,8 @@
     "followups": [
       "Where did it come up?",
       "Who else in the room had it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0131",
@@ -1545,7 +1673,8 @@
     "followups": [
       "What did you do with the day off?",
       "Who did you call from there?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0133",
@@ -1557,7 +1686,8 @@
     "followups": [
       "What was wrong with it?",
       "Who else drove it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0134",
@@ -1569,7 +1699,8 @@
     "followups": [
       "What replaced it?",
       "How would it go if you picked it up again?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0135",
@@ -1581,7 +1712,8 @@
     "followups": [
       "How did you learn it?",
       "What would make them listen?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0136",
@@ -1593,7 +1725,8 @@
     "followups": [
       "What happened if you broke it?",
       "Who enforced it without saying anything?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0137",
@@ -1605,7 +1738,8 @@
     "followups": [
       "How often did you see them?",
       "What did you talk about?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0138",
@@ -1617,7 +1751,8 @@
     "followups": [
       "How did they make it?",
       "Who makes it now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0139",
@@ -1629,7 +1764,8 @@
     "followups": [
       "What did you eat on the way?",
       "Who got the worst seat?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0140",
@@ -1641,7 +1777,8 @@
     "followups": [
       "How far did you follow it?",
       "What did they think of your taste?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0141",
@@ -1653,7 +1790,8 @@
     "followups": [
       "Who stayed with you?",
       "What did everyone do afterwards?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0142",
@@ -1665,7 +1803,8 @@
     "followups": [
       "When did you notice it?",
       "What does it remind you of?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0143",
@@ -1677,7 +1816,8 @@
     "followups": [
       "What did it buy you?",
       "Where do you stand on it now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0144",
@@ -1689,7 +1829,8 @@
     "followups": [
       "What was broken on it?",
       "Who finally got rid of it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0145",
@@ -1701,7 +1842,8 @@
     "followups": [
       "What would you do with the time?",
       "Who would be good at it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0146",
@@ -1713,7 +1855,8 @@
     "followups": [
       "How did you meet?",
       "What would break the habit?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0147",
@@ -1725,11 +1868,12 @@
     "followups": [
       "How did you find it?",
       "What would you say to get someone started?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0148",
-    "text": "What have you made with your hands in the last year?",
+    "text": "What is the biggest thing you have made with your hands?",
     "era": "now",
     "topic": "hobbies",
     "weight": "medium",
@@ -1737,7 +1881,8 @@
     "followups": [
       "Where is it now?",
       "Who did you give it to?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0149",
@@ -1749,7 +1894,8 @@
     "followups": [
       "How often do you get it?",
       "What would you trade it for?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0150",
@@ -1761,7 +1907,8 @@
     "followups": [
       "What read differently the second time?",
       "Where is your copy now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0151",
@@ -1773,7 +1920,8 @@
     "followups": [
       "Who sang it?",
       "Where do you hear it now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0152",
@@ -1785,7 +1933,8 @@
     "followups": [
       "How far was it?",
       "What did you take with you?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0153",
@@ -1797,7 +1946,8 @@
     "followups": [
       "Who else liked it?",
       "What happened there?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0154",
@@ -1809,7 +1959,8 @@
     "followups": [
       "What woke you in the morning?",
       "Which sounds came through at night?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0155",
@@ -1821,7 +1972,8 @@
     "followups": [
       "Who had been doing it for you?",
       "How old were you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0156",
@@ -1833,7 +1985,8 @@
     "followups": [
       "Whose house was it?",
       "Which game never got old?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0157",
@@ -1845,11 +1998,12 @@
     "followups": [
       "What did you call each other?",
       "How did it end?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0158",
-    "text": "Which prices did you have completely wrong as a kid?",
+    "text": "How much did you think a car cost when you were ten?",
     "era": "childhood",
     "topic": "money",
     "weight": "light",
@@ -1857,7 +2011,8 @@
     "followups": [
       "What surprised you later?",
       "Who put you right?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0159",
@@ -1869,7 +2024,8 @@
     "followups": [
       "How did you get away with it?",
       "What did you see?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0160",
@@ -1881,7 +2037,8 @@
     "followups": [
       "What was the first thing you fixed?",
       "How did you break something doing it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0161",
@@ -1893,7 +2050,8 @@
     "followups": [
       "Who complained?",
       "What were you playing?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0162",
@@ -1905,7 +2063,8 @@
     "followups": [
       "What did you make?",
       "How did the class react?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0163",
@@ -1917,7 +2076,8 @@
     "followups": [
       "Which friend went with you?",
       "What did you forget to bring?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0164",
@@ -1929,23 +2089,25 @@
     "followups": [
       "How did you take it at the time?",
       "When did it start to look right?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0165",
-    "text": "Tell me about a job you were bad at?",
+    "text": "What was the shortest time you lasted in a job?",
     "era": "teens",
     "topic": "work",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How long did you stay?",
+      "What made you leave?",
       "Who was patient with you?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0166",
-    "text": "What shop or cafe did you spend hours in without buying much?",
+    "text": "What is the longest you have sat in a cafe without ordering much?",
     "era": "teens",
     "topic": "places",
     "weight": "light",
@@ -1953,7 +2115,8 @@
     "followups": [
       "Who worked there?",
       "What did you always order?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0167",
@@ -1965,7 +2128,8 @@
     "followups": [
       "Where did it end up?",
       "Who helped you with it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0168",
@@ -1977,7 +2141,8 @@
     "followups": [
       "How did you ask for it?",
       "What happened to the friendship?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0169",
@@ -1989,7 +2154,8 @@
     "followups": [
       "What kept you there?",
       "Who else was on it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0170",
@@ -2001,7 +2167,8 @@
     "followups": [
       "Which friend came along?",
       "What did you get wrong?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0171",
@@ -2013,7 +2180,8 @@
     "followups": [
       "How did they teach you?",
       "What do you get wrong still?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0172",
@@ -2025,11 +2193,12 @@
     "followups": [
       "How long did it last?",
       "Who refused to get in it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0173",
-    "text": "Tell me about something you put on credit that you should not have?",
+    "text": "What is the most you have ever put on credit?",
     "era": "young-adult",
     "topic": "money",
     "weight": "medium",
@@ -2037,7 +2206,8 @@
     "followups": [
       "How long did it take to pay off?",
       "Who told you not to?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0174",
@@ -2049,7 +2219,8 @@
     "followups": [
       "What did they say?",
       "How did their answer land?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0175",
@@ -2061,11 +2232,12 @@
     "followups": [
       "What was making it?",
       "How long did it take to stop noticing?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0176",
-    "text": "Which thing did you own that was worth insuring?",
+    "text": "What is the most expensive thing you have ever owned?",
     "era": "young-adult",
     "topic": "firsts",
     "weight": "medium",
@@ -2073,7 +2245,8 @@
     "followups": [
       "Where did you get it?",
       "What happened to it in the end?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0177",
@@ -2085,7 +2258,8 @@
     "followups": [
       "How many times did you play it?",
       "Who else knew?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0178",
@@ -2097,7 +2271,8 @@
     "followups": [
       "How did it go?",
       "Who told you afterwards?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0179",
@@ -2109,7 +2284,8 @@
     "followups": [
       "Where are they now?",
       "What did you get wrong with them?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0180",
@@ -2121,19 +2297,21 @@
     "followups": [
       "How hard was it?",
       "Who pushed you into it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0181",
-    "text": "Where did your first real paycheque go?",
+    "text": "What is the biggest thing your first paycheque bought?",
     "era": "career",
     "topic": "money",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Which friend came along?",
+      "Who was with you?",
       "Where would that money go now?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0182",
@@ -2145,7 +2323,8 @@
     "followups": [
       "What surprised you when you got there?",
       "How long did you stay?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0183",
@@ -2157,7 +2336,8 @@
     "followups": [
       "Who organised it?",
       "What ended that?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0184",
@@ -2169,7 +2349,8 @@
     "followups": [
       "Who asked?",
       "What became clearer as you said it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0185",
@@ -2181,7 +2362,8 @@
     "followups": [
       "Who disagreed with you?",
       "What would have happened the other way?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0186",
@@ -2193,7 +2375,8 @@
     "followups": [
       "Who was up first?",
       "What did you smell?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0187",
@@ -2205,7 +2388,8 @@
     "followups": [
       "What details do they always include?",
       "How does everyone react?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0189",
@@ -2217,7 +2401,8 @@
     "followups": [
       "Which room were you in?",
       "What did everyone request?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0190",
@@ -2229,7 +2414,8 @@
     "followups": [
       "Who decided?",
       "Where did you end up?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0191",
@@ -2241,7 +2427,8 @@
     "followups": [
       "How did they show it?",
       "Who else in the family heard about it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0192",
@@ -2253,7 +2440,8 @@
     "followups": [
       "Who insisted?",
       "What did everyone say afterwards?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0193",
@@ -2265,7 +2453,8 @@
     "followups": [
       "Where did you land on those?",
       "What do you spend on it now?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0194",
@@ -2277,7 +2466,8 @@
     "followups": [
       "How long was the drive?",
       "What did they tell you that you did not expect?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0195",
@@ -2289,7 +2479,8 @@
     "followups": [
       "Why that?",
       "Who would you take with you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0196",
@@ -2301,7 +2492,8 @@
     "followups": [
       "What did they need?",
       "How did they thank you?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0197",
@@ -2313,7 +2505,8 @@
     "followups": [
       "Which argument won you over?",
       "How is it going now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0198",
@@ -2325,7 +2518,8 @@
     "followups": [
       "How long does it take?",
       "What would you add if someone came over?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0199",
@@ -2337,7 +2531,8 @@
     "followups": [
       "What made you stop?",
       "Who still brings it up?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0200",
@@ -2349,7 +2544,8 @@
     "followups": [
       "What stopped you?",
       "How would you start now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0202",
@@ -2361,7 +2557,8 @@
     "followups": [
       "How did they make it?",
       "What replaced it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0203",
@@ -2373,7 +2570,8 @@
     "followups": [
       "What was on the back seat?",
       "How long did they keep that car?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0204",
@@ -2385,7 +2583,8 @@
     "followups": [
       "Who was in on it?",
       "How close did you come to being caught?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0205",
@@ -2397,7 +2596,8 @@
     "followups": [
       "Where did you keep it?",
       "Who did you show?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0206",
@@ -2409,7 +2609,8 @@
     "followups": [
       "What did they think of you?",
       "How did you try to impress them?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0207",
@@ -2421,7 +2622,8 @@
     "followups": [
       "Where were you when you heard it?",
       "What did the adults do?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0208",
@@ -2433,7 +2635,8 @@
     "followups": [
       "Who corrected you?",
       "What were the real words?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0209",
@@ -2445,7 +2648,8 @@
     "followups": [
       "How did you learn it?",
       "Where did it lead?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0210",
@@ -2457,7 +2661,8 @@
     "followups": [
       "How did anyone find out?",
       "What did you learn about how it worked?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0211",
@@ -2469,7 +2674,8 @@
     "followups": [
       "Where did you get it?",
       "What happened to it?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0212",
@@ -2481,7 +2687,8 @@
     "followups": [
       "How much did you talk?",
       "What did they do that you still remember?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0213",
@@ -2493,7 +2700,8 @@
     "followups": [
       "How did it turn out?",
       "What did you do instead?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0214",
@@ -2505,7 +2713,8 @@
     "followups": [
       "Who walked it with you?",
       "What did you see that nobody else noticed?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0215",
@@ -2517,7 +2726,8 @@
     "followups": [
       "Who were you going to see?",
       "What was on the radio?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0216",
@@ -2529,7 +2739,8 @@
     "followups": [
       "Where were you?",
       "Who was the worst singer?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0217",
@@ -2541,7 +2752,8 @@
     "followups": [
       "What did they need from you?",
       "Which part did you get wrong?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0218",
@@ -2553,7 +2765,8 @@
     "followups": [
       "How long did it last?",
       "Who asked you to do it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0220",
@@ -2565,7 +2778,8 @@
     "followups": [
       "Where did it come from?",
       "What became of it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0221",
@@ -2577,7 +2791,8 @@
     "followups": [
       "What did you do there?",
       "Where would you go back to first?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0222",
@@ -2589,7 +2804,8 @@
     "followups": [
       "Who won?",
       "What was the rule afterwards?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0223",
@@ -2601,7 +2817,8 @@
     "followups": [
       "Who had the car before you?",
       "What did you never use?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0224",
@@ -2613,7 +2830,8 @@
     "followups": [
       "What did they tell you?",
       "How many times did you call them?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0225",
@@ -2625,7 +2843,8 @@
     "followups": [
       "Who did it belong to?",
       "How long did you keep it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0226",
@@ -2637,7 +2856,8 @@
     "followups": [
       "What did you expect?",
       "How did it change you instead?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0227",
@@ -2649,7 +2869,8 @@
     "followups": [
       "How did you do the sums?",
       "What did you cut first?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0228",
@@ -2661,7 +2882,8 @@
     "followups": [
       "How long did it take to find out?",
       "What did it cost you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0229",
@@ -2673,11 +2895,12 @@
     "followups": [
       "What did you take from them?",
       "Which habits did you drop?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0230",
-    "text": "What was the best place you ever ate lunch at work?",
+    "text": "What is the furthest you have walked for lunch at work?",
     "era": "career",
     "topic": "places",
     "weight": "light",
@@ -2685,7 +2908,8 @@
     "followups": [
       "Who found it first?",
       "What did you always get there?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0231",
@@ -2697,7 +2921,8 @@
     "followups": [
       "How often did you read it?",
       "Who else bothered?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0232",
@@ -2709,7 +2934,8 @@
     "followups": [
       "Which friend came along?",
       "What did you talk about?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0233",
@@ -2721,7 +2947,8 @@
     "followups": [
       "Who paid for it?",
       "How did it pay off?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0234",
@@ -2733,7 +2960,8 @@
     "followups": [
       "What did you get for it?",
       "Where did it come from?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0235",
@@ -2745,7 +2973,8 @@
     "followups": [
       "How did they show you?",
       "What happened if you pressed the wrong thing?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0236",
@@ -2757,7 +2986,8 @@
     "followups": [
       "Who resented it most?",
       "How did it balance out?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0237",
@@ -2769,7 +2999,8 @@
     "followups": [
       "How did you handle it?",
       "Who defended you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0238",
@@ -2781,7 +3012,8 @@
     "followups": [
       "How fast did it spread?",
       "What did they do with it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0239",
@@ -2793,7 +3025,8 @@
     "followups": [
       "Where did it come from?",
       "What do you keep in its place?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0240",
@@ -2805,7 +3038,8 @@
     "followups": [
       "What did anyone leave out there?",
       "Who did the work on it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0242",
@@ -2817,7 +3051,8 @@
     "followups": [
       "Who decided to go?",
       "What did you order or buy?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0243",
@@ -2829,7 +3064,8 @@
     "followups": [
       "How did you work out what to do?",
       "Where did it go from there?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0244",
@@ -2841,7 +3077,8 @@
     "followups": [
       "Who commented on it?",
       "What did you turn down when someone came?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0245",
@@ -2853,7 +3090,8 @@
     "followups": [
       "How did they react?",
       "When did they work it out?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0246",
@@ -2865,7 +3103,8 @@
     "followups": [
       "What would it take to fix it?",
       "How would you answer if they called?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0247",
@@ -2877,7 +3116,8 @@
     "followups": [
       "How long did it take?",
       "What went wrong doing it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0248",
@@ -2889,11 +3129,12 @@
     "followups": [
       "Where were you?",
       "How long did you stay?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0249",
-    "text": "What would you do with two weeks off and nowhere to go?",
+    "text": "What is the longest you have ever had off work at once?",
     "era": "now",
     "topic": "hobbies",
     "weight": "medium",
@@ -2901,7 +3142,8 @@
     "followups": [
       "Who would you see?",
       "What would you avoid?"
-    ]
+    ],
+    "hook": "measure"
   },
   {
     "id": "q0250",
@@ -2913,7 +3155,8 @@
     "followups": [
       "What would you do if you drove past it?",
       "Who was there with you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0251",
@@ -2925,7 +3168,8 @@
     "followups": [
       "Where is it now?",
       "What did it say about you?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0252",
@@ -2937,7 +3181,8 @@
     "followups": [
       "Who brought it?",
       "What made it the right thing?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0253",
@@ -2949,7 +3194,8 @@
     "followups": [
       "Whose was it?",
       "What did they say to you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0254",
@@ -2961,7 +3207,8 @@
     "followups": [
       "Where did you sit?",
       "Who else drifted in?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0255",
@@ -2973,7 +3220,8 @@
     "followups": [
       "What did they say?",
       "How long did it go on?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0256",
@@ -2985,7 +3233,8 @@
     "followups": [
       "Who checked on you?",
       "What did you get up to?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0257",
@@ -2997,7 +3246,8 @@
     "followups": [
       "Which part can you still hum?",
       "Who else knows it?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0259",
@@ -3009,7 +3259,8 @@
     "followups": [
       "When did they come around?",
       "How did they react?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0260",
@@ -3021,7 +3272,8 @@
     "followups": [
       "Whose car was it?",
       "What gave it away?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0261",
@@ -3033,7 +3285,8 @@
     "followups": [
       "How did they hand it over?",
       "Who else knew you kept it?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0262",
@@ -3045,11 +3298,12 @@
     "followups": [
       "Who noticed you were late?",
       "How often did it happen?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0263",
-    "text": "Where did a whole month's money go?",
+    "text": "What is the most money you have ever spent in one month?",
     "era": "teens",
     "topic": "money",
     "weight": "light",
@@ -3057,7 +3311,8 @@
     "followups": [
       "Who talked sense into you?",
       "How long did the money last?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0264",
@@ -3069,7 +3324,8 @@
     "followups": [
       "What did you choose?",
       "How did they find out what it cost?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0265",
@@ -3081,11 +3337,12 @@
     "followups": [
       "Who did you tell?",
       "How did they react?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0267",
-    "text": "Which skill did you pick up in a week?",
+    "text": "What is the fastest you have ever learned a skill?",
     "era": "young-adult",
     "topic": "work",
     "weight": "light",
@@ -3093,7 +3350,8 @@
     "followups": [
       "Who threw you in at the deep end?",
       "What did you get wrong?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0268",
@@ -3105,7 +3363,8 @@
     "followups": [
       "How did they make it?",
       "What was on the table besides that?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0269",
@@ -3117,7 +3376,8 @@
     "followups": [
       "What did you do there?",
       "Who did you tell about it?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0270",
@@ -3129,7 +3389,8 @@
     "followups": [
       "What made you stop?",
       "Who kept pushing you to buy it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0271",
@@ -3141,7 +3402,8 @@
     "followups": [
       "What did you show them?",
       "Which part did you get wrong?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0272",
@@ -3153,7 +3415,8 @@
     "followups": [
       "How did you know how?",
       "What went wrong with it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0273",
@@ -3165,7 +3428,8 @@
     "followups": [
       "How did they catch on?",
       "What happened to the deposit?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0274",
@@ -3177,7 +3441,8 @@
     "followups": [
       "How long did it last?",
       "Where are you with it now?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0275",
@@ -3189,7 +3454,8 @@
     "followups": [
       "Whose looked worse?",
       "What made them that way?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0276",
@@ -3201,7 +3467,8 @@
     "followups": [
       "Who did you tell first?",
       "What would you do differently?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0277",
@@ -3213,7 +3480,8 @@
     "followups": [
       "What do they assume?",
       "How do you correct them?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0278",
@@ -3225,7 +3493,8 @@
     "followups": [
       "What did you talk about?",
       "Where are they now?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0279",
@@ -3237,7 +3506,8 @@
     "followups": [
       "Who showed you?",
       "How long did it take to stick?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0281",
@@ -3249,7 +3519,8 @@
     "followups": [
       "Who thought you were wrong?",
       "What do you tell yourself about it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0282",
@@ -3261,7 +3532,8 @@
     "followups": [
       "Who showed you how to use it?",
       "What did the holdouts do instead?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0283",
@@ -3273,7 +3545,8 @@
     "followups": [
       "Who did you ask?",
       "How did it turn out?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0284",
@@ -3285,7 +3558,8 @@
     "followups": [
       "Who did the work?",
       "What did they say about the visitor afterwards?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0285",
@@ -3297,7 +3571,8 @@
     "followups": [
       "Where did it sit?",
       "How long was it there?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0286",
@@ -3309,7 +3584,8 @@
     "followups": [
       "How did they teach it without saying much?",
       "Who have you passed it on to?"
-    ]
+    ],
+    "hook": "relational"
   },
   {
     "id": "q0287",
@@ -3321,7 +3597,8 @@
     "followups": [
       "What did you plan?",
       "How did it go?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0288",
@@ -3333,7 +3610,8 @@
     "followups": [
       "Who played it?",
       "What do you remember hearing?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0289",
@@ -3345,7 +3623,8 @@
     "followups": [
       "Who controlled it?",
       "What did you watch there that you would not watch at home?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0290",
@@ -3357,7 +3636,8 @@
     "followups": [
       "Where did that belief come from?",
       "What do you believe instead?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0291",
@@ -3369,7 +3649,8 @@
     "followups": [
       "Who was in charge of it?",
       "What did you do with the last hours of freedom?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0292",
@@ -3381,7 +3662,8 @@
     "followups": [
       "What would they say back?",
       "Why can you not say it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0293",
@@ -3393,7 +3675,8 @@
     "followups": [
       "How long have you had it?",
       "What would you get instead?"
-    ]
+    ],
+    "hook": "scene"
   },
   {
     "id": "q0294",
@@ -3405,7 +3688,8 @@
     "followups": [
       "How did you start?",
       "Who started with you and then stopped?"
-    ]
+    ],
+    "hook": "extreme"
   },
   {
     "id": "q0295",
@@ -3417,7 +3701,8 @@
     "followups": [
       "What changed?",
       "Who got you to try it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0297",
@@ -3429,7 +3714,8 @@
     "followups": [
       "What changed it?",
       "Who disagrees with you now?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0298",
@@ -3441,7 +3727,8 @@
     "followups": [
       "How did the idea come up?",
       "What comes next?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0299",
@@ -3453,7 +3740,8 @@
     "followups": [
       "What do they say about it?",
       "Where has that cost you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0300",
@@ -3465,7 +3753,8 @@
     "followups": [
       "Who else knows about it?",
       "What would be enough to settle it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0301",
@@ -3477,7 +3766,8 @@
     "followups": [
       "Where had it come from?",
       "What did you lose along the way?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0302",
@@ -3489,7 +3779,8 @@
     "followups": [
       "Where did you play it?",
       "What happened to it in the end?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0303",
@@ -3501,7 +3792,8 @@
     "followups": [
       "Who knew it was there?",
       "What did you never use?"
-    ]
+    ],
+    "hook": "artifact"
   },
   {
     "id": "q0304",
@@ -3513,7 +3805,8 @@
     "followups": [
       "Who spotted the bad job?",
       "How long did that last?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0305",
@@ -3525,7 +3818,8 @@
     "followups": [
       "What do you always look at?",
       "Who goes there with you?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0306",
@@ -3537,7 +3831,8 @@
     "followups": [
       "How long before you tried it?",
       "What went wrong when you did?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0307",
@@ -3549,7 +3844,8 @@
     "followups": [
       "What did they want?",
       "How did you handle it?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0308",
@@ -3561,7 +3857,8 @@
     "followups": [
       "How did it start?",
       "What did the room do?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0309",
@@ -3573,7 +3870,8 @@
     "followups": [
       "How did the meal go after that?",
       "Who gave in?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0310",
@@ -3585,7 +3883,8 @@
     "followups": [
       "What did everyone complain about?",
       "Which song came on too often?"
-    ]
+    ],
+    "hook": "plain"
   },
   {
     "id": "q0311",
@@ -3597,6 +3896,124 @@
     "followups": [
       "What did you do anyway?",
       "When did it catch up with you?"
+    ],
+    "hook": "plain"
+  },
+  {
+    "id": "q0312",
+    "text": "What is the longest boat ride you have ever been on?",
+    "era": "now",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "extreme",
+    "followups": [
+      "Where did it leave from?",
+      "What did you see on the way?"
+    ]
+  },
+  {
+    "id": "q0313",
+    "text": "What is the longest you have ever stayed awake, and what kept you up?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "extreme",
+    "followups": [
+      "What were you doing at four in the morning?",
+      "How did the next day go?"
+    ]
+  },
+  {
+    "id": "q0314",
+    "text": "What is the furthest you have ever been from where you were born?",
+    "era": "now",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "measure",
+    "followups": [
+      "How did you get there?",
+      "What surprised you about it?"
+    ]
+  },
+  {
+    "id": "q0315",
+    "text": "Where were you for the best sunset you have ever seen?",
+    "era": "now",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "scene",
+    "followups": [
+      "What was in front of you?",
+      "How did the light change?"
+    ]
+  },
+  {
+    "id": "q0316",
+    "text": "What is the best country song of all time?",
+    "era": "now",
+    "topic": "music",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "debate",
+    "followups": [
+      "What makes that one the one?",
+      "Which one comes close?"
+    ]
+  },
+  {
+    "id": "q0317",
+    "text": "If you got unlimited free food from one fast food place for life, which would you pick?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "hypothetical",
+    "hook": "plain",
+    "followups": [
+      "What is the first thing you would order?",
+      "Which item would you get sick of?"
+    ]
+  },
+  {
+    "id": "q0318",
+    "text": "If the house were on fire and everyone was safe, which five things would you grab, in order?",
+    "era": "now",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "hypothetical",
+    "hook": "plain",
+    "followups": [
+      "What would you grab first?",
+      "Which thing would you leave behind?"
+    ]
+  },
+  {
+    "id": "q0319",
+    "text": "What book have you read more times than any other?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "measure",
+    "followups": [
+      "When do you go back to it?",
+      "What do you find each time?"
+    ]
+  },
+  {
+    "id": "q0320",
+    "text": "What is the best piece of art you have ever seen in person?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "artifact",
+    "followups": [
+      "Where was it hanging?",
+      "How long did you stand there?"
     ]
   }
 ]

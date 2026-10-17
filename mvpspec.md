@@ -84,15 +84,26 @@ Field rules:
   - medium: requires some reflection or touches something personal.
   - heavy: about regret, loss, big decisions, or the relationship itself.
 - `kind`: `memory` (asks about a specific past thing), `opinion`, or `hypothetical`.
+- `hook`: `extreme`, `measure`, `artifact`, `relational`, `scene`, `debate`, or `plain`.
+  The mechanism the question trades on. `extreme` and `measure` ask for a superlative
+  or a number (longest, furthest, how many) and the number pulls the story out;
+  `artifact` asks about a specific object; `relational` is about a person; `scene`
+  puts them back in a place; `debate` is an opinion people will defend, tagged and
+  kept rare because it works better in groups than one to one; `plain` is the rest.
+  Rules: extreme + measure + artifact + relational + scene at least 40 percent of the
+  deck, extreme + measure at least 10 percent, debate at most 5 percent, and
+  "favourite" questions at most 5 percent, only when everyone has an opinion on the
+  thing or a story comes attached. Reject "biggest impact" and "most influential":
+  they produce prepared answers.
 - `followups`: 1 to 3 short prompts to use if the first answer starts a story. Required for every question. Each ends with a question mark.
 
 ## Question content
 
-Seed `questions.json` with 300 questions. Write them directly; do not scrape or copy from other sites.
+Seed `questions.json` with 309 questions. Write them directly; do not scrape or copy from other sites.
 
 Distribution targets:
 
-- Weight: 195 light (65%), 90 medium (30%), 15 heavy (5%). Heavy is the scarcest thing in the deck on purpose: it is hidden by default, so a large heavy pool is dead weight.
+- Weight: 203 light, 91 medium, 15 heavy. Heavy is the scarcest thing in the deck on purpose: it is hidden by default, so a large heavy pool is dead weight.
 - Kind: at least 180 `memory` (60%). Concrete past specifics beat abstract opinions. The proven example: "What was the last concert you went to?" led to stories about the 1970s.
 - Every era value is represented by at least 15 questions and every topic by at
   least 10. Counts should look natural, not uniform.
@@ -131,7 +142,7 @@ Quality rules for writing questions:
 
 It exits non-zero on errors, zero with warnings printed otherwise.
 
-Passing the validator is necessary but not sufficient. It checks shape, not whether a question opens a door, so the validator also writes `review.html`: one page, all 300 questions, numbered, showing their tags, meant for a single human read-through with a highlighter. Reviewing that page is a required build step, not an optional nicety.
+Passing the validator is necessary but not sufficient. It checks shape, not whether a question opens a door, so the validator also writes `review.html`: one page, every question, numbered, showing their tags, meant for a single human read-through with a highlighter. Reviewing that page is a required build step, not an optional nicety.
 
 ## Screens and behavior
 
@@ -213,7 +224,7 @@ Checked at a 375 by 667 viewport with the browser UI visible:
 3. Asked and never questions do not reappear after a page reload, and the current card does.
 4. Back reverses the last action: after Ask then Back, the question returns and is no longer in `asked`.
 5. Filters change the pool immediately and the remaining count is accurate.
-6. All 300 questions pass the validator and meet the distribution targets, and the full deck has been read once on `review.html`.
+6. All questions pass the validator and meet the distribution targets, and the full deck has been read once on `review.html`.
 7. Export then import on a cleared browser restores state exactly.
 8. After `questions.json` loads, no further network requests occur while changing cards.
 9. No console errors. Every control is reachable by keyboard. Changing the card is announced to screen readers (`aria-live`), and Lighthouse accessibility runs with no major failures.
