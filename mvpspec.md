@@ -113,7 +113,7 @@ Quality rules for writing questions:
 - `text` ends with `?`, is not empty, and prints a warning above 120 characters
 - `text` does not open with a yes/no construction (regex list above)
 - no duplicate text (case and punctuation-insensitive)
-- near-duplicate pairs flagged as warnings (token overlap above 60 percent)
+- near-duplicate pairs flagged as warnings (Jaccard word overlap above 50 percent)
 - distribution printout for weight, kind, era, and topic, with a pass/fail line per target
 
 It exits non-zero on errors, zero with warnings printed otherwise.
@@ -165,14 +165,15 @@ Single screen with a drawer or sheet for filters.
   "version": 1,
   "asked": ["q0001"],
   "never": ["q0042"],
-  "skippedThisSession": [],
+  "skippedThisSession": [{ "id": "q0007", "at": 12 }],
   "filters": { "weight": ["light","medium"], "era": [], "topic": [], "kind": [] },
   "currentId": "q0001",
-  "history": [{ "id": "q0001", "askedAt": "2026-10-18T15:04:00Z" }]
+  "history": [{ "id": "q0001", "askedAt": "2026-10-18T15:04:00Z" }],
+  "shownCards": 13
 }
 ```
 
-An empty filter array means "all". `version` plus a simple migration hook (`migrate(state)` returning the current shape) covers later schema changes. Store `askedAt` timestamps now, so v2 features like "what did we cover last Sunday" are possible without a data migration. Unknown or missing `currentId` falls back to a fresh random pick.
+An empty filter array means "all". `shownCards` is a monotonic counter of cards displayed, and each skip records the counter value in `at`, which is how the 10-card re-entry window is measured. `version` plus a simple migration hook (`migrate(state)` returning the current shape) covers later schema changes. Store `askedAt` timestamps now, so v2 features like "what did we cover last Sunday" are possible without a data migration. Unknown or missing `currentId` falls back to a fresh random pick.
 
 ## Design
 

@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "q0001",
+    "text": "What did the kitchen in the house you grew up in look like?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did everyone sit?",
+      "What was always on the counter?"
+    ]
+  },
+  {
+    "id": "q0002",
+    "text": "What was the meal you asked for on your birthday?",
+    "era": "childhood",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made it?",
+      "Has anyone matched it since?"
+    ]
+  },
+  {
+    "id": "q0003",
+    "text": "What song do you remember from the car when you were small?",
+    "era": "childhood",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who chose the station?",
+      "Did anyone sing along?"
+    ]
+  },
+  {
+    "id": "q0004",
+    "text": "What is the first thing you remember about starting school?",
+    "era": "childhood",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you carry your lunch in?",
+      "Was there someone you looked for every morning?"
+    ]
+  },
+  {
+    "id": "q0005",
+    "text": "Where did you go when you wanted to be alone as a kid?",
+    "era": "childhood",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Could you see the house from there?",
+      "Did anyone know about it?"
+    ]
+  },
+  {
+    "id": "q0006",
+    "text": "Who was the neighbour everyone in your family talked about?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did they do that made them famous on the street?",
+      "Were you ever sent over to their house?"
+    ]
+  },
+  {
+    "id": "q0007",
+    "text": "What was the first thing you saved up your own money for?",
+    "era": "childhood",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did it take?",
+      "Do you still have anything from then?"
+    ]
+  },
+  {
+    "id": "q0008",
+    "text": "What was the one class in high school you actually looked forward to?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who else was in it?",
+      "What did the teacher do that worked?"
+    ]
+  },
+  {
+    "id": "q0009",
+    "text": "What car did you learn to drive in?",
+    "era": "teens",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who taught you?",
+      "Where did you practise?"
+    ]
+  },
+  {
+    "id": "q0010",
+    "text": "What was the first record or tape you bought with your own money?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you buy it?",
+      "Did you hide it from anyone?"
+    ]
+  },
+  {
+    "id": "q0011",
+    "text": "What did you do after school on a day with nothing planned?",
+    "era": "teens",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was usually with you?",
+      "Where did you end up?"
+    ]
+  },
+  {
+    "id": "q0012",
+    "text": "What show did you refuse to miss when you were a teenager?",
+    "era": "teens",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you watch it?",
+      "Who else was in the room?"
+    ]
+  },
+  {
+    "id": "q0013",
+    "text": "Who was the first friend you made outside your family, and how did it happen?",
+    "era": "teens",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Where did you meet?",
+      "Are you still in touch?"
+    ]
+  },
+  {
+    "id": "q0014",
+    "text": "What was your first job, and what did they actually pay you?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you spend it on?",
+      "Who trained you?"
+    ]
+  },
+  {
+    "id": "q0015",
+    "text": "What was the first place you lived in that was yours to arrange?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you put on the wall?",
+      "What did you get wrong about it?"
+    ]
+  },
+  {
+    "id": "q0016",
+    "text": "What did you cook badly, repeatedly, when you first lived on your own?",
+    "era": "young-adult",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who ate it anyway?",
+      "When did you get it right?"
+    ]
+  },
+  {
+    "id": "q0017",
+    "text": "Where did you go on your first long drive by yourself?",
+    "era": "young-adult",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was playing?",
+      "Did you tell anyone where you were going?"
+    ]
+  },
+  {
+    "id": "q0018",
+    "text": "What was the first big thing you bought that you regretted?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How long did you keep it?",
+      "What did you do with it in the end?"
+    ]
+  },
+  {
+    "id": "q0019",
+    "text": "What was the last concert you went to?",
+    "era": "young-adult",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who did you go with?",
+      "What was the best one you ever saw?"
+    ]
+  },
+  {
+    "id": "q0020",
+    "text": "Who did you spend the most time with in your early twenties?",
+    "era": "young-adult",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did the two of you do on a normal evening?",
+      "When did it stop?"
+    ]
+  },
+  {
+    "id": "q0021",
+    "text": "What was the first thing you were trusted to do on your own at work?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who decided you were ready?",
+      "Did you get it right the first time?"
+    ]
+  },
+  {
+    "id": "q0022",
+    "text": "What did you learn after school that turned out to matter more than the classes?",
+    "era": "career",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who taught you?",
+      "Where did you use it?"
+    ]
+  },
+  {
+    "id": "q0023",
+    "text": "What was the worst piece of advice anyone gave you early on, and who gave it?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did you take it?",
+      "What did it cost you?"
+    ]
+  },
+  {
+    "id": "q0024",
+    "text": "What did the view out of your office or worksite window look like?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What could you see at lunch?",
+      "Did anyone else watch it with you?"
+    ]
+  },
+  {
+    "id": "q0025",
+    "text": "What did you do on the drive home from work to stop thinking about it?",
+    "era": "career",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did that ritual last?",
+      "What was on the radio?"
+    ]
+  },
+  {
+    "id": "q0026",
+    "text": "Who at work did you learn the most from without them ever sitting you down to teach?",
+    "era": "career",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you copy from them?",
+      "Do they know?"
+    ]
+  },
+  {
+    "id": "q0027",
+    "text": "What piece of furniture from your parents' house do you remember best?",
+    "era": "family",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did it sit?",
+      "What happened to it?"
+    ]
+  },
+  {
+    "id": "q0028",
+    "text": "What was the one dish at family gatherings that everyone fought over?",
+    "era": "family",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made it?",
+      "Was there a version you liked better?"
+    ]
+  },
+  {
+    "id": "q0029",
+    "text": "Which relative told the stories at your family table?",
+    "era": "family",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What was their best one?",
+      "Did anyone repeat them after?"
+    ]
+  },
+  {
+    "id": "q0030",
+    "text": "What did your family watch together when you were growing up?",
+    "era": "family",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who controlled the remote?",
+      "What did you actually want to watch?"
+    ]
+  },
+  {
+    "id": "q0031",
+    "text": "What music did your parents play that you now like?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did you like it then?",
+      "What did they play that you still cannot stand?"
+    ]
+  },
+  {
+    "id": "q0032",
+    "text": "Where did your family go when it needed a day off?",
+    "era": "family",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How many times did you go?",
+      "What did you do there?"
+    ]
+  },
+  {
+    "id": "q0033",
+    "text": "What was the last thing you fixed in your house by yourself?",
+    "era": "now",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you learn how?",
+      "Did it hold?"
+    ]
+  },
+  {
+    "id": "q0034",
+    "text": "What have you got better at over the last five years without trying?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "Who noticed first?",
+      "What would you still like to learn?"
+    ]
+  },
+  {
+    "id": "q0035",
+    "text": "What was the last meal you ate that was worth the drive?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was there?",
+      "Would you go back?"
+    ]
+  },
+  {
+    "id": "q0036",
+    "text": "Where do you go when you need an hour to yourself?",
+    "era": "now",
+    "topic": "places",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "How often do you manage it?",
+      "Does anyone know you go there?"
+    ]
+  },
+  {
+    "id": "q0037",
+    "text": "What do you know now that took you much longer than it should have to learn?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "How did it finally click?",
+      "Who would have told you if you had asked?"
+    ]
+  },
+  {
+    "id": "q0038",
+    "text": "What do you happily spend money on now that you used to think was wasteful?",
+    "era": "now",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "What changed your mind?",
+      "What do you still refuse to spend on?"
+    ]
+  },
+  {
+    "id": "q0039",
+    "text": "What is the best day of work you have had in the last year?",
+    "era": "now",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What made it good?",
+      "Who else was there?"
+    ]
+  },
+  {
+    "id": "q0040",
+    "text": "Who did you see recently that you had not seen in years?",
+    "era": "now",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you talk about?",
+      "What surprised you?"
+    ]
+  },
+  {
+    "id": "q0041",
+    "text": "Who is the person in your family you wish you had asked more questions of while you could?",
+    "era": "family",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "What would you ask first?",
+      "What do you remember of their voice?"
+    ]
+  },
+  {
+    "id": "q0042",
+    "text": "What did you let go of that you still think about at odd moments?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "What made you let go of it?",
+      "Would you take it back?"
+    ]
+  },
+  {
+    "id": "q0043",
+    "text": "What place from your past do you miss that you know you will never see again?",
+    "era": "family",
+    "topic": "places",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "What would you do first if you walked in?",
+      "What do you remember most clearly about it?"
+    ]
+  },
+  {
+    "id": "q0044",
+    "text": "What was your bedroom like at the age when you first wanted the door shut?",
+    "era": "teens",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was on the walls?",
+      "What did you hide when people came over?"
+    ]
+  },
+  {
+    "id": "q0045",
+    "text": "What did your work shoes look like, and how long did you keep the same pair?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made fun of them?",
+      "When did you finally replace them?"
+    ]
+  },
+  {
+    "id": "q0046",
+    "text": "What was the first film you remember seeing in a theatre?",
+    "era": "childhood",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who took you?",
+      "Did you understand it?"
+    ]
+  },
+  {
+    "id": "q0047",
+    "text": "What did you study for a while and then walk away from?",
+    "era": "young-adult",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What made you stop?",
+      "Do you think about going back?"
+    ]
+  },
+  {
+    "id": "q0048",
+    "text": "What is the oddest thing your work has ever paid for?",
+    "era": "career",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Who approved it?",
+      "Would you do it again?"
+    ]
+  },
+  {
+    "id": "q0049",
+    "text": "What did you read or listen to on the way in to work that set the tone for the day?",
+    "era": "career",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did you ever share it with someone at work?",
+      "What stopped you?"
+    ]
+  },
+  {
+    "id": "q0050",
+    "text": "What did you collect as a child, and how did you store it?",
+    "era": "childhood",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Where is it now?",
+      "Who else knew what you were looking for?"
+    ]
+  },
+  {
+    "id": "q0051",
+    "text": "What was the corner shop near your house, and what did you buy there?",
+    "era": "childhood",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who sent you?",
+      "What did it smell like inside?"
+    ]
+  },
+  {
+    "id": "q0052",
+    "text": "What did you eat that your parents would not touch?",
+    "era": "childhood",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did they ever try it?",
+      "Where did you get it?"
+    ]
+  },
+  {
+    "id": "q0053",
+    "text": "What was the first book you remember finishing on your own?",
+    "era": "childhood",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you read it?",
+      "Who gave it to you?"
+    ]
+  },
+  {
+    "id": "q0054",
+    "text": "What was the car your family had when you were small, and what colour was it?",
+    "era": "childhood",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you sit in it?",
+      "What was wrong with it?"
+    ]
+  },
+  {
+    "id": "q0055",
+    "text": "What game did you play outside until someone called you in?",
+    "era": "childhood",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made up the rules?",
+      "What time did you have to be in?"
+    ]
+  },
+  {
+    "id": "q0056",
+    "text": "Who was the adult outside your family who noticed you?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did they say to you?",
+      "Did you tell anyone at home?"
+    ]
+  },
+  {
+    "id": "q0057",
+    "text": "What was the walk to school like, and who did you walk with?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you talk about?",
+      "Did you take the same way home?"
+    ]
+  },
+  {
+    "id": "q0058",
+    "text": "Where did everyone in your year hang around on a Friday night?",
+    "era": "teens",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you get there?",
+      "Who never showed up?"
+    ]
+  },
+  {
+    "id": "q0059",
+    "text": "What band did you defend when everyone else in the room could not stand them?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did you convert anyone?",
+      "What did they like instead?"
+    ]
+  },
+  {
+    "id": "q0060",
+    "text": "What was the first thing you did that felt like being an adult?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was with you?",
+      "Did it go the way you imagined?"
+    ]
+  },
+  {
+    "id": "q0061",
+    "text": "What did a teacher do that you still copy when you explain something?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was the subject?",
+      "Do people notice you doing it?"
+    ]
+  },
+  {
+    "id": "q0062",
+    "text": "What did you and your friends eat late at night that you would not eat now?",
+    "era": "teens",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you get it?",
+      "Who always paid?"
+    ]
+  },
+  {
+    "id": "q0063",
+    "text": "What was the first city you got to know without a guide?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you find your way?",
+      "What did you get wrong there?"
+    ]
+  },
+  {
+    "id": "q0064",
+    "text": "What did you do for money that you would never put on a CV?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did it last?",
+      "Who else was in it with you?"
+    ]
+  },
+  {
+    "id": "q0065",
+    "text": "What was the worst place you ever lived, and what made it bearable?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was next door?",
+      "How did you get out?"
+    ]
+  },
+  {
+    "id": "q0066",
+    "text": "What did an older person tell you then that you only understood later?",
+    "era": "young-adult",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who said it?",
+      "When did it finally make sense?"
+    ]
+  },
+  {
+    "id": "q0067",
+    "text": "What job taught you the most about people?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you learn to spot early?",
+      "Who was the best at it?"
+    ]
+  },
+  {
+    "id": "q0068",
+    "text": "What was the commute you could drive with your eyes half closed?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you always notice on it?",
+      "Did anything ever change on that route?"
+    ]
+  },
+  {
+    "id": "q0069",
+    "text": "What was the first time you saw your name in print or on a screen?",
+    "era": "career",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did they spell it right?",
+      "Who did you show first?"
+    ]
+  },
+  {
+    "id": "q0070",
+    "text": "What did you do on your lunch break that had nothing to do with work?",
+    "era": "career",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did anyone join you?",
+      "Do you still do anything like it?"
+    ]
+  },
+  {
+    "id": "q0071",
+    "text": "What room in your parents' house was everyone's favourite, and why?",
+    "era": "family",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What happened in there?",
+      "Who claimed the best chair?"
+    ]
+  },
+  {
+    "id": "q0072",
+    "text": "What did your family eat on the night nobody wanted to cook?",
+    "era": "family",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who suggested it?",
+      "Was it always the same thing?"
+    ]
+  },
+  {
+    "id": "q0073",
+    "text": "What film did your family quote at each other?",
+    "era": "family",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who started it?",
+      "Does anyone still say it?"
+    ]
+  },
+  {
+    "id": "q0074",
+    "text": "What song got everyone at a family party onto the floor?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who started dancing first?",
+      "What did the older ones think of it?"
+    ]
+  },
+  {
+    "id": "q0075",
+    "text": "What is the oldest thing in your house that you still use?",
+    "era": "now",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did it come from?",
+      "What would you replace it with?"
+    ]
+  },
+  {
+    "id": "q0076",
+    "text": "What is the car you would buy tomorrow if money were not the question?",
+    "era": "now",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "hypothetical",
+    "followups": [
+      "What would you do with it first?",
+      "Have you ever driven one?"
+    ]
+  },
+  {
+    "id": "q0077",
+    "text": "Who is the person you call when something good happens?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long have you known them?",
+      "What do they always say?"
+    ]
+  },
+  {
+    "id": "q0078",
+    "text": "What do you cook that people ask you to bring?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who asked first?",
+      "Have you ever given out the recipe?"
+    ]
+  },
+  {
+    "id": "q0079",
+    "text": "What do you do that makes the time disappear?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "When did you last do it?",
+      "What interrupts you most?"
+    ]
+  },
+  {
+    "id": "q0080",
+    "text": "What have you watched more than once, and why that one?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "Who else likes it?",
+      "What did you notice the second time?"
+    ]
+  },
+  {
+    "id": "q0081",
+    "text": "What is the best place within an hour of your house?",
+    "era": "now",
+    "topic": "places",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "How often do you get there?",
+      "What do you do when you arrive?"
+    ]
+  },
+  {
+    "id": "q0082",
+    "text": "What part of your work still surprises you?",
+    "era": "now",
+    "topic": "work",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "Who else notices it?",
+      "Would you tell a young person to do it?"
+    ]
+  },
+  {
+    "id": "q0083",
+    "text": "What is something you did for the first time recently?",
+    "era": "now",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What made you try it?",
+      "Would you do it again?"
+    ]
+  },
+  {
+    "id": "q0084",
+    "text": "What did you understand about your parents only after you were grown?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What gave it away?",
+      "Did you ever tell them?"
+    ]
+  },
+  {
+    "id": "q0085",
+    "text": "What did you want to be at fifteen, and who told you to be realistic?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did the idea ever leave you?",
+      "What did you do about it?"
+    ]
+  },
+  {
+    "id": "q0086",
+    "text": "What rule did you break that turned out to be right for you?",
+    "era": "teens",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did it cost?",
+      "Who found out?"
+    ]
+  },
+  {
+    "id": "q0087",
+    "text": "Who did you lose touch with that you still think about?",
+    "era": "young-adult",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What would you say first?",
+      "Could you find them now?"
+    ]
+  },
+  {
+    "id": "q0088",
+    "text": "What did you owe someone for longer than you meant to?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How did you settle it?",
+      "Did it change things between you?"
+    ]
+  },
+  {
+    "id": "q0089",
+    "text": "What did you have to unlearn to get good at your work?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Who helped you see it?",
+      "What did it cost you at the start?"
+    ]
+  },
+  {
+    "id": "q0090",
+    "text": "What is the hardest thing you have had to tell someone you worked with?",
+    "era": "career",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How did they take it?",
+      "Would you say it the same way now?"
+    ]
+  },
+  {
+    "id": "q0091",
+    "text": "What argument at the family table do you still remember?",
+    "era": "family",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What started it?",
+      "Who was right?"
+    ]
+  },
+  {
+    "id": "q0092",
+    "text": "What did your family do every year without ever discussing it?",
+    "era": "family",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "When did it stop?",
+      "Who would restart it?"
+    ]
+  },
+  {
+    "id": "q0093",
+    "text": "What do you do differently now because someone disappointed you?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "What did they do?",
+      "Did you ever tell them?"
+    ]
+  },
+  {
+    "id": "q0094",
+    "text": "What would you change about the place you live if nobody else had a say?",
+    "era": "now",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "hypothetical",
+    "followups": [
+      "What stops you?",
+      "What would you keep exactly as it is?"
+    ]
+  },
+  {
+    "id": "q0095",
+    "text": "What is something your closest friend does that you have never mentioned to them?",
+    "era": "now",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Why have you let it go?",
+      "Does it actually matter?"
+    ]
+  },
+  {
+    "id": "q0096",
+    "text": "What would you do with a free year and no obligations?",
+    "era": "now",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "hypothetical",
+    "followups": [
+      "What would you start with?",
+      "What would you miss?"
+    ]
+  },
+  {
+    "id": "q0097",
+    "text": "What have you bought that changed how your days go?",
+    "era": "now",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Was it worth it?",
+      "Who talked you into it?"
+    ]
+  },
+  {
+    "id": "q0098",
+    "text": "What did school get right for you, and what did it get wrong?",
+    "era": "now",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Which teacher saw it?",
+      "What would you fix first?"
+    ]
+  },
+  {
+    "id": "q0099",
+    "text": "What do you wish you had said at a funeral?",
+    "era": "family",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "Who was it for?",
+      "What stopped you?"
+    ]
+  },
+  {
+    "id": "q0100",
+    "text": "What are you still angry about that you have never said out loud?",
+    "era": "now",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "Who knows about it?",
+      "What would happen if you said it?"
+    ]
+  },
+  {
+    "id": "q0101",
+    "text": "What did you do in the garden or yard when nobody was watching?",
+    "era": "childhood",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you build or dig?",
+      "Who found out?"
+    ]
+  },
+  {
+    "id": "q0102",
+    "text": "Where did you sit in the car, and who called the seat first?",
+    "era": "childhood",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was the rule about the front seat?",
+      "What did you do on a long drive?"
+    ]
+  },
+  {
+    "id": "q0103",
+    "text": "What did you get in trouble for at school that you would do again?",
+    "era": "childhood",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who caught you?",
+      "What did your parents say?"
+    ]
+  },
+  {
+    "id": "q0104",
+    "text": "What was the pocket money arrangement in your house?",
+    "era": "childhood",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you have to do for it?",
+      "What did you buy first?"
+    ]
+  },
+  {
+    "id": "q0105",
+    "text": "What instrument did you try, and how long did it last?",
+    "era": "childhood",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made you practise?",
+      "What could you play by the end?"
+    ]
+  },
+  {
+    "id": "q0106",
+    "text": "What was the television rule in your house?",
+    "era": "childhood",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who enforced it?",
+      "What did you watch anyway?"
+    ]
+  },
+  {
+    "id": "q0107",
+    "text": "What was the first big trip you remember taking?",
+    "era": "childhood",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you get there?",
+      "What did you eat on the way?"
+    ]
+  },
+  {
+    "id": "q0108",
+    "text": "What job did you have around the house?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you get for it?",
+      "Who checked your work?"
+    ]
+  },
+  {
+    "id": "q0109",
+    "text": "What did you get caught doing for the first time?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who caught you?",
+      "How did you talk your way out of it?"
+    ]
+  },
+  {
+    "id": "q0110",
+    "text": "What was the first car you were allowed to take out alone?",
+    "era": "teens",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you take it?",
+      "What did you do wrong?"
+    ]
+  },
+  {
+    "id": "q0111",
+    "text": "What did you spend your weekends on that had nothing to do with school?",
+    "era": "teens",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was in it with you?",
+      "How good did you get?"
+    ]
+  },
+  {
+    "id": "q0112",
+    "text": "Whose house did everyone end up at?",
+    "era": "teens",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did their parents say about it?",
+      "What did you eat there?"
+    ]
+  },
+  {
+    "id": "q0113",
+    "text": "What job did you take that your friends did not understand?",
+    "era": "teens",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did it pay?",
+      "What did you learn from it?"
+    ]
+  },
+  {
+    "id": "q0114",
+    "text": "What subject did you get out of the way as fast as possible?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you pass it?",
+      "Who helped you?"
+    ]
+  },
+  {
+    "id": "q0115",
+    "text": "What did you save for that took months?",
+    "era": "teens",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How close did you come to giving up?",
+      "Who knew about it?"
+    ]
+  },
+  {
+    "id": "q0116",
+    "text": "What was the first gig or show you got into without telling anyone at home?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you get home?",
+      "Who covered for you?"
+    ]
+  },
+  {
+    "id": "q0117",
+    "text": "What place did you go to get away from everyone you knew?",
+    "era": "teens",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you find it?",
+      "Did you ever take anyone there?"
+    ]
+  },
+  {
+    "id": "q0118",
+    "text": "What was the first job where you were the one in charge?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who did you learn it from?",
+      "What did you get wrong?"
+    ]
+  },
+  {
+    "id": "q0119",
+    "text": "What was the first thing you bought for your first place?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you get it?",
+      "Did you keep it?"
+    ]
+  },
+  {
+    "id": "q0120",
+    "text": "What did you eat most nights when money was short?",
+    "era": "young-adult",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who ate it with you?",
+      "What do you think of it now?"
+    ]
+  },
+  {
+    "id": "q0121",
+    "text": "What was the first bill you ever missed?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What happened next?",
+      "How did you fix it?"
+    ]
+  },
+  {
+    "id": "q0122",
+    "text": "Who did you first share a place with, and how did that go?",
+    "era": "young-adult",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What was the rule nobody said out loud?",
+      "Do you still speak?"
+    ]
+  },
+  {
+    "id": "q0123",
+    "text": "What was the first holiday you paid for yourself?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who went with you?",
+      "What went wrong?"
+    ]
+  },
+  {
+    "id": "q0124",
+    "text": "What was wrong with your first car, and how long did you live with it?",
+    "era": "young-adult",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who fixed it?",
+      "Where did it finally give up?"
+    ]
+  },
+  {
+    "id": "q0125",
+    "text": "What was the first thing you did that your parents did not know about for years?",
+    "era": "young-adult",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "When did they find out?",
+      "How did they take it?"
+    ]
+  },
+  {
+    "id": "q0126",
+    "text": "What advice did you give someone younger that you had not followed yourself?",
+    "era": "young-adult",
+    "topic": "advice",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "Did it work for them?",
+      "Do you wish you had taken it?"
+    ]
+  },
+  {
+    "id": "q0127",
+    "text": "What task did you get faster at than anyone expected?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was the trick?",
+      "Did anyone notice?"
+    ]
+  },
+  {
+    "id": "q0128",
+    "text": "Who at work did you avoid, and what did you learn from them anyway?",
+    "era": "career",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What set them off?",
+      "Would you work with them again?"
+    ]
+  },
+  {
+    "id": "q0129",
+    "text": "What was the first raise you asked for, and how did you ask?",
+    "era": "career",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did they say?",
+      "What would you do differently?"
+    ]
+  },
+  {
+    "id": "q0130",
+    "text": "What did you study that turned up later in a job you did not expect?",
+    "era": "career",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did it come up?",
+      "Who else in the room had it?"
+    ]
+  },
+  {
+    "id": "q0131",
+    "text": "What was the furthest place work ever sent you?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you do with the day off?",
+      "Who did you call from there?"
+    ]
+  },
+  {
+    "id": "q0132",
+    "text": "What was the last thing you had to learn from a manual?",
+    "era": "career",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did it take?",
+      "Who did you ask for help?"
+    ]
+  },
+  {
+    "id": "q0133",
+    "text": "What was the work vehicle you remember best?",
+    "era": "career",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was wrong with it?",
+      "Who else drove it?"
+    ]
+  },
+  {
+    "id": "q0134",
+    "text": "What did you drop when work got busy, and do you miss it?",
+    "era": "career",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What replaced it?",
+      "Could you pick it up again?"
+    ]
+  },
+  {
+    "id": "q0135",
+    "text": "What do you know about your trade that a newcomer always gets wrong?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "How did you learn it?",
+      "Would they listen?"
+    ]
+  },
+  {
+    "id": "q0136",
+    "text": "What was the rule in your parents' house that nobody ever explained?",
+    "era": "family",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What happened if you broke it?",
+      "Who enforced it without saying anything?"
+    ]
+  },
+  {
+    "id": "q0137",
+    "text": "Which relative did you look forward to seeing, and what did you do together?",
+    "era": "family",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How often did you see them?",
+      "What did you talk about?"
+    ]
+  },
+  {
+    "id": "q0138",
+    "text": "What did someone in your family make better than anyone else could?",
+    "era": "family",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did they ever tell you how?",
+      "Who makes it now?"
+    ]
+  },
+  {
+    "id": "q0139",
+    "text": "What was the longest drive your family ever took?",
+    "era": "family",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you eat on the way?",
+      "Who got the worst seat?"
+    ]
+  },
+  {
+    "id": "q0140",
+    "text": "What did your parents read or listen to that you picked up too?",
+    "era": "family",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Do you still follow it?",
+      "What did they think of your taste?"
+    ]
+  },
+  {
+    "id": "q0141",
+    "text": "What was the first funeral you remember going to?",
+    "era": "family",
+    "topic": "firsts",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "Who stayed with you?",
+      "What did everyone do afterwards?"
+    ]
+  },
+  {
+    "id": "q0142",
+    "text": "What did someone in your family sing or play without noticing?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did you ever tell them you noticed?",
+      "What does it remind you of?"
+    ]
+  },
+  {
+    "id": "q0143",
+    "text": "What did your family spend money on that outsiders thought was strange?",
+    "era": "family",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Was it worth it?",
+      "Do you spend on it now?"
+    ]
+  },
+  {
+    "id": "q0144",
+    "text": "What car did someone in your family keep far too long?",
+    "era": "family",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What was broken on it?",
+      "Who finally got rid of it?"
+    ]
+  },
+  {
+    "id": "q0145",
+    "text": "What part of your day would you hand over to someone else tomorrow?",
+    "era": "now",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "What would you do with the time?",
+      "Who would be good at it?"
+    ]
+  },
+  {
+    "id": "q0146",
+    "text": "Who have you known the longest, and what do you always do together?",
+    "era": "now",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How did you meet?",
+      "What would break the habit?"
+    ]
+  },
+  {
+    "id": "q0147",
+    "text": "What do you read or listen to that nobody else you know cares about?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "How did you find it?",
+      "Would you recommend it?"
+    ]
+  },
+  {
+    "id": "q0148",
+    "text": "What have you made with your hands in the last year?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Where is it now?",
+      "Who did you give it to?"
+    ]
+  },
+  {
+    "id": "q0149",
+    "text": "What is the small thing you buy that makes a day better?",
+    "era": "now",
+    "topic": "money",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "How often do you get it?",
+      "Would you give it up first?"
+    ]
+  },
+  {
+    "id": "q0150",
+    "text": "What have you gone back and read that you first read at school?",
+    "era": "now",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What was different the second time?",
+      "Did you keep the copy?"
+    ]
+  },
+  {
+    "id": "q0151",
+    "text": "What song did someone sing to you when you were small?",
+    "era": "childhood",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who sang it?",
+      "Do you sing it to anyone now?"
+    ]
+  },
+  {
+    "id": "q0152",
+    "text": "What was the first place you were allowed to ride to on your own?",
+    "era": "childhood",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How far was it?",
+      "Who went with you?"
+    ]
+  },
+  {
+    "id": "q0153",
+    "text": "What was your favourite place in the school building?",
+    "era": "childhood",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who else liked it?",
+      "What happened there?"
+    ]
+  },
+  {
+    "id": "q0154",
+    "text": "What did your bedroom window look out on?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What woke you up in the morning?",
+      "What could you hear at night?"
+    ]
+  },
+  {
+    "id": "q0155",
+    "text": "What was the first thing you learned to do without help?",
+    "era": "childhood",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who had been doing it for you?",
+      "How old were you?"
+    ]
+  },
+  {
+    "id": "q0156",
+    "text": "What did you and your friends do when it rained all day?",
+    "era": "childhood",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Whose house was it?",
+      "Which game never got old?"
+    ]
+  },
+  {
+    "id": "q0157",
+    "text": "Who was your best friend, and what did the two of you do that nobody else knew about?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you call each other?",
+      "What ended it?"
+    ]
+  },
+  {
+    "id": "q0158",
+    "text": "What did you think things cost when you were small?",
+    "era": "childhood",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What surprised you later?",
+      "Who put you right?"
+    ]
+  },
+  {
+    "id": "q0159",
+    "text": "What did you watch that you were not supposed to?",
+    "era": "childhood",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you get away with it?",
+      "What did you see?"
+    ]
+  },
+  {
+    "id": "q0160",
+    "text": "Who taught you to fix something on a car by yourself?",
+    "era": "teens",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was the first thing you fixed?",
+      "What did you break doing it?"
+    ]
+  },
+  {
+    "id": "q0161",
+    "text": "What did you play so loudly that someone banged on the wall?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who complained?",
+      "What were you playing?"
+    ]
+  },
+  {
+    "id": "q0162",
+    "text": "What school assignment did you actually enjoy?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you make?",
+      "Did anyone else like it?"
+    ]
+  },
+  {
+    "id": "q0163",
+    "text": "What was the first time you travelled without your family?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who did you go with?",
+      "What did you forget to bring?"
+    ]
+  },
+  {
+    "id": "q0164",
+    "text": "What did a teacher tell you that you did not want to hear?",
+    "era": "teens",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Were they right?",
+      "Did you ever tell them so?"
+    ]
+  },
+  {
+    "id": "q0165",
+    "text": "What did you learn from a job you were bad at?",
+    "era": "teens",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did you stay?",
+      "Who was patient with you?"
+    ]
+  },
+  {
+    "id": "q0166",
+    "text": "What shop or cafe did you spend hours in without buying much?",
+    "era": "teens",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who worked there?",
+      "What did you always order?"
+    ]
+  },
+  {
+    "id": "q0167",
+    "text": "What did you collect or build in your teens that took over your room?",
+    "era": "teens",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did it end up?",
+      "Who helped you with it?"
+    ]
+  },
+  {
+    "id": "q0168",
+    "text": "What did you lend someone that you never got back?",
+    "era": "teens",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did you ask for it?",
+      "Did it change the friendship?"
+    ]
+  },
+  {
+    "id": "q0169",
+    "text": "What was the worst shift you ever worked?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What kept you there?",
+      "Who else was on it?"
+    ]
+  },
+  {
+    "id": "q0170",
+    "text": "What did you do on your first night in a new town?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was with you?",
+      "What did you get wrong?"
+    ]
+  },
+  {
+    "id": "q0171",
+    "text": "What did you learn to cook from someone else's family?",
+    "era": "young-adult",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who taught you?",
+      "Do you still make it?"
+    ]
+  },
+  {
+    "id": "q0172",
+    "text": "What did you drive that should not have been on the road?",
+    "era": "young-adult",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How long did it last?",
+      "Who refused to get in it?"
+    ]
+  },
+  {
+    "id": "q0173",
+    "text": "What did you buy on credit that you should not have?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How long did it take to pay off?",
+      "Who told you not to?"
+    ]
+  },
+  {
+    "id": "q0174",
+    "text": "Who was the first person you told about a big decision?",
+    "era": "young-adult",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did they say?",
+      "Did it change your mind?"
+    ]
+  },
+  {
+    "id": "q0175",
+    "text": "What was the noise your first place made at night?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was it?",
+      "Did you get used to it?"
+    ]
+  },
+  {
+    "id": "q0176",
+    "text": "What was the first thing you owned that was worth insuring?",
+    "era": "young-adult",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Where did you get it?",
+      "What happened to it in the end?"
+    ]
+  },
+  {
+    "id": "q0177",
+    "text": "What album or film got you through a bad year?",
+    "era": "young-adult",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How many times did you play it?",
+      "Who else knew?"
+    ]
+  },
+  {
+    "id": "q0178",
+    "text": "What did you do for the first time in front of a room full of people?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did it go?",
+      "Who told you afterwards?"
+    ]
+  },
+  {
+    "id": "q0179",
+    "text": "Who did you train, and what did they teach you?",
+    "era": "career",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where are they now?",
+      "What did you get wrong with them?"
+    ]
+  },
+  {
+    "id": "q0180",
+    "text": "What certificate or course changed what you were allowed to do?",
+    "era": "career",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How hard was it?",
+      "Who pushed you into it?"
+    ]
+  },
+  {
+    "id": "q0181",
+    "text": "What did you spend your first real paycheque on?",
+    "era": "career",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was with you?",
+      "Would you spend it the same way now?"
+    ]
+  },
+  {
+    "id": "q0182",
+    "text": "What workplace did you like the look of before you worked there?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Was it how you imagined?",
+      "How long did you stay?"
+    ]
+  },
+  {
+    "id": "q0183",
+    "text": "What did you do with colleagues outside work that you would not do now?",
+    "era": "career",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who organised it?",
+      "What ended that?"
+    ]
+  },
+  {
+    "id": "q0184",
+    "text": "What did you have to explain to someone that made you understand it better?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who asked?",
+      "What became clearer as you said it?"
+    ]
+  },
+  {
+    "id": "q0185",
+    "text": "What is the decision you still defend but are not sure about?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "Who disagreed with you?",
+      "What would have happened the other way?"
+    ]
+  },
+  {
+    "id": "q0186",
+    "text": "What was the sound of your parents' house in the morning?",
+    "era": "family",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was up first?",
+      "What did you smell?"
+    ]
+  },
+  {
+    "id": "q0187",
+    "text": "Who in your family tells a story the same way every time?",
+    "era": "family",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What details do they always include?",
+      "Does anyone correct them?"
+    ]
+  },
+  {
+    "id": "q0188",
+    "text": "What did your family argue about at the table?",
+    "era": "family",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who stayed out of it?",
+      "What was it really about?"
+    ]
+  },
+  {
+    "id": "q0189",
+    "text": "What did you hear at a family gathering before you saw who was playing it?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was it?",
+      "What did everyone request?"
+    ]
+  },
+  {
+    "id": "q0190",
+    "text": "What did your family do on the first warm day of the year?",
+    "era": "family",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who decided?",
+      "Where did you end up?"
+    ]
+  },
+  {
+    "id": "q0191",
+    "text": "What was the first thing you did that made your parents proud?",
+    "era": "family",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did they say so?",
+      "Who told the rest of the family?"
+    ]
+  },
+  {
+    "id": "q0192",
+    "text": "What did your family watch on a holiday that nobody really liked?",
+    "era": "family",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who insisted?",
+      "Did anyone admit it was bad?"
+    ]
+  },
+  {
+    "id": "q0193",
+    "text": "What did your parents refuse to spend money on?",
+    "era": "family",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Did you agree with them?",
+      "Do you spend on it now?"
+    ]
+  },
+  {
+    "id": "q0194",
+    "text": "What did you and a relative talk about in the car?",
+    "era": "family",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How long was the drive?",
+      "What did they tell you that you did not expect?"
+    ]
+  },
+  {
+    "id": "q0195",
+    "text": "What is the one thing you would keep if you changed jobs tomorrow?",
+    "era": "now",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Why that?",
+      "Who would you take with you?"
+    ]
+  },
+  {
+    "id": "q0196",
+    "text": "Who did you help last who did not need to ask?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did they need?",
+      "How did they thank you?"
+    ]
+  },
+  {
+    "id": "q0197",
+    "text": "What have you tried recently that you were bad at?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who talked you into it?",
+      "Will you keep going?"
+    ]
+  },
+  {
+    "id": "q0198",
+    "text": "What is the meal you make when you are alone?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long does it take?",
+      "Would you serve it to someone else?"
+    ]
+  },
+  {
+    "id": "q0199",
+    "text": "What have you stopped watching or reading, and what made you stop?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "Did you ever go back to it?",
+      "Who still mentions it?"
+    ]
+  },
+  {
+    "id": "q0200",
+    "text": "What did school get you interested in that you never followed up?",
+    "era": "now",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What stopped you?",
+      "Would you start now?"
+    ]
+  },
+  {
+    "id": "q0201",
+    "text": "What was the first thing you saw when you woke up as a child?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Was it the same every morning?",
+      "What time did you get up?"
+    ]
+  },
+  {
+    "id": "q0202",
+    "text": "What did you have for breakfast that you would not eat now?",
+    "era": "childhood",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made it?",
+      "Does anyone in the family still eat it?"
+    ]
+  },
+  {
+    "id": "q0203",
+    "text": "What did your family's car smell like?",
+    "era": "childhood",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What was on the back seat?",
+      "How long did they keep that car?"
+    ]
+  },
+  {
+    "id": "q0204",
+    "text": "What did you do at school that nobody at home ever found out about?",
+    "era": "childhood",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who was in on it?",
+      "How close did you come to being caught?"
+    ]
+  },
+  {
+    "id": "q0205",
+    "text": "What did you make out of things you found lying around?",
+    "era": "childhood",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you keep it?",
+      "Who did you show?"
+    ]
+  },
+  {
+    "id": "q0206",
+    "text": "Who was the first person outside your family whose opinion mattered to you?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did they think of you?",
+      "How did you try to impress them?"
+    ]
+  },
+  {
+    "id": "q0207",
+    "text": "What was the first piece of news you remember hearing?",
+    "era": "childhood",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where were you when you heard it?",
+      "What did the adults do?"
+    ]
+  },
+  {
+    "id": "q0208",
+    "text": "What did you sing without knowing all the words?",
+    "era": "childhood",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who corrected you?",
+      "What were the real words?"
+    ]
+  },
+  {
+    "id": "q0209",
+    "text": "What was the first street or road you could name on your own?",
+    "era": "childhood",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you learn it?",
+      "Where did it lead?"
+    ]
+  },
+  {
+    "id": "q0210",
+    "text": "What did you take apart that you could not put back together?",
+    "era": "teens",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who found out?",
+      "What did you learn about how it worked?"
+    ]
+  },
+  {
+    "id": "q0211",
+    "text": "What was the cheapest thing you ever owned that mattered to you?",
+    "era": "teens",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you get it?",
+      "What happened to it?"
+    ]
+  },
+  {
+    "id": "q0212",
+    "text": "Who did you sit next to for a whole school year?",
+    "era": "teens",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did you talk much?",
+      "What did they do that you still remember?"
+    ]
+  },
+  {
+    "id": "q0213",
+    "text": "What did a friend talk you out of doing?",
+    "era": "teens",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Were they right?",
+      "What did you do instead?"
+    ]
+  },
+  {
+    "id": "q0214",
+    "text": "What was the long way home, and why did you take it?",
+    "era": "teens",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who walked it with you?",
+      "What did you see that nobody else noticed?"
+    ]
+  },
+  {
+    "id": "q0215",
+    "text": "What was the first road you drove on your own at night?",
+    "era": "teens",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who were you going to see?",
+      "What was on the radio?"
+    ]
+  },
+  {
+    "id": "q0216",
+    "text": "What did you and your friends sing badly together?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where were you?",
+      "Who was the worst singer?"
+    ]
+  },
+  {
+    "id": "q0217",
+    "text": "What was the first time you were responsible for someone else?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who was it?",
+      "What did you get wrong?"
+    ]
+  },
+  {
+    "id": "q0218",
+    "text": "What was the first thing you were paid to make or fix?",
+    "era": "teens",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did it last?",
+      "Who asked you to do it?"
+    ]
+  },
+  {
+    "id": "q0219",
+    "text": "What did your first payslip actually say?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you think it would be?",
+      "Who explained the deductions?"
+    ]
+  },
+  {
+    "id": "q0220",
+    "text": "What did you hang on the wall of your first place?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did it come from?",
+      "Did you keep it after you moved?"
+    ]
+  },
+  {
+    "id": "q0221",
+    "text": "What place did you leave that took years to stop missing?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you do there?",
+      "What would you go back for?"
+    ]
+  },
+  {
+    "id": "q0222",
+    "text": "What did you and the people you lived with fight over in the kitchen?",
+    "era": "young-adult",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who won?",
+      "What was the rule afterwards?"
+    ]
+  },
+  {
+    "id": "q0223",
+    "text": "What did you keep in the glovebox, and why?",
+    "era": "young-adult",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who had the car before you?",
+      "What did you never use?"
+    ]
+  },
+  {
+    "id": "q0224",
+    "text": "Who did you first call when something broke at home?",
+    "era": "young-adult",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did they tell you?",
+      "How many times did you call them?"
+    ]
+  },
+  {
+    "id": "q0225",
+    "text": "What did you borrow and mean to give back?",
+    "era": "young-adult",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who did it belong to?",
+      "How long did you keep it?"
+    ]
+  },
+  {
+    "id": "q0226",
+    "text": "What was the first thing you did that you thought would change you and did not?",
+    "era": "young-adult",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you expect?",
+      "What changed you instead?"
+    ]
+  },
+  {
+    "id": "q0227",
+    "text": "What was the first thing you had to budget for?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you do the sums?",
+      "Who helped you?"
+    ]
+  },
+  {
+    "id": "q0228",
+    "text": "What job did you think you wanted until you tried it?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did it take to find out?",
+      "What did it cost you?"
+    ]
+  },
+  {
+    "id": "q0229",
+    "text": "Whose work did you copy until you found your own way of doing it?",
+    "era": "career",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you take from them?",
+      "What did you throw away?"
+    ]
+  },
+  {
+    "id": "q0230",
+    "text": "What was the best place you ever ate lunch at work?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who found it first?",
+      "What did you always get there?"
+    ]
+  },
+  {
+    "id": "q0231",
+    "text": "What did you have to read to keep up with your trade?",
+    "era": "career",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How often did you read it?",
+      "Who else bothered?"
+    ]
+  },
+  {
+    "id": "q0232",
+    "text": "What did you do on the long drive to a work trip?",
+    "era": "career",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was with you?",
+      "What did you talk about?"
+    ]
+  },
+  {
+    "id": "q0233",
+    "text": "What did you have to study again after school for work?",
+    "era": "career",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who paid for it?",
+      "Was it worth it?"
+    ]
+  },
+  {
+    "id": "q0234",
+    "text": "What did you sell that you wish you had kept?",
+    "era": "career",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you get for it?",
+      "Who bought it?"
+    ]
+  },
+  {
+    "id": "q0235",
+    "text": "What was the first machine you were scared to use?",
+    "era": "career",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who showed you how?",
+      "What happened if you pressed the wrong thing?"
+    ]
+  },
+  {
+    "id": "q0236",
+    "text": "What did you have to give up for your work that nobody at home understood?",
+    "era": "career",
+    "topic": "work",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "Who resented it most?",
+      "Was it worth it?"
+    ]
+  },
+  {
+    "id": "q0237",
+    "text": "What was the first mistake you made that cost someone money?",
+    "era": "career",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How did you handle it?",
+      "Who defended you?"
+    ]
+  },
+  {
+    "id": "q0238",
+    "text": "Which relative did everyone call first with news?",
+    "era": "family",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How fast did it spread?",
+      "What did they do with it?"
+    ]
+  },
+  {
+    "id": "q0239",
+    "text": "What was always in the cupboard at your parents' house?",
+    "era": "family",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who bought it?",
+      "Is it still there?"
+    ]
+  },
+  {
+    "id": "q0240",
+    "text": "What did the back of your parents' house look like?",
+    "era": "family",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did anyone leave out there?",
+      "Who did the work on it?"
+    ]
+  },
+  {
+    "id": "q0241",
+    "text": "What was played at a family wedding that got everyone up?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who asked for it?",
+      "What did the band or the DJ do next?"
+    ]
+  },
+  {
+    "id": "q0242",
+    "text": "What was the first place your family took you where you felt grown up?",
+    "era": "family",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who decided to go?",
+      "What did you order or buy?"
+    ]
+  },
+  {
+    "id": "q0243",
+    "text": "What was the first thing you had to do for a family member who needed help?",
+    "era": "family",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did you know what you were doing?",
+      "Who showed you how?"
+    ]
+  },
+  {
+    "id": "q0244",
+    "text": "What did you play in your room that the rest of the house could hear?",
+    "era": "family",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did anyone comment on it?",
+      "What did you turn down when you heard someone coming?"
+    ]
+  },
+  {
+    "id": "q0245",
+    "text": "What was the first thing you saved for that was not for you?",
+    "era": "family",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who was it for?",
+      "Did they ever know what it cost?"
+    ]
+  },
+  {
+    "id": "q0246",
+    "text": "Who in your family did you stop talking to, and what was it about?",
+    "era": "family",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "Did anyone try to fix it?",
+      "What would you say if they called?"
+    ]
+  },
+  {
+    "id": "q0247",
+    "text": "What in your house did you build or put together yourself?",
+    "era": "now",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long did it take?",
+      "What went wrong doing it?"
+    ]
+  },
+  {
+    "id": "q0248",
+    "text": "Who did you last sit and do nothing with?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where were you?",
+      "How long did you stay?"
+    ]
+  },
+  {
+    "id": "q0249",
+    "text": "What would you do with a fortnight off and nowhere to go?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "hypothetical",
+    "followups": [
+      "Who would you see?",
+      "What would you avoid?"
+    ]
+  },
+  {
+    "id": "q0250",
+    "text": "What place holds the worst day of your life?",
+    "era": "now",
+    "topic": "places",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "What would you do if you drove past it?",
+      "Who was there with you?"
+    ]
+  },
+  {
+    "id": "q0251",
+    "text": "What did you draw or write that your family kept?",
+    "era": "childhood",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where is it now?",
+      "What did it say about you?"
+    ]
+  },
+  {
+    "id": "q0252",
+    "text": "What was the treat you got when you were ill?",
+    "era": "childhood",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who brought it to you?",
+      "Did it actually help?"
+    ]
+  },
+  {
+    "id": "q0253",
+    "text": "What was the first vehicle you sat in the driver's seat of?",
+    "era": "childhood",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Whose was it?",
+      "What did they say to you?"
+    ]
+  },
+  {
+    "id": "q0254",
+    "text": "Who did you sit with at lunch, and where did you sit?",
+    "era": "childhood",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Was it always the same table?",
+      "Did anyone new ever join you?"
+    ]
+  },
+  {
+    "id": "q0255",
+    "text": "What did you do that made someone in your house angry every time?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did they say?",
+      "Did you stop?"
+    ]
+  },
+  {
+    "id": "q0256",
+    "text": "What did you do with a whole day to yourself as a child?",
+    "era": "childhood",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did anyone check on you?",
+      "What was the first thing you did?"
+    ]
+  },
+  {
+    "id": "q0257",
+    "text": "What music from a television programme or film stayed with you?",
+    "era": "childhood",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Can you still hum it?",
+      "Who else knows it?"
+    ]
+  },
+  {
+    "id": "q0258",
+    "text": "What was the first time you were allowed out on your own?",
+    "era": "childhood",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you go?",
+      "What did you do first?"
+    ]
+  },
+  {
+    "id": "q0259",
+    "text": "What was the first thing you turned out to be right about when nobody believed you?",
+    "era": "teens",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "When did they find out?",
+      "Did they say anything about it?"
+    ]
+  },
+  {
+    "id": "q0260",
+    "text": "What did you and your friends do to a car that you would not admit to now?",
+    "era": "teens",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Whose car was it?",
+      "Did anything break?"
+    ]
+  },
+  {
+    "id": "q0261",
+    "text": "Who gave you your first real copy of something you still like?",
+    "era": "teens",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did they give it to you?",
+      "Do they know you kept it?"
+    ]
+  },
+  {
+    "id": "q0262",
+    "text": "What did you do that took all your focus and made you late?",
+    "era": "teens",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who noticed you were late?",
+      "How often did it happen?"
+    ]
+  },
+  {
+    "id": "q0263",
+    "text": "What did you spend everything on for one month?",
+    "era": "teens",
+    "topic": "money",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who talked sense into you?",
+      "Did you regret it?"
+    ]
+  },
+  {
+    "id": "q0264",
+    "text": "What did you have to decide for someone who could not decide for themselves?",
+    "era": "teens",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "What did you choose?",
+      "Did they ever know what it cost you?"
+    ]
+  },
+  {
+    "id": "q0265",
+    "text": "What did you tell someone at school that you immediately wished you had not?",
+    "era": "teens",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who did you tell?",
+      "How did they react?"
+    ]
+  },
+  {
+    "id": "q0266",
+    "text": "What was the first thing you bought with money you had earned?",
+    "era": "teens",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who saw it first?",
+      "Do you still have it?"
+    ]
+  },
+  {
+    "id": "q0267",
+    "text": "What did you learn to do in a week that normally takes months?",
+    "era": "young-adult",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who threw you in at the deep end?",
+      "What did you get wrong?"
+    ]
+  },
+  {
+    "id": "q0268",
+    "text": "What was the meal that made you feel settled somewhere new?",
+    "era": "young-adult",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who made it?",
+      "Who else was at the table?"
+    ]
+  },
+  {
+    "id": "q0269",
+    "text": "What was the first place you went to alone that you would go back to?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you do there?",
+      "Who did you tell about it?"
+    ]
+  },
+  {
+    "id": "q0270",
+    "text": "What did you learn to say no to buying?",
+    "era": "young-adult",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What made you stop?",
+      "Who kept pushing you to buy it?"
+    ]
+  },
+  {
+    "id": "q0271",
+    "text": "What was the first place you took someone who was visiting?",
+    "era": "young-adult",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where did you go?",
+      "What did you get wrong about it?"
+    ]
+  },
+  {
+    "id": "q0272",
+    "text": "What was the first thing you fixed on your own?",
+    "era": "young-adult",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you know how?",
+      "Did it hold?"
+    ]
+  },
+  {
+    "id": "q0273",
+    "text": "What rule did you break in your first rented place?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did anyone find out?",
+      "What happened to the deposit?"
+    ]
+  },
+  {
+    "id": "q0274",
+    "text": "What did you get into because a friend would not stop talking about it?",
+    "era": "young-adult",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "How long did it last?",
+      "Do you still do it?"
+    ]
+  },
+  {
+    "id": "q0275",
+    "text": "What did your hands look like at the end of a working day?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Whose looked worse?",
+      "What made them that way?"
+    ]
+  },
+  {
+    "id": "q0276",
+    "text": "What did you spend a bonus on that you would not spend it on now?",
+    "era": "career",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who did you tell first?",
+      "What would you do differently?"
+    ]
+  },
+  {
+    "id": "q0277",
+    "text": "What do people get wrong about what you do all day?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "opinion",
+    "followups": [
+      "What do they assume?",
+      "How do you correct them?"
+    ]
+  },
+  {
+    "id": "q0278",
+    "text": "Who did you work alongside who made the day go faster?",
+    "era": "career",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What did you talk about?",
+      "Where are they now?"
+    ]
+  },
+  {
+    "id": "q0279",
+    "text": "What did you learn on the job that no course covers?",
+    "era": "career",
+    "topic": "school",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who showed you?",
+      "How long did it take to stick?"
+    ]
+  },
+  {
+    "id": "q0280",
+    "text": "What did you see out of a window at work that you still remember?",
+    "era": "career",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Where were you?",
+      "What was happening outside?"
+    ]
+  },
+  {
+    "id": "q0281",
+    "text": "What did you walk away from that still looks right and does not feel like it?",
+    "era": "career",
+    "topic": "advice",
+    "weight": "heavy",
+    "kind": "memory",
+    "followups": [
+      "Who thought you were wrong?",
+      "What do you tell yourself about it?"
+    ]
+  },
+  {
+    "id": "q0282",
+    "text": "What was the first tool that made your work faster?",
+    "era": "career",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who showed you how to use it?",
+      "Did anyone refuse to use it?"
+    ]
+  },
+  {
+    "id": "q0283",
+    "text": "What did you do when you were given a job you had no idea how to do?",
+    "era": "career",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who did you ask?",
+      "How did it turn out?"
+    ]
+  },
+  {
+    "id": "q0284",
+    "text": "What did your family make when someone was coming to visit?",
+    "era": "family",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who did the work?",
+      "What did they say about the visitor afterwards?"
+    ]
+  },
+  {
+    "id": "q0285",
+    "text": "What was the first thing anyone saw when they walked into your parents' house?",
+    "era": "family",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Did anyone move it?",
+      "How long was it there?"
+    ]
+  },
+  {
+    "id": "q0286",
+    "text": "What did a relative teach you that you still use?",
+    "era": "family",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Did they know you were paying attention?",
+      "Have you passed it on?"
+    ]
+  },
+  {
+    "id": "q0287",
+    "text": "What was the first family occasion you were trusted to organise something for?",
+    "era": "family",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "What did you do?",
+      "Did it work?"
+    ]
+  },
+  {
+    "id": "q0288",
+    "text": "What instrument was in the house, and who played it?",
+    "era": "family",
+    "topic": "music",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Were you allowed to touch it?",
+      "What did they play?"
+    ]
+  },
+  {
+    "id": "q0289",
+    "text": "What was on the television at your grandparents' house?",
+    "era": "family",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who controlled it?",
+      "What did you watch there that you would not watch at home?"
+    ]
+  },
+  {
+    "id": "q0290",
+    "text": "What did your family believe about money that you had to unlearn?",
+    "era": "family",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "Where did that belief come from?",
+      "What do you believe instead?"
+    ]
+  },
+  {
+    "id": "q0291",
+    "text": "What did your family do on the day before school started?",
+    "era": "family",
+    "topic": "places",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "Who was in charge of it?",
+      "What did you do with the last hours of freedom?"
+    ]
+  },
+  {
+    "id": "q0292",
+    "text": "What would you say to someone you will never see again?",
+    "era": "now",
+    "topic": "people",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "What would they say back?",
+      "Why can you not say it?"
+    ]
+  },
+  {
+    "id": "q0293",
+    "text": "What is the thing in your kitchen you would replace first?",
+    "era": "now",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How long have you had it?",
+      "What would you get instead?"
+    ]
+  },
+  {
+    "id": "q0294",
+    "text": "What have you kept up longer than anything else?",
+    "era": "now",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "How did you start?",
+      "Who started with you and then stopped?"
+    ]
+  },
+  {
+    "id": "q0295",
+    "text": "What do you eat now that your younger self would not have touched?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What changed?",
+      "Who got you to try it?"
+    ]
+  },
+  {
+    "id": "q0296",
+    "text": "Who do you see most often, and where do you usually meet?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "followups": [
+      "What do you do there?",
+      "How long has that been the habit?"
+    ]
+  },
+  {
+    "id": "q0297",
+    "text": "What opinion have you changed your mind about in the last few years?",
+    "era": "now",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "What changed it?",
+      "Who disagrees with you now?"
+    ]
+  },
+  {
+    "id": "q0298",
+    "text": "What have you started doing this year that you did not expect to enjoy?",
+    "era": "now",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "memory",
+    "followups": [
+      "Who suggested it?",
+      "What comes next?"
+    ]
+  },
+  {
+    "id": "q0299",
+    "text": "What do you refuse to spend money on, whatever anyone says?",
+    "era": "now",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "opinion",
+    "followups": [
+      "What do they say about it?",
+      "Have you ever caved?"
+    ]
+  },
+  {
+    "id": "q0300",
+    "text": "What is the thing you have never forgiven yourself for?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "heavy",
+    "kind": "opinion",
+    "followups": [
+      "Who else knows about it?",
+      "What would be enough to settle it?"
+    ]
+  }
+]

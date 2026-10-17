@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#1d2021" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbf1c7" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="katchup">
+<meta name="mobile-web-app-capable" content="yes">
+<title>katchup</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar">
+  <span class="brand">katchup</span>
+  <div class="bar-actions">
+    <button type="button" class="ghost" id="undoBtn" disabled aria-label="Undo last action">Back</button>
+    <button type="button" class="ghost" id="filtersBtn" aria-haspopup="dialog">Filters</button>
+    <button type="button" class="ghost" id="statsBtn" aria-haspopup="dialog">Stats</button>
+  </div>
+</header>
+
+<main class="stage">
+  <section class="card" id="card" aria-live="polite" aria-atomic="true">
+    <h1 class="question" id="question" tabindex="-1">Loading</h1>
+    <p class="tags" id="tags"></p>
+    <button type="button" class="followups-toggle" id="followupsToggle" hidden
+            aria-expanded="false" aria-controls="followups">Follow-ups</button>
+    <ul class="followups" id="followups" hidden></ul>
+  </section>
+
+  <section class="card empty" id="empty" hidden>
+    <h1 class="question">You have asked everything that matches these filters.</h1>
+    <p class="tags">Widen the filters, or reset history to start over.</p>
+    <div class="empty-actions">
+      <button type="button" class="secondary" id="emptyFilters">Open filters</button>
+      <button type="button" class="secondary" id="emptyReset">Reset history</button>
+    </div>
+  </section>
+
+  <section class="card empty" id="error" hidden>
+    <h1 class="question">Could not load the questions.</h1>
+    <p class="tags">Check your connection, then reload the page.</p>
+  </section>
+</main>
+
+<footer class="actions" id="actions">
+  <button type="button" class="action ask" id="askedBtn">Asked it</button>
+  <button type="button" class="action" id="skipBtn">Skip</button>
+  <button type="button" class="action danger" id="neverBtn">Never</button>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<section class="sheet" id="filtersSheet" role="dialog" aria-modal="true" aria-labelledby="filtersTitle" hidden>
+  <h2 id="filtersTitle">Filters</h2>
+  <p class="count" id="filterCount"></p>
+  <div class="groups" id="filterGroups"></div>
+  <button type="button" class="done" id="filtersDone">Done</button>
+</section>
+
+<section class="sheet" id="statsSheet" role="dialog" aria-modal="true" aria-labelledby="statsTitle" hidden>
+  <h2 id="statsTitle">Stats</h2>
+  <dl class="stats">
+    <div><dt>Asked</dt><dd id="statAsked">0</dd></div>
+    <div><dt>Remaining</dt><dd id="statRemaining">0</dd></div>
+  </dl>
+  <div class="settings-actions">
+    <button type="button" class="secondary" id="exportBtn">Export history</button>
+    <button type="button" class="secondary" id="importBtn">Import history</button>
+    <button type="button" class="secondary danger-text" id="resetBtn">Reset history</button>
+  </div>
+  <p class="hint" id="resetHint" hidden>Tap Reset again to confirm. This clears asked and never.</p>
+  <input type="file" id="importFile" accept="application/json,.json" hidden>
+  <button type="button" class="done" id="statsDone">Done</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
