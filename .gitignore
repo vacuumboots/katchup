@@ -1,2 +1,7 @@
 .DS_Store
 review.html
+review_wyr.html
+review_categories.html
+
+# local plans and agent scratch, not part of the site
+.hermes/
