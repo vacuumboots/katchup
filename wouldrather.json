@@ -46,5 +46,1557 @@
     "topic": "places",
     "weight": "medium",
     "kind": "preference"
+  },
+  {
+    "id": "w0007",
+    "a": "Never eat cheese again",
+    "b": "Never eat chocolate again",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0008",
+    "a": "Only ever eat breakfast food",
+    "b": "Only ever eat dinner food",
+    "topic": "food",
+    "weight": "light",
+    "kind": "impossible"
+  },
+  {
+    "id": "w0009",
+    "a": "Have a chef in every city you visit",
+    "b": "Have a friend in every city you visit",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0010",
+    "a": "Eat the same dinner every night",
+    "b": "Never eat the same dinner twice",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0011",
+    "a": "Give up coffee for good",
+    "b": "Give up dessert for good",
+    "topic": "food",
+    "weight": "light",
+    "kind": "impossible"
+  },
+  {
+    "id": "w0012",
+    "a": "Only eat what you cook yourself",
+    "b": "Only eat what someone else cooks",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0013",
+    "a": "Have a fridge that stocks itself",
+    "b": "Have a stove that cleans itself",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0014",
+    "a": "Eat one perfect meal a year",
+    "b": "Eat one good meal a week",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0015",
+    "a": "Eat no meat for a year",
+    "b": "Eat no bread for a year",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0016",
+    "a": "Never taste anything spicy again",
+    "b": "Never taste anything sweet again",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0017",
+    "a": "Have a brilliant chef who is rude",
+    "b": "Have a kind chef who is slow",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0018",
+    "a": "Eat your favourite meal twice a week",
+    "b": "Eat a new meal twice a week",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0019",
+    "a": "Only eat with chopsticks",
+    "b": "Only eat with a spoon",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0020",
+    "a": "Never eat out again",
+    "b": "Never order in again",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0021",
+    "a": "Eat breakfast for dinner every night",
+    "b": "Eat dinner for breakfast every morning",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0022",
+    "a": "Try any dish once, whatever it is",
+    "b": "Stay with the dishes you already love",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0023",
+    "a": "Grow your own vegetables",
+    "b": "Shop at a market every week",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0024",
+    "a": "Be a great cook and awful baker",
+    "b": "Be a great baker and awful cook",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0025",
+    "a": "Never wait for a table again",
+    "b": "Never get the wrong order again",
+    "topic": "food",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0026",
+    "a": "Eat only food from your own country",
+    "b": "Eat only food from somewhere else",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0027",
+    "a": "Double the size of your kitchen",
+    "b": "Double the size of your garden",
+    "topic": "food",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0028",
+    "a": "Cook for a crowd once a month",
+    "b": "Cook for two every night",
+    "topic": "food",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0029",
+    "a": "Own a deep fryer you never touch",
+    "b": "Own a bread maker you never touch",
+    "topic": "food",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0030",
+    "a": "Live in a city that never sleeps",
+    "b": "Live in a town that closes at eight",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0031",
+    "a": "Wake up to the ocean",
+    "b": "Wake up to the mountains",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0032",
+    "a": "Live where it snows six months",
+    "b": "Live where it rains six months",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0033",
+    "a": "Have a balcony with a view",
+    "b": "Have a garden with a fence",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0034",
+    "a": "Live beside a school",
+    "b": "Live beside a train line",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0035",
+    "a": "Never take the same route twice",
+    "b": "Never leave your own neighbourhood",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0036",
+    "a": "Live on a street with no cars",
+    "b": "Live in a building with no lift",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0037",
+    "a": "Have a view of water from every room",
+    "b": "Have a view of trees from every room",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0038",
+    "a": "Live somewhere walkable",
+    "b": "Live somewhere with a garage",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0039",
+    "a": "Have a corner shop two minutes away",
+    "b": "Have a park two minutes away",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0040",
+    "a": "Move to a new city every five years",
+    "b": "Stay in one city for life",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0041",
+    "a": "Live in a converted warehouse",
+    "b": "Live in a house built new",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0042",
+    "a": "Have a guest room nobody uses",
+    "b": "Have a workshop nobody uses",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0043",
+    "a": "Live ten minutes from work",
+    "b": "Live ten minutes from the trails",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0044",
+    "a": "Holiday in the same place yearly",
+    "b": "Holiday somewhere new yearly",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0045",
+    "a": "Live with four housemates you like",
+    "b": "Live alone in a bigger place",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0046",
+    "a": "Have neighbours who host",
+    "b": "Have neighbours who never bother you",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0047",
+    "a": "Live where the sun sets over water",
+    "b": "Live where it rises over water",
+    "topic": "places",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0048",
+    "a": "Have a small place downtown",
+    "b": "Have a big place outside town",
+    "topic": "places",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0049",
+    "a": "Never check your phone before noon",
+    "b": "Never watch TV after nine",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0050",
+    "a": "Always know what is coming next",
+    "b": "Always be surprised",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0051",
+    "a": "Never be able to lie again",
+    "b": "Never be able to keep a secret",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0052",
+    "a": "Have one friend who tells you the truth",
+    "b": "Have ten friends who tell you what you want",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0053",
+    "a": "Never lose your temper again",
+    "b": "Never lose your keys again",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0054",
+    "a": "Only give advice you follow",
+    "b": "Only take advice you give",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0055",
+    "a": "Be able to end any conversation",
+    "b": "Be able to start any conversation",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0056",
+    "a": "Never be late again",
+    "b": "Never be early again",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0057",
+    "a": "Have perfect recall of every birthday",
+    "b": "Have perfect recall of every name",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0058",
+    "a": "Have a rule for everything",
+    "b": "Have no rules at all",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0059",
+    "a": "Only make decisions in the morning",
+    "b": "Only make decisions after dinner",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0060",
+    "a": "Never have to explain yourself again",
+    "b": "Never have to ask for anything again",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0061",
+    "a": "Be told when you are wrong immediately",
+    "b": "Be told a week later",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0062",
+    "a": "Have a year with no screens",
+    "b": "Have a year with no alcohol",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0063",
+    "a": "Always have the answer",
+    "b": "Always have the question",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0064",
+    "a": "Always take the advice you are given",
+    "b": "Always ignore it",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0065",
+    "a": "Have laundry that folds itself",
+    "b": "Have dishes that wash themselves",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0066",
+    "a": "Have a spotless house and empty cupboards",
+    "b": "Have a messy house and a full pantry",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0067",
+    "a": "Own one perfect chair",
+    "b": "Own ten decent chairs",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0068",
+    "a": "Never make a bed again",
+    "b": "Never change a lightbulb again",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0069",
+    "a": "Have a bath big enough for two",
+    "b": "Have a shower with pressure for ten",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0070",
+    "a": "Live without a microwave",
+    "b": "Live without a kettle",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0071",
+    "a": "Have a house that is always warm",
+    "b": "Have a house that is always quiet",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0072",
+    "a": "Own more books than shelves",
+    "b": "Own more tools than jobs",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0073",
+    "a": "Have a workshop in the garage",
+    "b": "Have a studio in the attic",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0074",
+    "a": "Keep every card anyone ever sent",
+    "b": "Throw out anything unworn for a year",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0075",
+    "a": "Have the best kitchen in the house",
+    "b": "Have the best bed in the house",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0076",
+    "a": "Have a garden you keep up with",
+    "b": "Have a cleaner who comes weekly",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0077",
+    "a": "Live in one big room",
+    "b": "Live in six small rooms",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0078",
+    "a": "Have every wall a different colour",
+    "b": "Have every wall the same colour",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0079",
+    "a": "Own a dog that sheds everywhere",
+    "b": "Own a cat that ignores you",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0080",
+    "a": "Have a garage you can park in",
+    "b": "Have a garage you can work in",
+    "topic": "home",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0081",
+    "a": "Have a hidden room nobody knows about",
+    "b": "Have a window seat everybody fights over",
+    "topic": "home",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0082",
+    "a": "Be very good at one thing",
+    "b": "Be decent at twenty things",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0083",
+    "a": "Have a hobby that pays",
+    "b": "Have a hobby that costs",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0084",
+    "a": "Learn an instrument badly",
+    "b": "Learn a language badly",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0085",
+    "a": "Spend Saturdays on a project",
+    "b": "Spend Sundays outside",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0086",
+    "a": "Have a season ticket to anything",
+    "b": "Have a membership to everything",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0087",
+    "a": "Build furniture you keep forever",
+    "b": "Grow food you eat that season",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0088",
+    "a": "Never play a game you lose",
+    "b": "Never win a game easily",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "impossible"
+  },
+  {
+    "id": "w0089",
+    "a": "Collect something small and costly",
+    "b": "Collect something big and free",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0090",
+    "a": "Do one thing for a decade",
+    "b": "Try something new each year",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0091",
+    "a": "Have a hobby nobody in your family gets",
+    "b": "Have a hobby everybody shares",
+    "topic": "hobbies",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0092",
+    "a": "Play a sport badly and love it",
+    "b": "Play it well and dread it",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0093",
+    "a": "Spend a month learning to sail",
+    "b": "Spend a month learning to fish",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0094",
+    "a": "Have a shed full of half-finished things",
+    "b": "Have a phone full of unread books",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0095",
+    "a": "Join a club where you know nobody",
+    "b": "Join a club where you know everyone",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0096",
+    "a": "Have a hobby that leaves a mess",
+    "b": "Have a hobby that leaves nothing to show",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0097",
+    "a": "Run slowly for an hour",
+    "b": "Walk fast for two",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0098",
+    "a": "Own the best tools",
+    "b": "Own the most tools",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0099",
+    "a": "Keep a journal nobody reads",
+    "b": "Write a blog everybody reads",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0100",
+    "a": "Have a spare hour every day",
+    "b": "Have a spare day every week",
+    "topic": "hobbies",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0101",
+    "a": "Only watch films you have seen",
+    "b": "Only watch films you have not",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0102",
+    "a": "Listen to every book read aloud",
+    "b": "Read every book yourself",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0103",
+    "a": "Never watch a series that gets cancelled",
+    "b": "Never watch one that runs too long",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0104",
+    "a": "Have a film made about your life",
+    "b": "Have a book written about your year",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0105",
+    "a": "Only listen to albums in full",
+    "b": "Only listen to singles",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0106",
+    "a": "Have a cinema in your house",
+    "b": "Have a library in your house",
+    "topic": "media",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0107",
+    "a": "Never see a trailer again",
+    "b": "Never read a review again",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0108",
+    "a": "Know how every film ends",
+    "b": "Know nothing about any film",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0109",
+    "a": "Only ever read books you own",
+    "b": "Only ever read books you borrow",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0110",
+    "a": "Have unlimited streaming",
+    "b": "Have unlimited concert tickets",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0111",
+    "a": "Watch sport live at the ground",
+    "b": "Watch it on a big screen",
+    "topic": "media",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0112",
+    "a": "Have a radio that picks up the world",
+    "b": "Have a TV that gets one channel",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0113",
+    "a": "Never watch your favourite film again",
+    "b": "Never watch anything new again",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0114",
+    "a": "Know every lyric to one band",
+    "b": "Know every line of one film",
+    "topic": "media",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0115",
+    "a": "Only read paper books",
+    "b": "Only read on a screen",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0116",
+    "a": "Have a show you can quote endlessly",
+    "b": "Have a show nobody else knows",
+    "topic": "media",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0117",
+    "a": "Have every book you own signed",
+    "b": "Have every record you own be a first pressing",
+    "topic": "media",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0118",
+    "a": "Have one friend you have known thirty years",
+    "b": "Have thirty friends you have known a year",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0119",
+    "a": "Always be the one who calls first",
+    "b": "Always be the one who is called",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0120",
+    "a": "Have a friend who remembers everything",
+    "b": "Have a friend who forgives everything",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0121",
+    "a": "Know what everyone really thinks of you",
+    "b": "Know nothing of what anyone thinks",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0122",
+    "a": "Have a big loud family dinner",
+    "b": "Have a quiet dinner for two",
+    "topic": "people",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0123",
+    "a": "Have a friend who is always late",
+    "b": "Have a friend who is always early",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0124",
+    "a": "Be the funniest person in the room",
+    "b": "Be the person everyone trusts",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0125",
+    "a": "Have a group chat that never stops",
+    "b": "Have one friend who answers in a day",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0126",
+    "a": "Have neighbours who know your name",
+    "b": "Have neighbours who mind their own",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0127",
+    "a": "Always remember faces",
+    "b": "Always remember names",
+    "topic": "people",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0128",
+    "a": "Have someone who tells you when you are being an idiot",
+    "b": "Have someone who never does",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0129",
+    "a": "Be invited to everything",
+    "b": "Be excused from everything",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0130",
+    "a": "Have a friend who borrows your tools",
+    "b": "Have a friend who returns them oiled",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0131",
+    "a": "Be the one who plans everything",
+    "b": "Be the one who just shows up",
+    "topic": "people",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0132",
+    "a": "Have a mentor",
+    "b": "Have a student",
+    "topic": "people",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0133",
+    "a": "Be liked by everyone a little",
+    "b": "Be trusted by three people completely",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0134",
+    "a": "See any band once, front row",
+    "b": "See your favourite ten times, back row",
+    "topic": "music",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0135",
+    "a": "Have perfect pitch",
+    "b": "Have perfect rhythm",
+    "topic": "music",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0136",
+    "a": "Only listen to live recordings",
+    "b": "Only listen to studio ones",
+    "topic": "music",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0137",
+    "a": "Never hear a song you hate again",
+    "b": "Never hear your favourite again",
+    "topic": "music",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0138",
+    "a": "Play in a band that gets famous",
+    "b": "Write songs for bands that do",
+    "topic": "music",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0139",
+    "a": "Have a record collection you inherited",
+    "b": "Have a playlist you built",
+    "topic": "music",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0140",
+    "a": "Only ever hear music you choose",
+    "b": "Only ever hear music someone else picks",
+    "topic": "music",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0141",
+    "a": "Have a song written about you",
+    "b": "Have a song you wrote for someone",
+    "topic": "music",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0142",
+    "a": "Know how to fix an amp",
+    "b": "Know how to tune by ear",
+    "topic": "music",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0143",
+    "a": "Have one instrument you play well",
+    "b": "Have five you play badly",
+    "topic": "music",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0144",
+    "a": "Go to a festival in the rain",
+    "b": "Go to a club where you cannot hear",
+    "topic": "music",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0145",
+    "a": "Only listen to what your parents played",
+    "b": "Only listen to what your kids will",
+    "topic": "music",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0146",
+    "a": "Meet the band you loved at fifteen",
+    "b": "Meet the band you love now",
+    "topic": "music",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0147",
+    "a": "Own the best speakers",
+    "b": "Own the best headphones",
+    "topic": "music",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0148",
+    "a": "Never work Fridays again",
+    "b": "Never work Mondays again",
+    "topic": "work",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0149",
+    "a": "Have a job you love that takes weekends",
+    "b": "Have a job you tolerate that ends at five",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0150",
+    "a": "Have a boss who leaves you alone",
+    "b": "Have a boss who teaches you everything",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0151",
+    "a": "Work four days a week, longer days",
+    "b": "Work five days, shorter days",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0152",
+    "a": "Have a desk with a window",
+    "b": "Have a desk with nobody behind you",
+    "topic": "work",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0153",
+    "a": "Always finish a task you hate",
+    "b": "Always start one you love",
+    "topic": "work",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0154",
+    "a": "Have a job where you never travel",
+    "b": "Have a job where you never sit still",
+    "topic": "work",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0155",
+    "a": "Be the person who knows the system",
+    "b": "Be the person everyone likes",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0156",
+    "a": "Have meetings that end early",
+    "b": "Have emails that answer themselves",
+    "topic": "work",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0157",
+    "a": "Work from a cabin",
+    "b": "Work from a cafe",
+    "topic": "work",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0158",
+    "a": "Have a job with no deadlines",
+    "b": "Have a job with no meetings",
+    "topic": "work",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0159",
+    "a": "Learn a trade in a year",
+    "b": "Take four years for a degree",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0160",
+    "a": "Have colleagues who are friends",
+    "b": "Have friends who are colleagues",
+    "topic": "work",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0161",
+    "a": "Do work you can finish by Friday",
+    "b": "Do work you will never finish",
+    "topic": "work",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0162",
+    "a": "Drive the same car for thirty years",
+    "b": "Drive thirty cars for a year each",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0163",
+    "a": "Never hunt for parking again",
+    "b": "Never get stuck behind a slow truck again",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0164",
+    "a": "Have a car that never breaks",
+    "b": "Have one you can fix yourself",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0165",
+    "a": "Drive a fast old car",
+    "b": "Drive a slow new car",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0166",
+    "a": "Have a truck that carries everything",
+    "b": "Have a car that parks anywhere",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0167",
+    "a": "Only drive manual",
+    "b": "Only drive automatic",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0168",
+    "a": "Have a garage with a lift",
+    "b": "Have a driveway with a roof",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0169",
+    "a": "Never pay for fuel again",
+    "b": "Never pay for parking again",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0170",
+    "a": "Take the long way for the view",
+    "b": "Take the shortest way every time",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0171",
+    "a": "Have a car nobody notices",
+    "b": "Have one everybody asks about",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0172",
+    "a": "Drive across the country once",
+    "b": "Drive one great road every year",
+    "topic": "cars",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0173",
+    "a": "Have a back seat full of tools",
+    "b": "Have a roof rack full of bikes",
+    "topic": "cars",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0174",
+    "a": "Have the teacher who is strict",
+    "b": "Have the teacher who is kind",
+    "topic": "school",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0175",
+    "a": "Only learn what you need",
+    "b": "Only learn what interests you",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0176",
+    "a": "Be good at maths",
+    "b": "Be good at languages",
+    "topic": "school",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0177",
+    "a": "Have a locker you can close",
+    "b": "Have a desk you can keep",
+    "topic": "school",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0178",
+    "a": "Be the one who answers",
+    "b": "Be the one who asks",
+    "topic": "school",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0179",
+    "a": "Only take tests you prepared for",
+    "b": "Never take a test again",
+    "topic": "school",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0180",
+    "a": "Have a class you remember at forty",
+    "b": "Have a teacher you remember at fifty",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0181",
+    "a": "Learn to type properly",
+    "b": "Learn to write by hand well",
+    "topic": "school",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0182",
+    "a": "Have school lunches you liked",
+    "b": "Have a seat by the window in every class",
+    "topic": "school",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0183",
+    "a": "Be the first to finish",
+    "b": "Be the last to leave",
+    "topic": "school",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0184",
+    "a": "Go back for one day, invisible",
+    "b": "Go back for one day, as yourself",
+    "topic": "school",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0185",
+    "a": "Have a school with a field",
+    "b": "Have a school with a library",
+    "topic": "school",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0186",
+    "a": "Have everything you own paid off",
+    "b": "Have nothing you cannot leave behind",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0187",
+    "a": "Never pay for a coffee again",
+    "b": "Never pay for a haircut again",
+    "topic": "money",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0188",
+    "a": "Have a budget you stick to",
+    "b": "Have a spreadsheet you enjoy",
+    "topic": "money",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0189",
+    "a": "Find a wallet with cash and no name",
+    "b": "Find a wallet with a name and no cash",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0190",
+    "a": "Get a refund you forgot about",
+    "b": "Get a rebate you never claimed",
+    "topic": "money",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0191",
+    "a": "Have a month of free meals",
+    "b": "Have a year of free parking",
+    "topic": "money",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0192",
+    "a": "Borrow the thing you always need",
+    "b": "Buy the thing you always borrow",
+    "topic": "money",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0193",
+    "a": "Remember your first word",
+    "b": "Remember your first day of school",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0194",
+    "a": "Have your first car back",
+    "b": "Have your first guitar back",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0195",
+    "a": "Know what your first job taught you",
+    "b": "Know what your last one did",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0196",
+    "a": "Relive one first date",
+    "b": "Relive one first day at a new job",
+    "topic": "firsts",
+    "weight": "medium",
+    "kind": "preference"
+  },
+  {
+    "id": "w0197",
+    "a": "Have every first go perfectly",
+    "b": "Have every third attempt work",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0198",
+    "a": "Have your first apartment back for a week",
+    "b": "Have your first paycheque back for a week",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0199",
+    "a": "Meet your best friend again for the first time",
+    "b": "Remember meeting them the first time",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "preference"
+  },
+  {
+    "id": "w0200",
+    "a": "Have your first attempt be your best",
+    "b": "Have your best be your last",
+    "topic": "firsts",
+    "weight": "light",
+    "kind": "dilemma"
   }
 ]

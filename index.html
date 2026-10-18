@@ -25,6 +25,9 @@
       <button type="button" class="ghost" id="filtersBtn" aria-haspopup="dialog">Filters</button>
       <button type="button" class="ghost" id="statsBtn" aria-haspopup="dialog">Stats</button>
     </div>
+    <div class="bar-group" data-for="random" hidden>
+      <button type="button" class="ghost" id="randomFiltersBtn" aria-haspopup="dialog">Filters</button>
+    </div>
   </div>
 </header>
 
@@ -93,12 +96,41 @@
 
 <section class="screen" data-screen="random" hidden>
   <main class="stage">
-    <section class="card placeholder">
-      <h1 class="question">Would you rather random</h1>
-      <p class="tags">Two choices, pick one</p>
-      <p class="placeholder-note">This mode is not built yet.</p>
+    <section class="card pair" id="randomCard" aria-live="polite" aria-atomic="true" hidden>
+      <p class="pair-title">Would you rather</p>
+      <p class="pair-topic" id="randomTopic"></p>
+      <button type="button" class="choice" id="choiceA"><span id="choiceAText"></span></button>
+      <p class="pair-or" aria-hidden="true">or</p>
+      <button type="button" class="choice" id="choiceB"><span id="choiceBText"></span></button>
+    </section>
+
+    <section class="card empty" id="randomEmpty" hidden>
+      <h1 class="question">Nothing matches those filters yet.</h1>
+      <p class="tags">Widen the topic or the weight.</p>
+      <div class="empty-actions">
+        <button type="button" class="secondary" id="randomEmptyFilters">Open filters</button>
+      </div>
+    </section>
+
+    <section class="card empty" id="randomDone" hidden>
+      <h1 class="question">That is every pair in this filter.</h1>
+      <p class="tags">Nothing is stored, so the next visit starts fresh.</p>
+      <div class="empty-actions">
+        <button type="button" class="secondary" id="randomAgain">Play them again</button>
+      </div>
+    </section>
+
+    <section class="card empty" id="randomError" hidden>
+      <h1 class="question">Could not load the pairs.</h1>
+      <p class="tags">Check your connection, then reload the page.</p>
     </section>
   </main>
+
+  <footer class="actions pair-actions" id="randomFooter">
+    <button type="button" class="action" id="randomUndoBtn" disabled>Back</button>
+    <button type="button" class="action" id="randomSkipBtn">Skip</button>
+    <p class="progress" id="randomProgress"></p>
+  </footer>
 </section>
 
 <section class="screen" data-screen="categories" hidden>
@@ -136,7 +168,15 @@
   <button type="button" class="done" id="statsDone">Done</button>
 </section>
 
+<section class="sheet" id="randomFiltersSheet" role="dialog" aria-modal="true" aria-labelledby="randomFiltersTitle" hidden>
+  <h2 id="randomFiltersTitle">Filters</h2>
+  <p class="count" id="randomFilterCount"></p>
+  <div class="groups" id="randomFilterGroups"></div>
+  <button type="button" class="done" id="randomFiltersDone">Done</button>
+</section>
+
 <script src="app-core.js"></script>
 <script src="app-open.js"></script>
+<script src="app-random.js"></script>
 </body>
 </html>

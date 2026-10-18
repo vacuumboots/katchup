@@ -10,8 +10,8 @@ on screen, three buttons: **Asked it**, **Skip**, **Never**. **Back** undoes the
 last action. Follow-up prompts are one tap away if the answer starts a story.
 
 The home screen offers three modes: **Open ended** (the deck above), **Would you
-rather random**, and **Would you rather Categories**. The two would-you-rather modes
-are next; their cards currently lead to a placeholder.
+rather random** (200 dilemma pairs, pick one and move on), and **Would you rather
+Categories** (a category bracket, still a placeholder for now).
 
 No accounts, no backend, no analytics, no network calls after the page loads.
 
@@ -34,9 +34,10 @@ browsers, but the local server is closer to what a host will serve.
 
 ## Deploy
 
-The whole app is static: `index.html`, `app-core.js`, `app-open.js`, `styles.css`,
-`questions.json`, `manifest.webmanifest`, and `icons/`. Any static host will do. Serve
-over HTTPS if you want "Add to Home Screen" to give you a proper shortcut.
+The whole app is static: `index.html`, `app-core.js`, `app-open.js`, `app-random.js`,
+`styles.css`, `questions.json`, `wouldrather.json`, `manifest.webmanifest`, and `icons/`.
+Any static host will do. Serve over HTTPS if you want "Add to Home Screen" to give you a
+proper shortcut.
 
 - **GitHub Pages**: push the repo, then Settings -> Pages -> Deploy from branch,
   root folder. The site lands on the repo URL.
@@ -101,11 +102,46 @@ not its quality: it also writes `review.html`, one page with every question, for
 a read-through. `bash scripts/test_validators.sh` proves the validators still
 fail on the rules they claim to enforce.
 
+## Adding or editing would-you-rather pairs
+
+`wouldrather.json` is a flat array of pairs. The UI supplies the words "would you
+rather":
+
+```json
+{
+  "id": "w0001",
+  "a": "Never wait in a line again",
+  "b": "Never sit in traffic again",
+  "topic": "advice",
+  "weight": "light",
+  "kind": "dilemma"
+}
+```
+
+- `id`: `wNNNN`, unique and never reused.
+- `a`, `b`: one short phrase each, 3 to 60 characters, no end punctuation, and the
+  same grammatical shape on both sides. Do not write "Would you rather" in either.
+- `topic`: the same list as the question deck, so the chips match.
+- `weight`: `light` or `medium`. There is no heavy tier here.
+- `kind`: `dilemma` (trade one annoyance for another), `preference` (which is
+  better), `impossible` (absurd but harmless).
+
+One hard rule: **no death and no loss of a person.** Nothing about dying, killing,
+funerals, grief, or losing someone. Injuries and mishaps are wanted. `python3
+scripts/validate_wyr.py` enforces the shape, the duplicates, and the death wording,
+and writes `review_wyr.html`, which is the real gate: for every pair, ask whether
+one side is obviously better and whether it lands badly at a family table.
+
 ## What is stored, and where
 
 Everything lives in `localStorage` under `katchup_state_v1`: which ids have been
 asked or never asked again, the current card, this session's skips, your filter
 selection, and a timestamped history of asks.
+
+Would you rather random keeps exactly one thing of its own, `katchup_random_v1`,
+and it is only a preference: its topic and weight chips. No pair, no picks, no
+counters. Every visit shuffles a fresh run, which is why nothing needs clearing.
+Category mode stores nothing at all; the bracket lives in memory for the visit.
 
 There is no sync and no server. **Stats -> Export history** downloads the state
 as JSON; **Import history** loads it back into a cleared browser. That is the
@@ -120,12 +156,13 @@ buttons are always the primary path.
 ## Files
 
 ```
-index.html              six screens as sections, plus the shared header and two sheets
+index.html              six screens as sections, plus the shared header and three sheets
 app-core.js             state storage, hash router, screen show/hide, sheets, chips
 app-open.js             open ended: selection, undo, filters, stats, export/import
+app-random.js           would you rather: shuffled pool, pick, skip, undo, filters
 styles.css              gruvbox light and dark, system font stack
 questions.json          the deck
-wouldrather.json        would-you-rather pairs (stub)
+wouldrather.json        the 200 pairs
 categories.json         category decks (stub)
 manifest.webmanifest    home screen shortcut (no service worker, so no offline)
 icons/                  placeholder PNGs, 192 and 512

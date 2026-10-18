@@ -128,6 +128,69 @@ body {
 .placeholder .question { font-size: clamp(24px, 5.5vw, 30px); }
 .placeholder-note { margin: 0; font-size: 15px; color: var(--muted); }
 
+/* ---------- would you rather ---------- */
+
+.pair { gap: 12px; }
+
+.pair-title {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pair-topic {
+  margin: 0 0 4px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+.choice {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  width: 100%;
+  min-height: 96px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-wrap: balance;
+}
+
+.choice.is-long { font-size: 17px; }
+.choice:active { transform: translateY(1px); }
+
+.pair-or {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pair-actions { grid-template-columns: 1fr 1fr auto; align-items: center; }
+
+.progress {
+  margin: 0;
+  padding-right: 4px;
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
 .ghost {
   appearance: none;
   border: 0;
