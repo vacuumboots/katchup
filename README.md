@@ -9,7 +9,19 @@ Live: <https://vacuumboots.github.io/katchup/>
 on screen, three buttons: **Asked it**, **Skip**, **Never**. **Back** undoes the
 last action. Follow-up prompts are one tap away if the answer starts a story.
 
+The home screen offers three modes: **Open ended** (the deck above), **Would you
+rather random**, and **Would you rather Categories**. The two would-you-rather modes
+are next; their cards currently lead to a placeholder.
+
 No accounts, no backend, no analytics, no network calls after the page loads.
+
+## Routes
+
+Hash routing, no library, so browser back works and every screen is linkable.
+
+`#` home · `#open` open ended · `#random` would you rather · `#categories` category
+picker (and, once built, `#categories/<id>` for a duel and
+`#categories/<id>/done` for the champion).
 
 ## Run it locally
 
@@ -22,9 +34,9 @@ browsers, but the local server is closer to what a host will serve.
 
 ## Deploy
 
-The whole app is static: `index.html`, `app.js`, `styles.css`, `questions.json`,
-`manifest.webmanifest`, and `icons/`. Any static host will do. Serve over HTTPS
-if you want "Add to Home Screen" to give you a proper shortcut.
+The whole app is static: `index.html`, `app-core.js`, `app-open.js`, `styles.css`,
+`questions.json`, `manifest.webmanifest`, and `icons/`. Any static host will do. Serve
+over HTTPS if you want "Add to Home Screen" to give you a proper shortcut.
 
 - **GitHub Pages**: push the repo, then Settings -> Pages -> Deploy from branch,
   root folder. The site lands on the repo URL.
@@ -75,17 +87,19 @@ All content lives in `questions.json`, a flat array:
   one when everyone has an opinion on the thing, or when a story comes attached).
 - `followups`: 1 to 3 prompts, each ending in a question mark.
 
-Then run the validator:
+Then run the validators:
 
 ```sh
-python3 scripts/validate_questions.py
+python3 scripts/validate_questions.py     # this deck only
+bash scripts/validate_all.sh              # all three content files
 ```
 
 It checks ids, enum values, follow-up counts, question marks, yes/no openers,
 duplicates, and near-duplicates, prints the distributions against the spec
 targets, and exits non-zero on hard errors. Passing it proves the deck's shape,
 not its quality: it also writes `review.html`, one page with every question, for
-a read-through.
+a read-through. `bash scripts/test_validators.sh` proves the validators still
+fail on the rules they claim to enforce.
 
 ## What is stored, and where
 
@@ -106,11 +120,18 @@ buttons are always the primary path.
 ## Files
 
 ```
-index.html              markup, one screen plus two sheets
-app.js                  state, selection, undo, filters, export/import
+index.html              six screens as sections, plus the shared header and two sheets
+app-core.js             state storage, hash router, screen show/hide, sheets, chips
+app-open.js             open ended: selection, undo, filters, stats, export/import
 styles.css              gruvbox light and dark, system font stack
 questions.json          the deck
+wouldrather.json        would-you-rather pairs (stub)
+categories.json         category decks (stub)
 manifest.webmanifest    home screen shortcut (no service worker, so no offline)
 icons/                  placeholder PNGs, 192 and 512
-scripts/validate_questions.py   validator and review.html generator
+scripts/validate_questions.py    question validator and review.html generator
+scripts/validate_wyr.py          pair validator and review_wyr.html generator
+scripts/validate_categories.py   deck validator and review_categories.html generator
+scripts/validate_all.sh          runs all three
+scripts/test_validators.sh       proves each validator rule actually fires
 ```

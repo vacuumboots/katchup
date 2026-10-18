@@ -16,43 +16,100 @@
 </head>
 <body>
 <header class="bar">
-  <span class="brand">katchup</span>
-  <div class="bar-actions">
-    <button type="button" class="ghost" id="undoBtn" disabled aria-label="Undo last action">Back</button>
-    <button type="button" class="ghost" id="filtersBtn" aria-haspopup="dialog">Filters</button>
-    <button type="button" class="ghost" id="statsBtn" aria-haspopup="dialog">Stats</button>
+  <div class="bar-left">
+    <button type="button" class="ghost" id="modesBtn" aria-label="Back to the mode picker" hidden>← Modes</button>
+  </div>
+  <div class="bar-right">
+    <div class="bar-group" data-for="open" hidden>
+      <button type="button" class="ghost" id="undoBtn" disabled aria-label="Undo last action">Back</button>
+      <button type="button" class="ghost" id="filtersBtn" aria-haspopup="dialog">Filters</button>
+      <button type="button" class="ghost" id="statsBtn" aria-haspopup="dialog">Stats</button>
+    </div>
   </div>
 </header>
 
-<main class="stage">
-  <section class="card" id="card" aria-live="polite" aria-atomic="true">
-    <h1 class="question" id="question" tabindex="-1">Loading</h1>
-    <p class="tags" id="tags"></p>
-    <button type="button" class="followups-toggle" id="followupsToggle" hidden
-            aria-expanded="false" aria-controls="followups">Follow-ups</button>
-    <ul class="followups" id="followups" hidden></ul>
-  </section>
-
-  <section class="card empty" id="empty" hidden>
-    <h1 class="question">You have asked everything that matches these filters.</h1>
-    <p class="tags">Widen the filters, or reset history to start over.</p>
-    <div class="empty-actions">
-      <button type="button" class="secondary" id="emptyFilters">Open filters</button>
-      <button type="button" class="secondary" id="emptyReset">Reset history</button>
+<section class="screen" data-screen="home" hidden>
+  <main class="stage">
+    <div class="home">
+      <h1 class="home-title">katchup</h1>
+      <ul class="modes">
+        <li>
+          <a class="mode-card" href="#open">
+            <span class="mode-name">Open ended</span>
+            <span class="mode-desc">One good question at a time</span>
+            <span class="mode-count" data-count="open"></span>
+          </a>
+        </li>
+        <li>
+          <a class="mode-card" href="#random">
+            <span class="mode-name">Would you rather random</span>
+            <span class="mode-desc">Two choices, pick one</span>
+            <span class="mode-count" data-count="random"></span>
+          </a>
+        </li>
+        <li>
+          <a class="mode-card" href="#categories">
+            <span class="mode-name">Would you rather Categories</span>
+            <span class="mode-desc">One category, last one standing</span>
+            <span class="mode-count" data-count="categories"></span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </main>
+</section>
 
-  <section class="card empty" id="error" hidden>
-    <h1 class="question">Could not load the questions.</h1>
-    <p class="tags">Check your connection, then reload the page.</p>
-  </section>
-</main>
+<section class="screen" data-screen="open" hidden>
+  <main class="stage">
+    <section class="card" id="card" aria-live="polite" aria-atomic="true">
+      <h1 class="question" id="question" tabindex="-1">Loading</h1>
+      <p class="tags" id="tags"></p>
+      <button type="button" class="followups-toggle" id="followupsToggle" hidden
+              aria-expanded="false" aria-controls="followups">Follow-ups</button>
+      <ul class="followups" id="followups" hidden></ul>
+    </section>
 
-<footer class="actions" id="actions">
-  <button type="button" class="action ask" id="askedBtn">Asked it</button>
-  <button type="button" class="action" id="skipBtn">Skip</button>
-  <button type="button" class="action danger" id="neverBtn">Never</button>
-</footer>
+    <section class="card empty" id="empty" hidden>
+      <h1 class="question">You have asked everything that matches these filters.</h1>
+      <p class="tags">Widen the filters, or reset history to start over.</p>
+      <div class="empty-actions">
+        <button type="button" class="secondary" id="emptyFilters">Open filters</button>
+        <button type="button" class="secondary" id="emptyReset">Reset history</button>
+      </div>
+    </section>
+
+    <section class="card empty" id="error" hidden>
+      <h1 class="question">Could not load the questions.</h1>
+      <p class="tags">Check your connection, then reload the page.</p>
+    </section>
+  </main>
+
+  <footer class="actions" id="actions">
+    <button type="button" class="action ask" id="askedBtn">Asked it</button>
+    <button type="button" class="action" id="skipBtn">Skip</button>
+    <button type="button" class="action danger" id="neverBtn">Never</button>
+  </footer>
+</section>
+
+<section class="screen" data-screen="random" hidden>
+  <main class="stage">
+    <section class="card placeholder">
+      <h1 class="question">Would you rather random</h1>
+      <p class="tags">Two choices, pick one</p>
+      <p class="placeholder-note">This mode is not built yet.</p>
+    </section>
+  </main>
+</section>
+
+<section class="screen" data-screen="categories" hidden>
+  <main class="stage">
+    <section class="card placeholder">
+      <h1 class="question">Would you rather Categories</h1>
+      <p class="tags">One category, last one standing</p>
+      <p class="placeholder-note">This mode is not built yet.</p>
+    </section>
+  </main>
+</section>
 
 <div class="scrim" id="scrim" hidden></div>
 
@@ -79,6 +136,7 @@
   <button type="button" class="done" id="statsDone">Done</button>
 </section>
 
-<script src="app.js"></script>
+<script src="app-core.js"></script>
+<script src="app-open.js"></script>
 </body>
 </html>
