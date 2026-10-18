@@ -1,0 +1,50 @@
+[
+  {
+    "id": "w0001",
+    "a": "Never wait in a line again",
+    "b": "Never sit in traffic again",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0002",
+    "a": "Always be ten minutes early",
+    "b": "Always be ten minutes late",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0003",
+    "a": "Have a chef cook every meal",
+    "b": "Have a cleaner tidy every day",
+    "topic": "home",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0004",
+    "a": "Find a twenty in every old jacket",
+    "b": "Find a twenty in every used book",
+    "topic": "money",
+    "weight": "light",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0005",
+    "a": "Only listen to music from the nineties",
+    "b": "Only watch films from the nineties",
+    "topic": "media",
+    "weight": "medium",
+    "kind": "dilemma"
+  },
+  {
+    "id": "w0006",
+    "a": "Live in an apartment above a bakery",
+    "b": "Live in a cabin an hour from town",
+    "topic": "places",
+    "weight": "medium",
+    "kind": "preference"
+  }
+]

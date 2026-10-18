@@ -1,0 +1,15 @@
+[
+  {"id": "w1", "a": "Never wait in a line", "b": "Never sit in traffic", "topic": "advice", "weight": "light", "kind": "dilemma"},
+  {"id": "w0002", "a": "Same thing", "b": "Same thing!", "topic": "advice", "weight": "light", "kind": "dilemma"},
+  {"id": "w0003", "a": "Eat only toast", "b": "Eat only soup", "topic": "food", "weight": "light"},
+  {"id": "w0004", "a": "A side that runs on and on well past the sixty character limit for sure", "b": "", "topic": "food", "weight": "light", "kind": "dilemma"},
+  {"id": "w0005", "a": "Never sit in traffic", "b": "Never wait in a line", "topic": "advice", "weight": "light", "kind": "dilemma"},
+  {"id": "w0006", "a": "Own ten cats", "b": "Own ten dogs", "topic": "home", "weight": "heavy", "kind": "dilemma"},
+  {"id": "w0007", "a": "Own a boat", "b": "Own a caravan", "topic": "gambling", "weight": "light", "kind": "dilemma"},
+  {"id": "w0008", "a": "Own a truck", "b": "Own a van", "topic": "cars", "weight": "light", "kind": "quiz"},
+  {"id": "w0002", "a": "Up", "b": "Down", "topic": "cars", "weight": "light", "kind": "dilemma"},
+  {"id": "w0010", "a": "Die young but famous", "b": "Live long and quiet", "topic": "people", "weight": "medium", "kind": "dilemma"},
+  {"id": "w0011", "a": "Lose your mother for a week", "b": "Lose your brother for a week", "topic": "people", "weight": "medium", "kind": "dilemma"},
+  {"id": "w0012", "a": "Would you rather swim", "b": "Never swim again", "topic": "hobbies", "weight": "light", "kind": "dilemma"},
+  {"id": "w0013", "a": "Never  sleep in", "b": "Never sleep late", "topic": "advice", "weight": "light", "kind": "dilemma"}
+]

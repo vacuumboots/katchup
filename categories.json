@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sandwiches",
+    "name": "Sandwiches",
+    "prompt": "Which sandwich?",
+    "items": [
+      { "id": "tuna-salad", "label": "Tuna salad", "blurb": "tuna, celery, too much mayo" },
+      { "id": "reuben", "label": "Reuben", "blurb": "corned beef, kraut, Russian dressing" },
+      { "id": "philly-cheesesteak", "label": "Philly cheesesteak", "blurb": "shaved ribeye, onion, provolone" },
+      { "id": "grilled-cheese", "label": "Grilled cheese", "blurb": "cheddar, butter, white bread" },
+      { "id": "blt", "label": "BLT", "blurb": "bacon, lettuce, tomato, mayo" },
+      { "id": "banh-mi", "label": "Banh mi", "blurb": "pork, pickled carrot, cilantro" },
+      { "id": "club", "label": "Club sandwich", "blurb": "turkey, bacon, three layers, toothpick" },
+      { "id": "egg-salad", "label": "Egg salad", "blurb": "egg, mayo, a little mustard" },
+      { "id": "pbj", "label": "Peanut butter and jam", "blurb": "squishy bread, cold milk" },
+      { "id": "chicken-salad", "label": "Chicken salad", "blurb": "chicken, grapes, celery" },
+      { "id": "meatball-sub", "label": "Meatball sub", "blurb": "meatballs, marinara, mozzarella, napkins" },
+      { "id": "pastrami-rye", "label": "Pastrami on rye", "blurb": "pastrami, mustard, rye" },
+      { "id": "falafel-wrap", "label": "Falafel wrap", "blurb": "falafel, hummus, pickled turnip" },
+      { "id": "pulled-pork", "label": "Pulled pork", "blurb": "slaw, pickle, brioche bun" }
+    ]
+  }
+]

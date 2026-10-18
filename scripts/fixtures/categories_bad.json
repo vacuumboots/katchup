@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Sandwich Bar",
+    "name": "An extremely long category name",
+    "prompt": "Which sandwich do you want right now please",
+    "items": [
+      { "id": "tuna-salad", "label": "Tuna salad" },
+      { "id": "tuna-salad", "label": "Tuna Salad!" },
+      { "id": "reuben", "label": "Reuben" },
+      { "id": "grilled-cheese", "label": "Grilled cheese" },
+      { "id": "grilled-cheese-sandwich", "label": "Grilled cheese sandwich" },
+      { "id": "blt", "label": "BLT" },
+      { "id": "long-label", "label": "This label is definitely longer than forty characters" },
+      { "id": "blurb-row", "label": "Club", "blurb": "one two three four five six seven eight nine ten eleven twelve thirteen" },
+      { "id": "Bad_ID", "label": "Bad id row" },
+      { "id": "empty-label", "label": "" },
+      { "id": "pulled-pork", "label": "Pulled pork" }
+    ]
+  },
+  {
+    "id": "long-prompt",
+    "name": "Prompt check",
+    "prompt": "Which of these many things would you most like right now?",
+    "items": [
+      { "id": "one", "label": "One" },
+      { "id": "two", "label": "Two" },
+      { "id": "three", "label": "Three" },
+      { "id": "four", "label": "Four" },
+      { "id": "five", "label": "Five" },
+      { "id": "six", "label": "Six" },
+      { "id": "seven", "label": "Seven" },
+      { "id": "eight", "label": "Eight" },
+      { "id": "nine", "label": "Nine" },
+      { "id": "ten", "label": "Ten" },
+      { "id": "eleven", "label": "Eleven" },
+      { "id": "twelve", "label": "Twelve" }
+    ]
+  },
+  {
+    "id": "long-prompt",
+    "name": "Duplicate deck id",
+    "prompt": "Which one?",
+    "items": [
+      { "id": "a", "label": "Ay" },
+      { "id": "b", "label": "Bee" },
+      { "id": "c", "label": "Sea" },
+      { "id": "d", "label": "Dee" },
+      { "id": "e", "label": "Eee" },
+      { "id": "f", "label": "Eff" },
+      { "id": "g", "label": "Gee" },
+      { "id": "h", "label": "Aitch" },
+      { "id": "i", "label": "Eye" },
+      { "id": "j", "label": "Jay" },
+      { "id": "k", "label": "Kay" },
+      { "id": "l", "label": "Ell" }
+    ]
+  }
+]
