@@ -30,9 +30,9 @@ WEIGHTS = ["light", "medium", "heavy"]
 KINDS = ["memory", "opinion", "hypothetical"]
 HOOKS = ["extreme", "measure", "artifact", "relational", "scene", "debate", "plain"]
 
-TARGET_TOTAL = 309
-TARGET_LIGHT = 203
-TARGET_MEDIUM = 91
+TARGET_TOTAL = 329
+TARGET_LIGHT = 220
+TARGET_MEDIUM = 94
 TARGET_HEAVY = 15
 MIN_PER_ERA = 15
 MIN_PER_TOPIC = 10
@@ -340,6 +340,30 @@ def main() -> int:
         f"({(hooks['extreme'] + hooks['measure']) / total:.1%})"
     )
     lines.append(f"  'favourite' questions: {favourite if total else 0}")
+
+    # warmth, reported and never enforced: this is a deck for a family to play together,
+    # so a pass that only sharpens the questions makes it colder every time
+    family_re = re.compile(
+        r"\b(mothers?|fathers?|mums?|dads?|parents?|mother-in-law|father-in-law|"
+        r"grandmother|grandfather|grandma|grandpa|nana|aunt|uncle|cousin|sister|brother|"
+        r"family|relative)\b",
+        re.IGNORECASE,
+    )
+    named = sum(1 for item in data if family_re.search(item.get("text", "")))
+    why = sum(
+        1
+        for item in data
+        for f in item.get("followups", [])
+        if f.strip().lower().startswith("why")
+    )
+    lines.append("")
+    lines.append("Warmth (reported, not enforced)")
+    lines.append(
+        f"  cards naming a family member: {named} ({named / total:.0%})"
+        if total
+        else "  cards naming a family member: 0"
+    )
+    lines.append(f"  follow-ups starting 'Why': {why}")
 
     print("\n".join(lines))
 

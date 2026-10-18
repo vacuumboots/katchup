@@ -1,29 +1,29 @@
 [
   {
     "id": "q0001",
-    "text": "What was always on the counter in your childhood kitchen?",
+    "text": "What did your mother always have on the go in the kitchen?",
     "era": "childhood",
     "topic": "home",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who was usually standing at the stove?",
-      "What did the room smell like at supper time?"
+      "What did she make when someone was coming over?",
+      "Where did everyone end up?"
     ],
-    "hook": "artifact"
+    "hook": "relational"
   },
   {
     "id": "q0002",
-    "text": "What was the meal you asked for on your birthday?",
+    "text": "Which birthday meal did you ask your mother for?",
     "era": "childhood",
     "topic": "food",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How did they make it?",
-      "What made theirs different?"
+      "How did she make it?",
+      "What made hers different?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0003",
@@ -60,7 +60,7 @@
     "kind": "memory",
     "followups": [
       "What could you see from there?",
-      "How did you get away with it?"
+      "Who else knew where you were?"
     ],
     "hook": "scene"
   },
@@ -281,7 +281,7 @@
     "kind": "memory",
     "followups": [
       "How did you use it?",
-      "What did it cost you?"
+      "Who saw the cost?"
     ],
     "hook": "plain"
   },
@@ -326,7 +326,7 @@
   },
   {
     "id": "q0027",
-    "text": "What piece of furniture from your parents' house do you remember best?",
+    "text": "Which chair in your parents' house was always someone's?",
     "era": "childhood",
     "topic": "home",
     "weight": "light",
@@ -456,7 +456,7 @@
   },
   {
     "id": "q0037",
-    "text": "What took you ten years to learn that others got in a week?",
+    "text": "What do you wish someone in your family had told you sooner?",
     "era": "now",
     "topic": "advice",
     "weight": "medium",
@@ -465,7 +465,7 @@
       "How did it finally click?",
       "Who would have told you if you had asked?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0038",
@@ -638,16 +638,16 @@
   },
   {
     "id": "q0051",
-    "text": "What was the corner shop near your house, and what did you buy there?",
+    "text": "Which shop did your mother send you to, and what did she want?",
     "era": "childhood",
     "topic": "places",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who sent you?",
-      "What did it smell like inside?"
+      "What did you have to remember?",
+      "How far was the walk?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0052",
@@ -716,16 +716,16 @@
   },
   {
     "id": "q0057",
-    "text": "What was the walk to school like, and who did you walk with?",
+    "text": "Who walked you to school, and what did you talk about?",
     "era": "teens",
     "topic": "school",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "What did you talk about?",
+      "What did you notice on the way?",
       "Which way did you take home?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0058",
@@ -898,7 +898,7 @@
   },
   {
     "id": "q0071",
-    "text": "What room in your parents' house was everyone's favourite, and why?",
+    "text": "Which room did your family always end up in?",
     "era": "childhood",
     "topic": "home",
     "weight": "light",
@@ -1073,7 +1073,7 @@
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "What gave it away?",
+      "What were they right about?",
       "When did you tell them?"
     ],
     "hook": "relational"
@@ -1086,7 +1086,7 @@
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "What did you do about it?",
+      "Who told you to keep going?",
       "Where did the idea go?"
     ],
     "hook": "plain"
@@ -1126,7 +1126,7 @@
     "kind": "memory",
     "followups": [
       "How did you settle it?",
-      "What did it cost you beyond the money?"
+      "Who else knew about it?"
     ],
     "hook": "measure"
   },
@@ -1139,7 +1139,7 @@
     "kind": "opinion",
     "followups": [
       "Who helped you see it?",
-      "What did it cost you at the start?"
+      "What got you through the start?"
     ],
     "hook": "plain"
   },
@@ -1353,20 +1353,20 @@
   },
   {
     "id": "q0106",
-    "text": "What was the television rule in your house?",
+    "text": "Who decided what was allowed on the television?",
     "era": "childhood",
     "topic": "media",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who enforced it?",
-      "What did you watch anyway?"
+      "What was never allowed?",
+      "Where did you watch it instead?"
     ],
-    "hook": "artifact"
+    "hook": "relational"
   },
   {
     "id": "q0107",
-    "text": "Where did you go on the big trip you remember from childhood?",
+    "text": "Where did your family take you on the big childhood trip?",
     "era": "childhood",
     "topic": "firsts",
     "weight": "light",
@@ -1379,7 +1379,7 @@
   },
   {
     "id": "q0108",
-    "text": "What job did you have around the house?",
+    "text": "What did your mother hand you to do around the house?",
     "era": "childhood",
     "topic": "home",
     "weight": "light",
@@ -1388,7 +1388,7 @@
       "What did you get for it?",
       "Who checked your work?"
     ],
-    "hook": "scene"
+    "hook": "relational"
   },
   {
     "id": "q0109",
@@ -1704,7 +1704,7 @@
   },
   {
     "id": "q0135",
-    "text": "What does every newcomer to your trade get wrong first?",
+    "text": "What do you wish every newcomer to your trade knew?",
     "era": "career",
     "topic": "advice",
     "weight": "light",
@@ -1730,7 +1730,7 @@
   },
   {
     "id": "q0137",
-    "text": "Which relative did you look forward to seeing, and what did you do together?",
+    "text": "Which aunt or uncle did you look forward to seeing?",
     "era": "childhood",
     "topic": "people",
     "weight": "medium",
@@ -1743,16 +1743,16 @@
   },
   {
     "id": "q0138",
-    "text": "What did someone in your family make better than anyone else?",
+    "text": "Whose cooking could nobody in the family match?",
     "era": "childhood",
     "topic": "food",
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "How did they make it?",
+      "What was the trick?",
       "Who makes it now?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0139",
@@ -1795,7 +1795,7 @@
   },
   {
     "id": "q0142",
-    "text": "What did someone in your family sing or play without noticing?",
+    "text": "What did your father hum without noticing?",
     "era": "childhood",
     "topic": "music",
     "weight": "light",
@@ -1804,7 +1804,7 @@
       "When did you notice it?",
       "What does it remind you of?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0143",
@@ -1912,16 +1912,16 @@
   },
   {
     "id": "q0151",
-    "text": "What song did someone sing to you when you were small?",
+    "text": "What song did your mother sing to you when you were small?",
     "era": "childhood",
     "topic": "music",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who sang it?",
+      "When did she sing it?",
       "Where do you hear it now?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0152",
@@ -2022,7 +2022,7 @@
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How did you get away with it?",
+      "Who was in the room?",
       "What did you see?"
     ],
     "hook": "plain"
@@ -2087,7 +2087,7 @@
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "How did you take it at the time?",
+      "What did you want to say back?",
       "When did it start to look right?"
     ],
     "hook": "relational"
@@ -2621,7 +2621,7 @@
     "kind": "memory",
     "followups": [
       "Where were you when you heard it?",
-      "What did the adults do?"
+      "How did your parents explain it?"
     ],
     "hook": "plain"
   },
@@ -2659,7 +2659,7 @@
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How did anyone find out?",
+      "Who found out?",
       "What did you learn about how it worked?"
     ],
     "hook": "artifact"
@@ -2881,7 +2881,7 @@
     "kind": "memory",
     "followups": [
       "How long did it take to find out?",
-      "What did it cost you?"
+      "What did you miss about it?"
     ],
     "hook": "plain"
   },
@@ -2997,8 +2997,8 @@
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "How did you handle it?",
-      "Who defended you?"
+      "Who did you tell first?",
+      "What did they say after?"
     ],
     "hook": "measure"
   },
@@ -3017,7 +3017,7 @@
   },
   {
     "id": "q0239",
-    "text": "What was always in the cupboard at your parents' house?",
+    "text": "What did your mother always keep in the cupboard?",
     "era": "childhood",
     "topic": "food",
     "weight": "light",
@@ -3043,7 +3043,7 @@
   },
   {
     "id": "q0242",
-    "text": "Where did your family take you when you felt grown up?",
+    "text": "Where did your parents take you when you felt grown up?",
     "era": "teens",
     "topic": "places",
     "weight": "light",
@@ -3271,7 +3271,7 @@
     "kind": "memory",
     "followups": [
       "Whose car was it?",
-      "What gave it away?"
+      "How long before someone noticed?"
     ],
     "hook": "relational"
   },
@@ -3355,16 +3355,16 @@
   },
   {
     "id": "q0268",
-    "text": "What was the meal that made you feel settled somewhere new?",
+    "text": "Who fed you when you were new somewhere?",
     "era": "young-adult",
     "topic": "food",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How did they make it?",
-      "What was on the table besides that?"
+      "What did they make?",
+      "Who was at the table?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0269",
@@ -3550,16 +3550,16 @@
   },
   {
     "id": "q0284",
-    "text": "What did your family make when someone was coming to visit?",
+    "text": "What did your mother make when visitors were coming?",
     "era": "childhood",
     "topic": "food",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who did the work?",
+      "Who helped her?",
       "What did they say about the visitor afterwards?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0285",
@@ -3641,16 +3641,16 @@
   },
   {
     "id": "q0291",
-    "text": "How did your family mark the day before school started?",
+    "text": "How did your mother get you ready the night before school started?",
     "era": "childhood",
     "topic": "places",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who was in charge of it?",
-      "What did you do with the last hours of freedom?"
+      "What did you have ready by the door?",
+      "How did you spend the last hours of freedom?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0292",
@@ -3843,7 +3843,7 @@
     "kind": "memory",
     "followups": [
       "What did they want?",
-      "How did you handle it?"
+      "Who else was there?"
     ],
     "hook": "plain"
   },
@@ -4014,6 +4014,266 @@
     "followups": [
       "Where was it hanging?",
       "How long did you stand there?"
+    ]
+  },
+  {
+    "id": "q0321",
+    "text": "What does your father do that you have caught yourself doing?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "When did you notice?",
+      "What would he say about it?"
+    ]
+  },
+  {
+    "id": "q0322",
+    "text": "Which of your mother's sayings comes out of your mouth now?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "When does it slip out?",
+      "How did she say it?"
+    ]
+  },
+  {
+    "id": "q0323",
+    "text": "What did someone in your family do for you that you never thanked them for?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "How did they do it without being asked?",
+      "What would you say now?"
+    ]
+  },
+  {
+    "id": "q0324",
+    "text": "What was in your grandmother's purse?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "artifact",
+    "followups": [
+      "What did she hand you from it?",
+      "Where did it end up?"
+    ]
+  },
+  {
+    "id": "q0325",
+    "text": "Which relative never forgot your birthday?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "What did they send?",
+      "How did they always remember?"
+    ]
+  },
+  {
+    "id": "q0326",
+    "text": "Who in your family is the easiest to sit in silence with?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "relational",
+    "followups": [
+      "Where do you usually sit?",
+      "What do you talk about when the silence breaks?"
+    ]
+  },
+  {
+    "id": "q0327",
+    "text": "How did your family spend a Sunday?",
+    "era": "childhood",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "scene",
+    "followups": [
+      "Who did what?",
+      "What did the house smell like?"
+    ]
+  },
+  {
+    "id": "q0328",
+    "text": "Which meal does someone make that tastes like being looked after?",
+    "era": "now",
+    "topic": "food",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "relational",
+    "followups": [
+      "Who makes it?",
+      "What is in it?"
+    ]
+  },
+  {
+    "id": "q0329",
+    "text": "Who taught you something you still use every week?",
+    "era": "career",
+    "topic": "work",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "How did they teach it?",
+      "What do they say about it now?"
+    ]
+  },
+  {
+    "id": "q0330",
+    "text": "What did your family call your grandparents?",
+    "era": "childhood",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "Where did the name come from?",
+      "Which one stuck with you?"
+    ]
+  },
+  {
+    "id": "q0331",
+    "text": "Whose handwriting do you still have somewhere?",
+    "era": "now",
+    "topic": "media",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "artifact",
+    "followups": [
+      "What is it written on?",
+      "Where do you keep it?"
+    ]
+  },
+  {
+    "id": "q0332",
+    "text": "Whose laugh can you hear in your head right now?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "relational",
+    "followups": [
+      "What sets it off?",
+      "When did you last hear it?"
+    ]
+  },
+  {
+    "id": "q0333",
+    "text": "What did someone do on your worst day that helped most?",
+    "era": "midlife",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "What did they say?",
+      "Who else showed up?"
+    ]
+  },
+  {
+    "id": "q0334",
+    "text": "What small tradition would you pass on?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "plain",
+    "followups": [
+      "Where did it start?",
+      "Who would keep it?"
+    ]
+  },
+  {
+    "id": "q0335",
+    "text": "Which colleague did you look after without being asked?",
+    "era": "career",
+    "topic": "people",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "What did they need?",
+      "How did they thank you?"
+    ]
+  },
+  {
+    "id": "q0336",
+    "text": "What was your mother's remedy when someone was sick?",
+    "era": "childhood",
+    "topic": "food",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "scene",
+    "followups": [
+      "How did it taste?",
+      "Who else got it?"
+    ]
+  },
+  {
+    "id": "q0337",
+    "text": "What did you keep from your family's house when you moved out?",
+    "era": "young-adult",
+    "topic": "home",
+    "weight": "light",
+    "kind": "memory",
+    "hook": "artifact",
+    "followups": [
+      "Where is it now?",
+      "Why that one?"
+    ]
+  },
+  {
+    "id": "q0338",
+    "text": "Who looked out for you without making a fuss about it?",
+    "era": "teens",
+    "topic": "people",
+    "weight": "medium",
+    "kind": "memory",
+    "hook": "relational",
+    "followups": [
+      "How did you know?",
+      "What did you say later?"
+    ]
+  },
+  {
+    "id": "q0339",
+    "text": "Who would you call at two in the morning?",
+    "era": "now",
+    "topic": "people",
+    "weight": "light",
+    "kind": "opinion",
+    "hook": "relational",
+    "followups": [
+      "What would you say?",
+      "How quickly would they answer?"
+    ]
+  },
+  {
+    "id": "q0340",
+    "text": "What do you notice about your parents now that you missed at twenty?",
+    "era": "now",
+    "topic": "advice",
+    "weight": "medium",
+    "kind": "opinion",
+    "hook": "relational",
+    "followups": [
+      "What changed?",
+      "Who would you ask about it now?"
     ]
   }
 ]

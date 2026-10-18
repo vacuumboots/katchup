@@ -18,7 +18,7 @@ screen shortcut (no service worker, no offline mode, by decision).
 
 ## Status right now
 
-- **309 questions**, all validated: 203 light / 91 medium / 15 heavy. `validate_questions.py`
+- **329 questions**, all validated: 220 light / 94 medium / 15 heavy. `validate_questions.py`
   exits 0, no errors, no warnings. Unchanged by the three-mode work.
 - **Phase 1 done:** `scripts/validate_wyr.py`, `scripts/validate_categories.py`,
   `scripts/validate_all.sh`, plus `scripts/test_validators.sh` (42 checks against broken
@@ -48,11 +48,20 @@ screen shortcut (no service worker, no offline mode, by decision).
   now 13px full-strength `--muted` at 5.74:1 / 5.90:1.
 - Fourteen commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
 - **Content pass, same day:** Categories went from 13 decks to **40** (27 authored, 560
-  items, 8 themes) and **50 of the 309 questions were rewritten** — every "Tell me about…"
+  items, 8 themes) and **50 of the questions were rewritten** — every "Tell me about…"
   imperative and every "Which thing did you…" template is gone, and the abstract prompts
   ("what do you do that makes the time disappear?", "when did you feel properly grown up?")
-  were replaced with concrete asks. The deck still validates at exactly 309 with the same
-  light/medium/heavy split, so no rebalancing was needed.
+  were replaced with concrete asks.
+- **Warmth pass, same day:** the deck is a gift between family members, and the sharpening
+  pass had made it colder — it asked for facts and named almost nobody. Fixed by adding
+  **20 cards that are warm by construction** (gratitude, inherited habits, small kindnesses,
+  handwriting, being looked after) and rewriting **20 existing cards to name a person**
+  ("What was the meal you asked for on your birthday?" became "Which birthday meal did you
+  ask your mother for?"). Cards naming a family member went 33 → 70 (21%), and 14 more
+  quiz-style follow-ups ("Who defended you?", "What gave it away?") became invitations
+  ("What did they say after?", "How long before someone noticed?"). Deck is now **329**
+  (220 light / 94 medium / 15 heavy); `TARGET_*` in the validator carries those numbers and
+  the report prints a Warmth line so the next content pass cannot quietly undo it.
 - **The live site matches `main` byte for byte** — verified 2026-10-17 by hashing all nine
   shipped files against https://vacuumboots.github.io/katchup/. Pages status `built`.
   Deploy at the end of a phase, as before.
@@ -213,7 +222,7 @@ app-random.js         323 lines: pair pool, shuffle, pick/skip/undo, its own fil
 app-categories.js     347 lines: grouped picker with jump chips, bracket, champion,
                       restart, play at random
 styles.css            gruvbox light/dark, 76px actions, 96px choices, [hidden] override
-questions.json        309 questions, the deck
+questions.json        329 questions, the deck
 wouldrather.json      200 pairs, 140 light / 60 medium
 categories.json       40 decks, 14 items each, 560 items, 8 theme groups
 scripts/validate_questions.py    validator + review.html emitter (449 lines)
@@ -256,6 +265,14 @@ Data model for a question: `id`, `text`, `era`, `topic`, `weight`, `kind`, `hook
 Questions:
 - Under ~100 chars, one sentence, ends in `?`, never yes/no, never starting Do / Can /
   Is / Are / Would / Have.
+- **Warmth is a content rule, not a mood.** This deck exists so a family can talk, so a
+  card that only extracts a fact is a bad card. Name the person when the card is about one
+  ("your mother", "your father", "your grandmother"); prefer follow-ups that invite detail
+  ("What did they say after?", "How did they do it without being asked?") over ones that
+  close the floor ("Who defended you?", "What gave it away?"); and write cards the other
+  person wants to answer. Cards q0321-q0340 are the reference set — gratitude, inherited
+  habits, being looked after. The validator prints warmth as a number and never fails on
+  it; watch it, do not game it.
 - **Never open with "Tell me about"** or "Which thing did you…". Both were in the deck and
   both read as a form to fill in rather than a question. A card gets one ask, a concrete
   anchor (an object, a number, a place, a named person), and nothing that invites "not
@@ -299,7 +316,7 @@ has never seen the list, so no hyper-local items and nothing that needs a footno
    fall back to `BODY`.
 3. `review.html`, `review_wyr.html`, `review_categories.html` are gitignored; regenerate
    rather than commit them.
-4. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
+4. Heavy is 15 questions = 4.6% of 329. The validator floors at 15 questions and caps at
    10% rather than enforcing a strict 5% share; adding one heavy question would make the
    percentage literal.
 5. Debate is represented by a single question (the country song). Sparing was the rule,
@@ -314,6 +331,10 @@ has never seen the list, so no hyper-local items and nothing that needs a footno
 - Light-mode muted text measured 4.29:1 against the body background but 5.74:1 against
   the card (`--muted` is `#665c54`); measure against the element's real painted
   background, not `body`. Do not lighten it.
+- **The two-word opener cap is a live constraint.** `What did` sits at 13.7% against a 15%
+  cap, so almost any new card of that shape pushes the deck over. Check
+  `python3 scripts/validate_questions.py` after adding cards and vary the opener (Which /
+  Whose / How did / What was) before adding volume.
 - **Never dim text with `opacity`** here: alpha blends toward the background and silently
   breaks contrast (`opacity: 0.7` on the trail counter cost 2.7 points of ratio). Use
   size, weight or spacing to de-emphasise.

@@ -5,7 +5,7 @@ are sitting with someone you know well and the conversation has stalled.
 
 Live: <https://vacuumboots.github.io/katchup/>
 
-309 questions, written by hand, tagged by era, topic, weight, kind, and hook. One card
+329 questions, written by hand, tagged by era, topic, weight, kind, and hook. One card
 on screen, three buttons: **Asked it**, **Skip**, **Never**. **Back** undoes the
 last action. Follow-up prompts are one tap away if the answer starts a story.
 

@@ -107,11 +107,11 @@ Field rules:
 
 ## Question content
 
-Seed `questions.json` with 309 questions. Write them directly; do not scrape or copy from other sites.
+Seed `questions.json` with 329 questions. Write them directly; do not scrape or copy from other sites.
 
 Distribution targets:
 
-- Weight: 203 light, 91 medium, 15 heavy. Heavy is the scarcest thing in the deck on purpose: it is hidden by default, so a large heavy pool is dead weight.
+- Weight: 220 light, 94 medium, 15 heavy. Heavy is the scarcest thing in the deck on purpose: it is hidden by default, so a large heavy pool is dead weight.
 - Kind: at least 180 `memory` (60%). Concrete past specifics beat abstract opinions. The proven example: "What was the last concert you went to?" led to stories about the 1970s.
 - Every era value is represented by at least 15 questions and every topic by at
   least 10. Counts should look natural, not uniform.
