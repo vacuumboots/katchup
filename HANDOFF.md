@@ -20,7 +20,7 @@ screen shortcut (no service worker, no offline mode, by decision).
 - **309 questions**, all validated: 203 light / 91 medium / 15 heavy. `validate_questions.py`
   exits 0, no errors, no warnings. Unchanged by the three-mode work.
 - **Phase 1 done:** `scripts/validate_wyr.py`, `scripts/validate_categories.py`,
-  `scripts/validate_all.sh`, plus `scripts/test_validators.sh` (40 checks against broken
+  `scripts/validate_all.sh`, plus `scripts/test_validators.sh` (42 checks against broken
   fixtures) and the two content stubs — `wouldrather.json` with 6 real pairs,
   `categories.json` with 1 complete 14-item deck (sandwiches). The categories stub fails
   on the count rules, which is the intended state.
@@ -179,7 +179,7 @@ scripts/validate_questions.py    validator + review.html emitter (449 lines)
 scripts/validate_wyr.py          pairs + review_wyr.html (373 lines)
 scripts/validate_categories.py   decks + review_categories.html (311 lines)
 scripts/validate_all.sh          runs all three, one summary line
-scripts/test_validators.sh       40 assertions against fixtures/
+scripts/test_validators.sh       42 assertions against fixtures/
 scripts/fixtures/                deliberately broken content, for the tests above
 manifest.webmanifest  home-screen shortcut only
 icons/                192 and 512 placeholder PNGs
@@ -297,7 +297,7 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
 2. `cd ~/Git/katchup && git log --oneline -3 && git status --short` — clean apart from
    ignored files.
 3. `bash scripts/validate_all.sh` — expect all three green.
-   `bash scripts/test_validators.sh` — expect 40/40.
+   `bash scripts/test_validators.sh` — expect 42/42.
 4. Dev server on 8099: curl it, do not assume. Restart if the reply is empty.
 5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 99/99 before you
    change anything. That is your baseline.

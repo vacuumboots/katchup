@@ -87,8 +87,10 @@ reject "exact duplicate not also near-dup" "$cat_out" "near-duplicate labels tun
 
 echo "shipped content files"
 expect "questions.json still clean"    "$real_q" "No errors."
-expect "wouldrather.json is the 6-pair stub" "$real_wyr" "only 6 pairs, minimum 200"
-expect "categories.json is the 1-deck stub"  "$real_cat" "only 1 deck, minimum 12"
+expect "wouldrather.json validates clean"  "$real_wyr" "No errors."
+expect "categories.json validates clean"  "$real_cat" "No errors."
+reject "wouldrather.json is not a stub any more" "$real_wyr" "minimum 200"
+reject "categories.json is not a stub any more" "$real_cat" "minimum 12"
 reject "wouldrather.json has no shape errors" "$real_wyr" "bad weight"
 reject "wouldrather.json has no death wording" "$real_wyr" "death wording"
 reject "categories.json has no duplicate labels" "$real_cat" "duplicate label"
