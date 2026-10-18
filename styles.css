@@ -469,7 +469,9 @@ body {
 
 /* ---------- categories ---------- */
 
-.stage-scroll { justify-content: flex-start; overflow-y: auto; }
+/* no top padding: any padding here leaves a band above the sticky jump bar
+   through which scrolled rows show. The bar carries its own top padding. */
+.stage-scroll { justify-content: flex-start; overflow-y: auto; padding-top: 0; }
 
 .picker {
   align-items: stretch;
@@ -478,6 +480,61 @@ body {
 }
 
 .picker-lede { margin: 0 0 2px; font-size: 15px; color: var(--muted); }
+
+/* forty decks: a sticky jump bar, then theme headings over their own lists */
+.deck-jumps {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  margin: 0 0 2px;
+  padding: 8px 0 10px;
+  overflow-x: auto;
+  background: var(--bg);
+  scrollbar-width: none;
+}
+
+.deck-jumps::-webkit-scrollbar { display: none; }
+
+.deck-jump {
+  appearance: none;
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.deck-jump::before { content: "↓ "; }
+
+.deck-jump:active { transform: translateY(1px); }
+
+.deck-group { scroll-margin-top: 64px; }
+
+.deck-group-title {
+  margin: 4px 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.deck-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .picker-random {
   appearance: none;
@@ -496,10 +553,10 @@ body {
 .deck-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 22px;
 }
 
 .deck-row {

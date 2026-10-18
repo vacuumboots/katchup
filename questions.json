@@ -1,16 +1,16 @@
 [
   {
     "id": "q0001",
-    "text": "Tell me about the kitchen you grew up in?",
+    "text": "What was always on the counter in your childhood kitchen?",
     "era": "childhood",
     "topic": "home",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Where did everyone sit?",
-      "What was always on the counter?"
+      "Who was usually standing at the stove?",
+      "What did the room smell like at supper time?"
     ],
-    "hook": "scene"
+    "hook": "artifact"
   },
   {
     "id": "q0002",
@@ -79,7 +79,7 @@
   },
   {
     "id": "q0007",
-    "text": "Tell me about the thing you saved up your own money for?",
+    "text": "What did you buy with the first money you saved yourself?",
     "era": "childhood",
     "topic": "firsts",
     "weight": "light",
@@ -88,7 +88,7 @@
       "How long did it take?",
       "Where is it now?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0008",
@@ -196,7 +196,7 @@
   },
   {
     "id": "q0016",
-    "text": "Tell me about a dish you kept ruining in your first place?",
+    "text": "Which dish did you ruin twice before you got it right?",
     "era": "young-adult",
     "topic": "food",
     "weight": "light",
@@ -222,7 +222,7 @@
   },
   {
     "id": "q0018",
-    "text": "Tell me about a big purchase you ended up regretting?",
+    "text": "Which purchase did you regret before the receipt was cold?",
     "era": "young-adult",
     "topic": "money",
     "weight": "medium",
@@ -404,7 +404,7 @@
   },
   {
     "id": "q0033",
-    "text": "What is the longest you have put off fixing something at home?",
+    "text": "What is the longest you have put off a repair at home?",
     "era": "now",
     "topic": "home",
     "weight": "light",
@@ -456,7 +456,7 @@
   },
   {
     "id": "q0037",
-    "text": "What do you know now that took you much longer than it should have to learn?",
+    "text": "What took you ten years to learn that others got in a week?",
     "era": "now",
     "topic": "advice",
     "weight": "medium",
@@ -521,7 +521,7 @@
   },
   {
     "id": "q0042",
-    "text": "Tell me about something you let go of that still comes back?",
+    "text": "What have you let go of that still turns up in your thinking?",
     "era": "now",
     "topic": "advice",
     "weight": "heavy",
@@ -560,7 +560,7 @@
   },
   {
     "id": "q0045",
-    "text": "Tell me about the work shoes you wore for years?",
+    "text": "How long did you wear the same work shoes?",
     "era": "young-adult",
     "topic": "work",
     "weight": "light",
@@ -569,7 +569,7 @@
       "Who made fun of them?",
       "When did you finally replace them?"
     ],
-    "hook": "artifact"
+    "hook": "measure"
   },
   {
     "id": "q0046",
@@ -625,7 +625,7 @@
   },
   {
     "id": "q0050",
-    "text": "Tell me about what you collected as a child?",
+    "text": "What did you collect until the drawer would not close?",
     "era": "childhood",
     "topic": "hobbies",
     "weight": "medium",
@@ -634,7 +634,7 @@
       "Where is it now?",
       "Who else knew what you were looking for?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0051",
@@ -664,7 +664,7 @@
   },
   {
     "id": "q0053",
-    "text": "Tell me about a book you finished on your own as a kid?",
+    "text": "Which book did you finish alone for the first time?",
     "era": "childhood",
     "topic": "media",
     "weight": "light",
@@ -755,7 +755,7 @@
   },
   {
     "id": "q0060",
-    "text": "When did you feel properly grown up?",
+    "text": "When did someone first treat you as an adult?",
     "era": "teens",
     "topic": "firsts",
     "weight": "light",
@@ -807,7 +807,7 @@
   },
   {
     "id": "q0064",
-    "text": "Tell me about a job you would never put on a CV?",
+    "text": "Which job would you leave off your CV on purpose?",
     "era": "young-adult",
     "topic": "work",
     "weight": "light",
@@ -833,16 +833,16 @@
   },
   {
     "id": "q0066",
-    "text": "Tell me about advice that only landed years later?",
+    "text": "Whose advice did you ignore for ten years?",
     "era": "young-adult",
     "topic": "advice",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who said it?",
+      "What were they trying to warn you about?",
       "When did it finally make sense?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0067",
@@ -1002,7 +1002,7 @@
   },
   {
     "id": "q0079",
-    "text": "What do you do that makes the time disappear?",
+    "text": "What do you do that eats a whole afternoon?",
     "era": "now",
     "topic": "hobbies",
     "weight": "light",
@@ -1119,20 +1119,20 @@
   },
   {
     "id": "q0088",
-    "text": "Tell me about a debt you carried longer than you meant to?",
+    "text": "How long did you carry that debt past the plan?",
     "era": "young-adult",
     "topic": "money",
     "weight": "medium",
     "kind": "memory",
     "followups": [
       "How did you settle it?",
-      "What changed between you?"
+      "What did it cost you beyond the money?"
     ],
-    "hook": "plain"
+    "hook": "measure"
   },
   {
     "id": "q0089",
-    "text": "Tell me about what you had to unlearn to get good at your work?",
+    "text": "What habit did you have to drop to get good at your work?",
     "era": "career",
     "topic": "advice",
     "weight": "medium",
@@ -1184,7 +1184,7 @@
   },
   {
     "id": "q0093",
-    "text": "What do you do differently now because someone disappointed you?",
+    "text": "What do you no longer bother asking anyone for?",
     "era": "now",
     "topic": "advice",
     "weight": "medium",
@@ -1210,7 +1210,7 @@
   },
   {
     "id": "q0095",
-    "text": "What is something your closest friend does that you have never mentioned to them?",
+    "text": "What does your closest friend do that you have never mentioned?",
     "era": "now",
     "topic": "people",
     "weight": "medium",
@@ -1223,7 +1223,7 @@
   },
   {
     "id": "q0096",
-    "text": "What would you do with a free year and no obligations?",
+    "text": "If work stopped tomorrow, what would fill the month?",
     "era": "now",
     "topic": "work",
     "weight": "medium",
@@ -1392,7 +1392,7 @@
   },
   {
     "id": "q0109",
-    "text": "Which thing did you get caught doing?",
+    "text": "What did you get caught doing that was worth it?",
     "era": "teens",
     "topic": "firsts",
     "weight": "light",
@@ -1470,7 +1470,7 @@
   },
   {
     "id": "q0116",
-    "text": "Tell me about a gig you got into without telling anyone at home?",
+    "text": "Which gig did you go to without telling anyone at home?",
     "era": "teens",
     "topic": "music",
     "weight": "light",
@@ -1509,7 +1509,7 @@
   },
   {
     "id": "q0119",
-    "text": "Which thing did you buy for your own place?",
+    "text": "What did you buy for your own place before anything else?",
     "era": "young-adult",
     "topic": "home",
     "weight": "light",
@@ -1587,7 +1587,7 @@
   },
   {
     "id": "q0125",
-    "text": "Which thing did you keep from your parents for years?",
+    "text": "What did you keep from your parents for years?",
     "era": "young-adult",
     "topic": "firsts",
     "weight": "medium",
@@ -1596,7 +1596,7 @@
       "When did they find out?",
       "How did they take it?"
     ],
-    "hook": "relational"
+    "hook": "plain"
   },
   {
     "id": "q0126",
@@ -1704,7 +1704,7 @@
   },
   {
     "id": "q0135",
-    "text": "What do you know about your trade that a newcomer always gets wrong?",
+    "text": "What does every newcomer to your trade get wrong first?",
     "era": "career",
     "topic": "advice",
     "weight": "light",
@@ -1964,7 +1964,7 @@
   },
   {
     "id": "q0155",
-    "text": "Tell me about something you learned to do without help?",
+    "text": "What did you teach yourself because nobody would show you?",
     "era": "childhood",
     "topic": "firsts",
     "weight": "light",
@@ -2081,7 +2081,7 @@
   },
   {
     "id": "q0164",
-    "text": "Tell me about something a teacher told you that you did not want to hear?",
+    "text": "Which teacher told you the thing you did not want to hear?",
     "era": "teens",
     "topic": "advice",
     "weight": "medium",
@@ -2133,16 +2133,16 @@
   },
   {
     "id": "q0168",
-    "text": "Tell me about something you lent out and never saw again?",
+    "text": "What did you lend out that never came back?",
     "era": "teens",
     "topic": "money",
     "weight": "medium",
     "kind": "memory",
     "followups": [
-      "How did you ask for it?",
+      "Who did you lend it to?",
       "What happened to the friendship?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0169",
@@ -2328,7 +2328,7 @@
   },
   {
     "id": "q0183",
-    "text": "Which thing did you do with colleagues that you would not do now?",
+    "text": "What did you do with colleagues that you would not do now?",
     "era": "career",
     "topic": "hobbies",
     "weight": "light",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "q0184",
-    "text": "Tell me about explaining something until you understood it better?",
+    "text": "What did you only understand once you had to explain it?",
     "era": "career",
     "topic": "advice",
     "weight": "medium",
@@ -2445,7 +2445,7 @@
   },
   {
     "id": "q0193",
-    "text": "Which things did your parents refuse to pay for?",
+    "text": "What did your parents refuse to pay for?",
     "era": "childhood",
     "topic": "money",
     "weight": "medium",
@@ -2588,7 +2588,7 @@
   },
   {
     "id": "q0205",
-    "text": "Tell me about something you built from odds and ends?",
+    "text": "What did you build out of scraps and leftover nails?",
     "era": "childhood",
     "topic": "hobbies",
     "weight": "light",
@@ -2597,7 +2597,7 @@
       "Where did you keep it?",
       "Who did you show?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0206",
@@ -2614,7 +2614,7 @@
   },
   {
     "id": "q0207",
-    "text": "Tell me about a news story you remember hearing as a kid?",
+    "text": "Which news story did you hear first on the radio?",
     "era": "childhood",
     "topic": "firsts",
     "weight": "light",
@@ -2653,7 +2653,7 @@
   },
   {
     "id": "q0210",
-    "text": "Tell me about something you took apart and could not rebuild?",
+    "text": "What did you take apart that never went back together?",
     "era": "teens",
     "topic": "hobbies",
     "weight": "light",
@@ -2662,7 +2662,7 @@
       "How did anyone find out?",
       "What did you learn about how it worked?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0211",
@@ -2757,7 +2757,7 @@
   },
   {
     "id": "q0218",
-    "text": "Which thing were you paid to make or fix?",
+    "text": "What were you paid to make or fix?",
     "era": "teens",
     "topic": "work",
     "weight": "light",
@@ -2770,7 +2770,7 @@
   },
   {
     "id": "q0220",
-    "text": "Which thing went up on the wall of your first place?",
+    "text": "What went up on the wall of your first place?",
     "era": "young-adult",
     "topic": "home",
     "weight": "light",
@@ -2809,7 +2809,7 @@
   },
   {
     "id": "q0223",
-    "text": "Which things lived in your glovebox?",
+    "text": "What lived in your glovebox?",
     "era": "young-adult",
     "topic": "cars",
     "weight": "light",
@@ -2835,20 +2835,20 @@
   },
   {
     "id": "q0225",
-    "text": "Tell me about something you borrowed and meant to return?",
+    "text": "What did you borrow years ago and still have?",
     "era": "young-adult",
     "topic": "media",
     "weight": "medium",
     "kind": "memory",
     "followups": [
       "Who did it belong to?",
-      "How long did you keep it?"
+      "What would you say if they asked for it back?"
     ],
     "hook": "plain"
   },
   {
     "id": "q0226",
-    "text": "Tell me about something you expected to change you?",
+    "text": "What did you expect to change you that did not?",
     "era": "young-adult",
     "topic": "firsts",
     "weight": "medium",
@@ -2952,7 +2952,7 @@
   },
   {
     "id": "q0234",
-    "text": "Tell me about something you sold and wished you had kept?",
+    "text": "What did you sell that you would buy back tomorrow?",
     "era": "midlife",
     "topic": "money",
     "weight": "light",
@@ -2991,7 +2991,7 @@
   },
   {
     "id": "q0237",
-    "text": "Tell me about a mistake of yours that cost someone money?",
+    "text": "How much did your worst mistake cost someone else?",
     "era": "midlife",
     "topic": "work",
     "weight": "medium",
@@ -3000,7 +3000,7 @@
       "How did you handle it?",
       "Who defended you?"
     ],
-    "hook": "plain"
+    "hook": "measure"
   },
   {
     "id": "q0238",
@@ -3030,7 +3030,7 @@
   },
   {
     "id": "q0240",
-    "text": "Tell me about the back of your parents' house?",
+    "text": "What was at the back of your parents' house?",
     "era": "childhood",
     "topic": "home",
     "weight": "medium",
@@ -3039,7 +3039,7 @@
       "What did anyone leave out there?",
       "Who did the work on it?"
     ],
-    "hook": "relational"
+    "hook": "scene"
   },
   {
     "id": "q0242",
@@ -3082,7 +3082,7 @@
   },
   {
     "id": "q0245",
-    "text": "Tell me about something you saved for that was not for you?",
+    "text": "What did you save up for that was never yours to keep?",
     "era": "teens",
     "topic": "money",
     "weight": "medium",
@@ -3264,7 +3264,7 @@
   },
   {
     "id": "q0260",
-    "text": "Tell me about damage you and your friends did to a car?",
+    "text": "What did you and your friends break on a car?",
     "era": "teens",
     "topic": "cars",
     "weight": "light",
@@ -3329,7 +3329,7 @@
   },
   {
     "id": "q0265",
-    "text": "Which thing did you say at school that you wished back?",
+    "text": "What did you say at school that you wished back?",
     "era": "teens",
     "topic": "advice",
     "weight": "light",
@@ -3407,7 +3407,7 @@
   },
   {
     "id": "q0272",
-    "text": "Tell me about something you fixed on your own?",
+    "text": "What did you fix yourself rather than call someone?",
     "era": "young-adult",
     "topic": "firsts",
     "weight": "light",
@@ -3511,7 +3511,7 @@
   },
   {
     "id": "q0281",
-    "text": "Tell me about something you walked away from that still looks right?",
+    "text": "What did you walk away from that you would still defend?",
     "era": "midlife",
     "topic": "advice",
     "weight": "heavy",
@@ -3628,7 +3628,7 @@
   },
   {
     "id": "q0290",
-    "text": "Which money belief did you have to unlearn?",
+    "text": "What did your parents teach you about money that you dropped?",
     "era": "midlife",
     "topic": "money",
     "weight": "medium",
@@ -3637,7 +3637,7 @@
       "Where did that belief come from?",
       "What do you believe instead?"
     ],
-    "hook": "plain"
+    "hook": "relational"
   },
   {
     "id": "q0291",
@@ -3667,7 +3667,7 @@
   },
   {
     "id": "q0293",
-    "text": "What is the thing in your kitchen you would replace first?",
+    "text": "What in your kitchen is on its last legs?",
     "era": "now",
     "topic": "home",
     "weight": "light",
@@ -3676,7 +3676,7 @@
       "How long have you had it?",
       "What would you get instead?"
     ],
-    "hook": "scene"
+    "hook": "artifact"
   },
   {
     "id": "q0294",
@@ -3706,7 +3706,7 @@
   },
   {
     "id": "q0297",
-    "text": "What opinion have you changed your mind about in the last few years?",
+    "text": "What did you believe ten years ago that you no longer buy?",
     "era": "now",
     "topic": "media",
     "weight": "medium",
@@ -3784,7 +3784,7 @@
   },
   {
     "id": "q0303",
-    "text": "Which things lived in your desk drawer?",
+    "text": "What lived in your desk drawer?",
     "era": "career",
     "topic": "work",
     "weight": "light",

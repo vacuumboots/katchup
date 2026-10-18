@@ -8,6 +8,7 @@
   const el = {
     picker: document.getElementById("categoryPicker"),
     deckList: document.getElementById("deckList"),
+    deckJumps: document.getElementById("deckJumps"),
     playRandom: document.getElementById("playRandom"),
     error: document.getElementById("categoryError"),
 
@@ -69,27 +70,71 @@
 
   /* ---------- picker ---------- */
 
+  function slug(text) {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+
   function renderPicker() {
     el.deckList.innerHTML = "";
+    el.deckJumps.innerHTML = "";
+
+    const groups = [];
     for (const entry of decks) {
-      const row = document.createElement("a");
-      row.className = "deck-row";
-      row.href = `#categories/${entry.id}`;
+      const name = entry.group || "More";
+      let bucket = groups.find((g) => g.name === name);
+      if (!bucket) {
+        bucket = { name, decks: [] };
+        groups.push(bucket);
+      }
+      bucket.decks.push(entry);
+    }
 
-      const name = document.createElement("span");
-      name.className = "deck-name";
-      name.textContent = entry.name;
+    for (const bucket of groups) {
+      const block = document.createElement("section");
+      block.className = "deck-group";
+      block.id = `group-${slug(bucket.name)}`;
 
-      const meta = document.createElement("span");
-      meta.className = "deck-prompt";
-      meta.textContent = `${entry.items.length} items · ${entry.prompt}`;
+      const title = document.createElement("h2");
+      title.className = "deck-group-title";
+      title.textContent = bucket.name;
+      block.appendChild(title);
 
-      row.appendChild(name);
-      row.appendChild(meta);
+      const list = document.createElement("ul");
+      list.className = "deck-rows";
 
-      const holder = document.createElement("li");
-      holder.appendChild(row);
-      el.deckList.appendChild(holder);
+      for (const entry of bucket.decks) {
+        const row = document.createElement("a");
+        row.className = "deck-row";
+        row.href = `#categories/${entry.id}`;
+
+        const name = document.createElement("span");
+        name.className = "deck-name";
+        name.textContent = entry.name;
+
+        const meta = document.createElement("span");
+        meta.className = "deck-prompt";
+        meta.textContent = `${entry.items.length} items · ${entry.prompt}`;
+
+        row.appendChild(name);
+        row.appendChild(meta);
+
+        const holder = document.createElement("li");
+        holder.appendChild(row);
+        list.appendChild(holder);
+      }
+
+      block.appendChild(list);
+      el.deckList.appendChild(block);
+
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "deck-jump";
+      chip.textContent = bucket.name;
+      chip.setAttribute("aria-label", `Jump to ${bucket.name}`);
+      chip.addEventListener("click", () => {
+        block.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      el.deckJumps.appendChild(chip);
     }
   }
 

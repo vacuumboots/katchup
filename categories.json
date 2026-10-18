@@ -1,5 +1,637 @@
 [
   {
+    "id": "barbecue",
+    "name": "Barbecue",
+    "group": "Food and drink",
+    "prompt": "What goes on the grill first?",
+    "items": [
+      {
+        "id": "burgers",
+        "label": "Burgers",
+        "blurb": "the appetizer argument"
+      },
+      {
+        "id": "hot-dogs",
+        "label": "Hot dogs",
+        "blurb": "split down the middle, charred edges"
+      },
+      {
+        "id": "steak",
+        "label": "Steak",
+        "blurb": "one flip, no poking"
+      },
+      {
+        "id": "drumsticks",
+        "label": "Chicken drumsticks",
+        "blurb": "sticky fingers, burnt tips"
+      },
+      {
+        "id": "ribs",
+        "label": "Ribs",
+        "blurb": "low and slow, sauce at the end"
+      },
+      {
+        "id": "corn",
+        "label": "Corn on the cob",
+        "blurb": "husk back, butter, salt, burned hands"
+      },
+      {
+        "id": "peppers-onions",
+        "label": "Peppers and onions",
+        "blurb": "for the burger, eaten off the side"
+      },
+      {
+        "id": "zucchini",
+        "label": "Zucchini planks",
+        "blurb": "pretending to be healthy"
+      },
+      {
+        "id": "shrimp-skewers",
+        "label": "Shrimp skewers",
+        "blurb": "six minutes, no more"
+      },
+      {
+        "id": "halloumi",
+        "label": "Halloumi",
+        "blurb": "squeaky, salty, never melts"
+      },
+      {
+        "id": "baked-potatoes",
+        "label": "Baked potatoes",
+        "blurb": "foil, ash, butter melting in"
+      },
+      {
+        "id": "fish-fillets",
+        "label": "Fish fillets",
+        "blurb": "lemon, flaky, falls through the grate"
+      },
+      {
+        "id": "pineapple-rings",
+        "label": "Pineapple rings",
+        "blurb": "the dividing line of the party"
+      },
+      {
+        "id": "marshmallows",
+        "label": "Marshmallows on a stick",
+        "blurb": "black outside, molten inside"
+      }
+    ]
+  },
+  {
+    "id": "breakfast",
+    "name": "Breakfast",
+    "prompt": "Which breakfast?",
+    "items": [
+      {
+        "id": "pancakes",
+        "label": "Pancakes"
+      },
+      {
+        "id": "waffles",
+        "label": "Waffles"
+      },
+      {
+        "id": "french-toast",
+        "label": "French toast"
+      },
+      {
+        "id": "eggs-benedict",
+        "label": "Eggs Benedict"
+      },
+      {
+        "id": "bacon-and-eggs",
+        "label": "Bacon and eggs"
+      },
+      {
+        "id": "oatmeal",
+        "label": "Oatmeal"
+      },
+      {
+        "id": "granola-and-yogurt",
+        "label": "Granola and yogurt"
+      },
+      {
+        "id": "bagel-and-cream-cheese",
+        "label": "Bagel and cream cheese"
+      },
+      {
+        "id": "breakfast-burrito",
+        "label": "Breakfast burrito"
+      },
+      {
+        "id": "hash-browns",
+        "label": "Hash browns"
+      },
+      {
+        "id": "smoothie-bowl",
+        "label": "Smoothie bowl"
+      },
+      {
+        "id": "toast-and-jam",
+        "label": "Toast and jam"
+      },
+      {
+        "id": "croissant",
+        "label": "Croissant"
+      },
+      {
+        "id": "big-cooked-breakfast",
+        "label": "Big cooked breakfast"
+      }
+    ],
+    "group": "Food and drink"
+  },
+  {
+    "id": "cheese",
+    "name": "Cheese",
+    "group": "Food and drink",
+    "prompt": "Which one on the board?",
+    "items": [
+      {
+        "id": "old-cheddar",
+        "label": "Old cheddar",
+        "blurb": "sharp enough to bite back"
+      },
+      {
+        "id": "brie",
+        "label": "Brie",
+        "blurb": "rind on, room temperature, gone in minutes"
+      },
+      {
+        "id": "smoked-gouda",
+        "label": "Smoked gouda",
+        "blurb": "the one with the red wax"
+      },
+      {
+        "id": "fresh-mozzarella",
+        "label": "Fresh mozzarella",
+        "blurb": "warm, salty, torn by hand"
+      },
+      {
+        "id": "blue",
+        "label": "Blue cheese",
+        "blurb": "the one that clears a room"
+      },
+      {
+        "id": "parmesan",
+        "label": "Parmesan",
+        "blurb": "grated over everything, rind saved for soup"
+      },
+      {
+        "id": "swiss",
+        "label": "Swiss",
+        "blurb": "the holes are the point"
+      },
+      {
+        "id": "feta",
+        "label": "Feta",
+        "blurb": "crumbled on salad, squeaks in your teeth"
+      },
+      {
+        "id": "havarti",
+        "label": "Havarti",
+        "blurb": "soft, buttery, a little bit bland"
+      },
+      {
+        "id": "cream-cheese",
+        "label": "Cream cheese",
+        "blurb": "bagel insurance"
+      },
+      {
+        "id": "pepper-jack",
+        "label": "Pepper jack",
+        "blurb": "mild, then a slow burn"
+      },
+      {
+        "id": "goat",
+        "label": "Goat cheese",
+        "blurb": "tangy, crumbled on hot bread"
+      },
+      {
+        "id": "cottage",
+        "label": "Cottage cheese",
+        "blurb": "lumps, honestly"
+      },
+      {
+        "id": "processed-slice",
+        "label": "Processed slice",
+        "blurb": "square, wrapped, guilty pleasure"
+      }
+    ]
+  },
+  {
+    "id": "chips-flavours",
+    "name": "Chips",
+    "group": "Food and drink",
+    "prompt": "Which bag gets opened first?",
+    "items": [
+      {
+        "id": "salt-vinegar",
+        "label": "Salt and vinegar",
+        "blurb": "hurts your tongue, worth it"
+      },
+      {
+        "id": "ketchup",
+        "label": "Ketchup",
+        "blurb": "red dust on everything"
+      },
+      {
+        "id": "all-dressed",
+        "label": "All dressed",
+        "blurb": "the Canadian answer to everything"
+      },
+      {
+        "id": "dill-pickle",
+        "label": "Dill pickle",
+        "blurb": "strangely addictive"
+      },
+      {
+        "id": "sour-cream-onion",
+        "label": "Sour cream and onion",
+        "blurb": "breath that ends conversations"
+      },
+      {
+        "id": "barbecue",
+        "label": "Barbecue",
+        "blurb": "sweet, smoky, orange fingers"
+      },
+      {
+        "id": "plain",
+        "label": "Plain",
+        "blurb": "a vehicle for dip"
+      },
+      {
+        "id": "cheese-puffs",
+        "label": "Cheese puffs",
+        "blurb": "not chips, still wins"
+      },
+      {
+        "id": "salt-pepper",
+        "label": "Salt and pepper",
+        "blurb": "quiet and correct"
+      },
+      {
+        "id": "jalapeno",
+        "label": "Jalapeno",
+        "blurb": "green, hot, gone by the handful"
+      },
+      {
+        "id": "ripple",
+        "label": "Ripple",
+        "blurb": "built for scooping"
+      },
+      {
+        "id": "kettle",
+        "label": "Kettle-cooked",
+        "blurb": "loud, hard, better crunch"
+      },
+      {
+        "id": "tortilla",
+        "label": "Tortilla chips",
+        "blurb": "only with salsa"
+      },
+      {
+        "id": "sweet-potato",
+        "label": "Sweet potato chips",
+        "blurb": "orange, sweet, thin as paper"
+      }
+    ]
+  },
+  {
+    "id": "desserts",
+    "name": "Desserts",
+    "prompt": "Which dessert?",
+    "items": [
+      {
+        "id": "apple-pie",
+        "label": "Apple pie"
+      },
+      {
+        "id": "cheesecake",
+        "label": "Cheesecake"
+      },
+      {
+        "id": "chocolate-cake",
+        "label": "Chocolate cake"
+      },
+      {
+        "id": "ice-cream",
+        "label": "Ice cream"
+      },
+      {
+        "id": "tiramisu",
+        "label": "Tiramisu"
+      },
+      {
+        "id": "brownies",
+        "label": "Brownies"
+      },
+      {
+        "id": "carrot-cake",
+        "label": "Carrot cake"
+      },
+      {
+        "id": "bread-pudding",
+        "label": "Bread pudding"
+      },
+      {
+        "id": "fruit-crumble",
+        "label": "Fruit crumble"
+      },
+      {
+        "id": "rice-pudding",
+        "label": "Rice pudding"
+      },
+      {
+        "id": "lemon-tart",
+        "label": "Lemon tart"
+      },
+      {
+        "id": "doughnuts",
+        "label": "Doughnuts"
+      },
+      {
+        "id": "pumpkin-pie",
+        "label": "Pumpkin pie"
+      },
+      {
+        "id": "smores",
+        "label": "S'mores"
+      }
+    ],
+    "group": "Food and drink"
+  },
+  {
+    "id": "fast-food",
+    "name": "Fast food places",
+    "prompt": "Which one?",
+    "items": [
+      {
+        "id": "burger-place",
+        "label": "Burger place"
+      },
+      {
+        "id": "taco-place",
+        "label": "Taco place"
+      },
+      {
+        "id": "fried-chicken-place",
+        "label": "Fried chicken place"
+      },
+      {
+        "id": "pizza-slice",
+        "label": "Pizza slice"
+      },
+      {
+        "id": "noodle-bar",
+        "label": "Noodle bar"
+      },
+      {
+        "id": "sandwich-shop",
+        "label": "Sandwich shop"
+      },
+      {
+        "id": "diner",
+        "label": "Diner"
+      },
+      {
+        "id": "drive-in",
+        "label": "Drive-in"
+      },
+      {
+        "id": "gyro-stand",
+        "label": "Gyro stand"
+      },
+      {
+        "id": "hot-dog-stand",
+        "label": "Hot dog stand"
+      },
+      {
+        "id": "sushi-counter",
+        "label": "Sushi counter"
+      },
+      {
+        "id": "burrito-place",
+        "label": "Burrito place"
+      },
+      {
+        "id": "ice-cream-stand",
+        "label": "Ice cream stand"
+      },
+      {
+        "id": "fish-and-chips",
+        "label": "Fish and chips"
+      }
+    ],
+    "group": "Food and drink"
+  },
+  {
+    "id": "hot-drinks",
+    "name": "Hot drinks",
+    "group": "Food and drink",
+    "prompt": "What is in your hand at 7 a.m.?",
+    "items": [
+      {
+        "id": "coffee-black",
+        "label": "Coffee, black",
+        "blurb": "no sugar, no ceremony"
+      },
+      {
+        "id": "double-double",
+        "label": "Double-double",
+        "blurb": "two cream, two sugar, a Canadian institution"
+      },
+      {
+        "id": "flat-white",
+        "label": "Flat white",
+        "blurb": "one strong shot, velvet milk"
+      },
+      {
+        "id": "cappuccino",
+        "label": "Cappuccino",
+        "blurb": "half foam, cocoa dust on top"
+      },
+      {
+        "id": "latte",
+        "label": "Latte",
+        "blurb": "mostly milk, held with both hands"
+      },
+      {
+        "id": "espresso",
+        "label": "Espresso",
+        "blurb": "one sip, then you are awake"
+      },
+      {
+        "id": "chai",
+        "label": "Chai",
+        "blurb": "cardamom, cloves, too much sugar"
+      },
+      {
+        "id": "green-tea",
+        "label": "Green tea",
+        "blurb": "grassy, faintly bitter, endlessly refilled"
+      },
+      {
+        "id": "orange-pekoe",
+        "label": "Orange pekoe",
+        "blurb": "bag in a mug, milk after"
+      },
+      {
+        "id": "hot-chocolate",
+        "label": "Hot chocolate",
+        "blurb": "marshmallows that dissolve too fast"
+      },
+      {
+        "id": "apple-cider",
+        "label": "Hot apple cider",
+        "blurb": "cinnamon stick, steam on your glasses"
+      },
+      {
+        "id": "mocha",
+        "label": "Mocha",
+        "blurb": "coffee pretending to be dessert"
+      },
+      {
+        "id": "peppermint-tea",
+        "label": "Peppermint tea",
+        "blurb": "no caffeine, no fun"
+      },
+      {
+        "id": "eggnog",
+        "label": "Eggnog",
+        "blurb": "nutmeg, once a year, straight from the carton"
+      }
+    ]
+  },
+  {
+    "id": "pizza-toppings",
+    "name": "Pizza toppings",
+    "prompt": "Which topping?",
+    "items": [
+      {
+        "id": "pepperoni",
+        "label": "Pepperoni"
+      },
+      {
+        "id": "mushrooms",
+        "label": "Mushrooms"
+      },
+      {
+        "id": "italian-sausage",
+        "label": "Italian sausage"
+      },
+      {
+        "id": "bacon",
+        "label": "Bacon"
+      },
+      {
+        "id": "green-peppers",
+        "label": "Green peppers"
+      },
+      {
+        "id": "onions",
+        "label": "Onions"
+      },
+      {
+        "id": "black-olives",
+        "label": "Black olives"
+      },
+      {
+        "id": "pineapple",
+        "label": "Pineapple"
+      },
+      {
+        "id": "anchovies",
+        "label": "Anchovies"
+      },
+      {
+        "id": "ham",
+        "label": "Ham"
+      },
+      {
+        "id": "extra-cheese",
+        "label": "Extra cheese"
+      },
+      {
+        "id": "hot-peppers",
+        "label": "Hot peppers"
+      },
+      {
+        "id": "spinach",
+        "label": "Spinach"
+      },
+      {
+        "id": "artichoke-hearts",
+        "label": "Artichoke hearts"
+      }
+    ],
+    "group": "Food and drink"
+  },
+  {
+    "id": "road-snacks",
+    "name": "Road trip snacks",
+    "prompt": "Which snack?",
+    "items": [
+      {
+        "id": "beef-jerky",
+        "label": "Beef jerky"
+      },
+      {
+        "id": "trail-mix",
+        "label": "Trail mix"
+      },
+      {
+        "id": "chips",
+        "label": "Chips"
+      },
+      {
+        "id": "chocolate-bar",
+        "label": "Chocolate bar"
+      },
+      {
+        "id": "licorice",
+        "label": "Licorice"
+      },
+      {
+        "id": "pretzels",
+        "label": "Pretzels"
+      },
+      {
+        "id": "granola-bars",
+        "label": "Granola bars"
+      },
+      {
+        "id": "apples",
+        "label": "Apples"
+      },
+      {
+        "id": "sunflower-seeds",
+        "label": "Sunflower seeds"
+      },
+      {
+        "id": "cheese-sticks",
+        "label": "Cheese sticks"
+      },
+      {
+        "id": "popcorn",
+        "label": "Popcorn"
+      },
+      {
+        "id": "cookies",
+        "label": "Cookies"
+      },
+      {
+        "id": "soda",
+        "label": "Soda"
+      },
+      {
+        "id": "coffee",
+        "label": "Coffee"
+      }
+    ],
+    "group": "Food and drink"
+  },
+  {
     "id": "sandwiches",
     "name": "Sandwiches",
     "prompt": "Which sandwich?",
@@ -74,383 +706,396 @@
         "label": "Pulled pork",
         "blurb": "slaw, pickle, brioche bun"
       }
-    ]
+    ],
+    "group": "Food and drink"
   },
   {
-    "id": "pizza-toppings",
-    "name": "Pizza toppings",
-    "prompt": "Which topping?",
+    "id": "candy",
+    "name": "Candy",
+    "group": "Sweet tooth",
+    "prompt": "Which one at the till?",
     "items": [
       {
-        "id": "pepperoni",
-        "label": "Pepperoni"
+        "id": "sour-patch-kids",
+        "label": "Sour Patch Kids",
+        "blurb": "sour first, sweet after"
       },
       {
-        "id": "mushrooms",
-        "label": "Mushrooms"
+        "id": "skittles",
+        "label": "Skittles",
+        "blurb": "sorted by colour, eaten by the handful"
       },
       {
-        "id": "italian-sausage",
-        "label": "Italian sausage"
+        "id": "mms",
+        "label": "M&Ms",
+        "blurb": "peanut or plain, pick a side"
       },
       {
-        "id": "bacon",
-        "label": "Bacon"
+        "id": "snickers",
+        "label": "Snickers",
+        "blurb": "actually a meal"
       },
       {
-        "id": "green-peppers",
-        "label": "Green peppers"
+        "id": "twizzlers",
+        "label": "Twizzlers",
+        "blurb": "red plastic, still eaten"
       },
       {
-        "id": "onions",
-        "label": "Onions"
+        "id": "gummy-bears",
+        "label": "Gummy bears",
+        "blurb": "ears first, always"
       },
       {
-        "id": "black-olives",
-        "label": "Black olives"
+        "id": "kitkat",
+        "label": "KitKat",
+        "blurb": "snap, then ration"
       },
       {
-        "id": "pineapple",
-        "label": "Pineapple"
+        "id": "black-licorice",
+        "label": "Black licorice",
+        "blurb": "the great divider"
       },
       {
-        "id": "anchovies",
-        "label": "Anchovies"
+        "id": "nerds",
+        "label": "Nerds",
+        "blurb": "tiny, crunchy, cuts your tongue"
       },
       {
-        "id": "ham",
-        "label": "Ham"
+        "id": "caramels",
+        "label": "Caramels",
+        "blurb": "pull your fillings out"
       },
       {
-        "id": "extra-cheese",
-        "label": "Extra cheese"
+        "id": "peanut-butter-cups",
+        "label": "Peanut butter cups",
+        "blurb": "cold from the fridge"
       },
       {
-        "id": "hot-peppers",
-        "label": "Hot peppers"
+        "id": "jelly-beans",
+        "label": "Jelly beans",
+        "blurb": "popcorn flavour is a trap"
       },
       {
-        "id": "spinach",
-        "label": "Spinach"
+        "id": "candy-canes",
+        "label": "Candy canes",
+        "blurb": "once a year, sharp edges"
       },
       {
-        "id": "artichoke-hearts",
-        "label": "Artichoke hearts"
+        "id": "tootsie-rolls",
+        "label": "Tootsie rolls",
+        "blurb": "cheap, chewy, everywhere"
       }
     ]
   },
   {
-    "id": "fast-food",
-    "name": "Fast food places",
-    "prompt": "Which one?",
+    "id": "cookies",
+    "name": "Cookies",
+    "group": "Sweet tooth",
+    "prompt": "Which one from the tray?",
     "items": [
       {
-        "id": "burger-place",
-        "label": "Burger place"
+        "id": "chocolate-chip",
+        "label": "Chocolate chip",
+        "blurb": "warm, gooey, the standard"
       },
       {
-        "id": "taco-place",
-        "label": "Taco place"
+        "id": "oatmeal-raisin",
+        "label": "Oatmeal raisin",
+        "blurb": "the betrayal"
       },
       {
-        "id": "fried-chicken-place",
-        "label": "Fried chicken place"
+        "id": "shortbread",
+        "label": "Shortbread",
+        "blurb": "butter, sugar, crumble"
       },
       {
-        "id": "pizza-slice",
-        "label": "Pizza slice"
+        "id": "peanut-butter",
+        "label": "Peanut butter",
+        "blurb": "fork marks on top"
       },
       {
-        "id": "noodle-bar",
-        "label": "Noodle bar"
+        "id": "ginger-snaps",
+        "label": "Ginger snaps",
+        "blurb": "hard, spicy, dunked"
       },
       {
-        "id": "sandwich-shop",
-        "label": "Sandwich shop"
+        "id": "sugar-cookie",
+        "label": "Sugar cookie",
+        "blurb": "frosted, seasonal shapes"
       },
       {
-        "id": "diner",
-        "label": "Diner"
+        "id": "white-choc-macadamia",
+        "label": "White chocolate macadamia",
+        "blurb": "rich, nutty, underrated"
       },
       {
-        "id": "drive-in",
-        "label": "Drive-in"
+        "id": "snickerdoodle",
+        "label": "Snickerdoodle",
+        "blurb": "cinnamon sugar crackle"
       },
       {
-        "id": "gyro-stand",
-        "label": "Gyro stand"
+        "id": "oreo",
+        "label": "Oreo",
+        "blurb": "twist, lick, or just eat"
       },
       {
-        "id": "hot-dog-stand",
-        "label": "Hot dog stand"
+        "id": "molasses",
+        "label": "Molasses",
+        "blurb": "dark, chewy, Christmas"
       },
       {
-        "id": "sushi-counter",
-        "label": "Sushi counter"
+        "id": "nanaimo-bar",
+        "label": "Nanaimo bar",
+        "blurb": "no baking, custard middle"
       },
       {
-        "id": "burrito-place",
-        "label": "Burrito place"
+        "id": "lemon",
+        "label": "Lemon",
+        "blurb": "iced, zesty, thin"
       },
       {
-        "id": "ice-cream-stand",
-        "label": "Ice cream stand"
+        "id": "double-chocolate",
+        "label": "Double chocolate",
+        "blurb": "cocoa dough, chocolate chunks"
       },
       {
-        "id": "fish-and-chips",
-        "label": "Fish and chips"
+        "id": "fortune",
+        "label": "Fortune cookie",
+        "blurb": "not dessert, still eaten"
       }
     ]
   },
   {
-    "id": "breakfast",
-    "name": "Breakfast",
-    "prompt": "Which breakfast?",
+    "id": "donuts",
+    "name": "Donuts",
+    "group": "Sweet tooth",
+    "prompt": "Which one in the box?",
     "items": [
       {
-        "id": "pancakes",
-        "label": "Pancakes"
+        "id": "glazed",
+        "label": "Glazed",
+        "blurb": "still warm, fingers shiny"
       },
       {
-        "id": "waffles",
-        "label": "Waffles"
+        "id": "boston-cream",
+        "label": "Boston cream",
+        "blurb": "custard under a chocolate lid"
       },
       {
-        "id": "french-toast",
-        "label": "French toast"
+        "id": "apple-fritter",
+        "label": "Apple fritter",
+        "blurb": "craggy, cinnamon, enormous"
       },
       {
-        "id": "eggs-benedict",
-        "label": "Eggs Benedict"
+        "id": "jelly-filled",
+        "label": "Jelly-filled",
+        "blurb": "the roulette of the box"
       },
       {
-        "id": "bacon-and-eggs",
-        "label": "Bacon and eggs"
+        "id": "maple-bacon",
+        "label": "Maple bacon",
+        "blurb": "salty, sweet, too much"
       },
       {
-        "id": "oatmeal",
-        "label": "Oatmeal"
+        "id": "sprinkle",
+        "label": "Sprinkles",
+        "blurb": "mostly for the photo"
       },
       {
-        "id": "granola-and-yogurt",
-        "label": "Granola and yogurt"
+        "id": "old-fashioned",
+        "label": "Old-fashioned",
+        "blurb": "cracked edges, nutmeg"
       },
       {
-        "id": "bagel-and-cream-cheese",
-        "label": "Bagel and cream cheese"
+        "id": "chocolate-glazed",
+        "label": "Chocolate glazed",
+        "blurb": "the safe bet"
       },
       {
-        "id": "breakfast-burrito",
-        "label": "Breakfast burrito"
+        "id": "cruller",
+        "label": "Cruller",
+        "blurb": "light, twisted, disappears"
       },
       {
-        "id": "hash-browns",
-        "label": "Hash browns"
+        "id": "bear-claw",
+        "label": "Bear claw",
+        "blurb": "almond bits in the grooves"
       },
       {
-        "id": "smoothie-bowl",
-        "label": "Smoothie bowl"
+        "id": "powdered",
+        "label": "Powdered",
+        "blurb": "white shirt warning"
       },
       {
-        "id": "toast-and-jam",
-        "label": "Toast and jam"
+        "id": "cinnamon-sugar",
+        "label": "Cinnamon sugar",
+        "blurb": "shake the bag"
       },
       {
-        "id": "croissant",
-        "label": "Croissant"
+        "id": "coconut",
+        "label": "Coconut",
+        "blurb": "toasted, sweet, divisive"
       },
       {
-        "id": "big-cooked-breakfast",
-        "label": "Big cooked breakfast"
+        "id": "long-john",
+        "label": "Long John",
+        "blurb": "an eclair by another name"
       }
     ]
   },
   {
-    "id": "desserts",
-    "name": "Desserts",
-    "prompt": "Which dessert?",
+    "id": "ice-cream",
+    "name": "Ice cream",
+    "group": "Sweet tooth",
+    "prompt": "Which scoop?",
     "items": [
       {
-        "id": "apple-pie",
-        "label": "Apple pie"
+        "id": "vanilla",
+        "label": "Vanilla",
+        "blurb": "the test of any shop"
       },
       {
-        "id": "cheesecake",
-        "label": "Cheesecake"
+        "id": "chocolate",
+        "label": "Chocolate",
+        "blurb": "dark, cold, correct"
       },
       {
-        "id": "chocolate-cake",
-        "label": "Chocolate cake"
+        "id": "strawberry",
+        "label": "Strawberry",
+        "blurb": "pink with real bits"
       },
       {
-        "id": "ice-cream",
-        "label": "Ice cream"
+        "id": "mint-chip",
+        "label": "Mint chocolate chip",
+        "blurb": "green, cold, divisive"
       },
       {
-        "id": "tiramisu",
-        "label": "Tiramisu"
+        "id": "butter-pecan",
+        "label": "Butter pecan",
+        "blurb": "grandparent energy"
       },
       {
-        "id": "brownies",
-        "label": "Brownies"
+        "id": "cookies-and-cream",
+        "label": "Cookies and cream",
+        "blurb": "chunks, not crumbs"
       },
       {
-        "id": "carrot-cake",
-        "label": "Carrot cake"
+        "id": "maple-walnut",
+        "label": "Maple walnut",
+        "blurb": "sweet, nutty, quietly Canadian"
       },
       {
-        "id": "bread-pudding",
-        "label": "Bread pudding"
-      },
-      {
-        "id": "fruit-crumble",
-        "label": "Fruit crumble"
-      },
-      {
-        "id": "rice-pudding",
-        "label": "Rice pudding"
-      },
-      {
-        "id": "lemon-tart",
-        "label": "Lemon tart"
-      },
-      {
-        "id": "doughnuts",
-        "label": "Doughnuts"
-      },
-      {
-        "id": "pumpkin-pie",
-        "label": "Pumpkin pie"
-      },
-      {
-        "id": "smores",
-        "label": "S'mores"
-      }
-    ]
-  },
-  {
-    "id": "road-snacks",
-    "name": "Road trip snacks",
-    "prompt": "Which snack?",
-    "items": [
-      {
-        "id": "beef-jerky",
-        "label": "Beef jerky"
-      },
-      {
-        "id": "trail-mix",
-        "label": "Trail mix"
-      },
-      {
-        "id": "chips",
-        "label": "Chips"
-      },
-      {
-        "id": "chocolate-bar",
-        "label": "Chocolate bar"
-      },
-      {
-        "id": "licorice",
-        "label": "Licorice"
-      },
-      {
-        "id": "pretzels",
-        "label": "Pretzels"
-      },
-      {
-        "id": "granola-bars",
-        "label": "Granola bars"
-      },
-      {
-        "id": "apples",
-        "label": "Apples"
-      },
-      {
-        "id": "sunflower-seeds",
-        "label": "Sunflower seeds"
-      },
-      {
-        "id": "cheese-sticks",
-        "label": "Cheese sticks"
-      },
-      {
-        "id": "popcorn",
-        "label": "Popcorn"
-      },
-      {
-        "id": "cookies",
-        "label": "Cookies"
-      },
-      {
-        "id": "soda",
-        "label": "Soda"
+        "id": "rocky-road",
+        "label": "Rocky road",
+        "blurb": "marshmallow, almond, chocolate"
       },
       {
         "id": "coffee",
-        "label": "Coffee"
+        "label": "Coffee",
+        "blurb": "bitter, adult, good in a cone"
+      },
+      {
+        "id": "neapolitan",
+        "label": "Neapolitan",
+        "blurb": "three flavours, one wrong stripe"
+      },
+      {
+        "id": "bubblegum",
+        "label": "Bubblegum",
+        "blurb": "blue, sweet, for children only"
+      },
+      {
+        "id": "salted-caramel",
+        "label": "Salted caramel",
+        "blurb": "the modern default"
+      },
+      {
+        "id": "black-raspberry",
+        "label": "Black raspberry",
+        "blurb": "purple, tart, New England"
+      },
+      {
+        "id": "soft-serve",
+        "label": "Soft serve",
+        "blurb": "swirl, cone, hurry"
       }
     ]
   },
   {
-    "id": "vacations",
-    "name": "Vacation spots",
-    "prompt": "Where would you go?",
+    "id": "pies",
+    "name": "Pies",
+    "group": "Sweet tooth",
+    "prompt": "Which pie gets the fork?",
     "items": [
       {
-        "id": "beach-town",
-        "label": "Beach town"
+        "id": "apple",
+        "label": "Apple",
+        "blurb": "cinnamon, lattice, vanilla on top"
       },
       {
-        "id": "mountain-cabin",
-        "label": "Mountain cabin"
+        "id": "pumpkin",
+        "label": "Pumpkin",
+        "blurb": "nutmeg, whipped cream, October"
       },
       {
-        "id": "big-city",
-        "label": "Big city"
+        "id": "pecan",
+        "label": "Pecan",
+        "blurb": "sticky, sweet, expensive"
       },
       {
-        "id": "cabin-on-a-lake",
-        "label": "Cabin on a lake"
+        "id": "lemon-meringue",
+        "label": "Lemon meringue",
+        "blurb": "sour under a cloud"
       },
       {
-        "id": "desert-road-trip",
-        "label": "Desert road trip"
+        "id": "butter-tart",
+        "label": "Butter tart",
+        "blurb": "runny, sweet, raisins optional"
       },
       {
-        "id": "island",
-        "label": "Island"
+        "id": "cherry",
+        "label": "Cherry",
+        "blurb": "red filling, threat of staining"
       },
       {
-        "id": "national-park",
-        "label": "National park"
+        "id": "rhubarb",
+        "label": "Rhubarb",
+        "blurb": "sour enough to make you wince"
       },
       {
-        "id": "ski-hill",
-        "label": "Ski hill"
+        "id": "coconut-cream",
+        "label": "Coconut cream",
+        "blurb": "toasted, cold, old-fashioned"
       },
       {
-        "id": "farm-stay",
-        "label": "Farm stay"
+        "id": "tourtiere",
+        "label": "Tourtiere",
+        "blurb": "spice and pork, Christmas Eve"
       },
       {
-        "id": "long-train-ride",
-        "label": "Long train ride"
+        "id": "blueberry",
+        "label": "Blueberry",
+        "blurb": "purple juice on the plate"
       },
       {
-        "id": "camping",
-        "label": "Camping"
+        "id": "key-lime",
+        "label": "Key lime",
+        "blurb": "green, sharp, graham crust"
       },
       {
-        "id": "coastal-drive",
-        "label": "Coastal drive"
+        "id": "chocolate-silk",
+        "label": "Chocolate silk",
+        "blurb": "dense, cold, quiet"
       },
       {
-        "id": "old-town",
-        "label": "Old town"
+        "id": "mincemeat",
+        "label": "Mincemeat",
+        "blurb": "the one nobody makes anymore"
       },
       {
-        "id": "hot-springs",
-        "label": "Hot springs"
+        "id": "chicken-pot-pie",
+        "label": "Chicken pot pie",
+        "blurb": "gravy, peas, cream crust"
       }
     ]
   },
@@ -515,6 +1160,603 @@
         "id": "denver",
         "label": "Denver"
       }
+    ],
+    "group": "Places and travel"
+  },
+  {
+    "id": "road-trip-drives",
+    "name": "Drives",
+    "group": "Places and travel",
+    "prompt": "Which road, and who is driving?",
+    "items": [
+      {
+        "id": "icefields-parkway",
+        "label": "Icefields Parkway",
+        "blurb": "glaciers both sides, pull over often"
+      },
+      {
+        "id": "cabot-trail",
+        "label": "Cabot Trail",
+        "blurb": "cliff on one side, sea on the other"
+      },
+      {
+        "id": "route-66",
+        "label": "Route 66",
+        "blurb": "neon, motels, mostly the idea"
+      },
+      {
+        "id": "pacific-coast",
+        "label": "Pacific Coast Highway",
+        "blurb": "ocean left, cliff right, slow"
+      },
+      {
+        "id": "going-to-the-sun",
+        "label": "Going-to-the-Sun Road",
+        "blurb": "narrow ledge, glacier above"
+      },
+      {
+        "id": "sea-to-sky",
+        "label": "Sea-to-Sky",
+        "blurb": "fjord, ferry towns, rain"
+      },
+      {
+        "id": "blue-ridge",
+        "label": "Blue Ridge Parkway",
+        "blurb": "haze, overlooks, no billboards"
+      },
+      {
+        "id": "overseas-highway",
+        "label": "Overseas Highway",
+        "blurb": "bridge after bridge, water both sides"
+      },
+      {
+        "id": "road-to-hana",
+        "label": "Road to Hana",
+        "blurb": "620 curves, waterfalls, one lane"
+      },
+      {
+        "id": "rogers-pass",
+        "label": "Rogers Pass",
+        "blurb": "avalanche sheds, snow in June"
+      },
+      {
+        "id": "dempster",
+        "label": "Dempster Highway",
+        "blurb": "gravel, caribou, no towns"
+      },
+      {
+        "id": "drumheller",
+        "label": "Drumheller badlands",
+        "blurb": "hoodoos, dinosaurs, dry heat"
+      },
+      {
+        "id": "natchez-trace",
+        "label": "Natchez Trace",
+        "blurb": "green tunnel, no trucks, 50 mph"
+      },
+      {
+        "id": "gravel-grid",
+        "label": "Any gravel grid road",
+        "blurb": "dust, canola, a decent radio"
+      }
+    ]
+  },
+  {
+    "id": "vacations",
+    "name": "Vacation spots",
+    "prompt": "Where would you go?",
+    "items": [
+      {
+        "id": "beach-town",
+        "label": "Beach town"
+      },
+      {
+        "id": "mountain-cabin",
+        "label": "Mountain cabin"
+      },
+      {
+        "id": "big-city",
+        "label": "Big city"
+      },
+      {
+        "id": "cabin-on-a-lake",
+        "label": "Cabin on a lake"
+      },
+      {
+        "id": "desert-road-trip",
+        "label": "Desert road trip"
+      },
+      {
+        "id": "island",
+        "label": "Island"
+      },
+      {
+        "id": "national-park",
+        "label": "National park"
+      },
+      {
+        "id": "ski-hill",
+        "label": "Ski hill"
+      },
+      {
+        "id": "farm-stay",
+        "label": "Farm stay"
+      },
+      {
+        "id": "long-train-ride",
+        "label": "Long train ride"
+      },
+      {
+        "id": "camping",
+        "label": "Camping"
+      },
+      {
+        "id": "coastal-drive",
+        "label": "Coastal drive"
+      },
+      {
+        "id": "old-town",
+        "label": "Old town"
+      },
+      {
+        "id": "hot-springs",
+        "label": "Hot springs"
+      }
+    ],
+    "group": "Places and travel"
+  },
+  {
+    "id": "wild-places",
+    "name": "Wild places",
+    "group": "Places and travel",
+    "prompt": "Where do you want to be standing?",
+    "items": [
+      {
+        "id": "cold-lake",
+        "label": "Cold lake at dawn",
+        "blurb": "mist, loons, no one else"
+      },
+      {
+        "id": "prairie",
+        "label": "Open prairie",
+        "blurb": "wind, grass, a horizon you can see"
+      },
+      {
+        "id": "mountain",
+        "label": "Mountain ridge",
+        "blurb": "cold air, loose rock, a view earned"
+      },
+      {
+        "id": "forest",
+        "label": "Deep forest",
+        "blurb": "spruce, moss, sound swallowed"
+      },
+      {
+        "id": "beach",
+        "label": "Warm beach",
+        "blurb": "sand in everything, worth it"
+      },
+      {
+        "id": "river-valley",
+        "label": "River valley",
+        "blurb": "cottonwoods, a path, dog off leash"
+      },
+      {
+        "id": "canyon",
+        "label": "Canyon floor",
+        "blurb": "walls of red rock, a thin sky"
+      },
+      {
+        "id": "island",
+        "label": "Small island",
+        "blurb": "one cabin, one dock, a boat"
+      },
+      {
+        "id": "glacier",
+        "label": "Glacier edge",
+        "blurb": "blue ice, cold breath, no sound"
+      },
+      {
+        "id": "desert",
+        "label": "High desert",
+        "blurb": "sage, heat, a long way to anywhere"
+      },
+      {
+        "id": "foothills",
+        "label": "Foothills",
+        "blurb": "aspen, gravel road, cows on the loose"
+      },
+      {
+        "id": "bog",
+        "label": "Muskeg bog",
+        "blurb": "black water, labrador tea, mosquitoes"
+      },
+      {
+        "id": "cave",
+        "label": "Cave mouth",
+        "blurb": "cool air, dripping, a flashlight"
+      },
+      {
+        "id": "fishing-harbour",
+        "label": "Fishing harbour",
+        "blurb": "diesel, gulls, ropes slapping mast"
+      }
+    ]
+  },
+  {
+    "id": "books",
+    "name": "Books",
+    "prompt": "Which would you reread?",
+    "items": [
+      {
+        "id": "to-kill-a-mockingbird",
+        "label": "To Kill a Mockingbird"
+      },
+      {
+        "id": "anne-of-green-gables",
+        "label": "Anne of Green Gables"
+      },
+      {
+        "id": "little-women",
+        "label": "Little Women"
+      },
+      {
+        "id": "charlottes-web",
+        "label": "Charlotte's Web"
+      },
+      {
+        "id": "the-outsiders",
+        "label": "The Outsiders"
+      },
+      {
+        "id": "watership-down",
+        "label": "Watership Down"
+      },
+      {
+        "id": "pride-and-prejudice",
+        "label": "Pride and Prejudice"
+      },
+      {
+        "id": "the-great-gatsby",
+        "label": "The Great Gatsby"
+      },
+      {
+        "id": "jane-eyre",
+        "label": "Jane Eyre"
+      },
+      {
+        "id": "the-hobbit",
+        "label": "The Hobbit"
+      },
+      {
+        "id": "matilda",
+        "label": "Matilda"
+      },
+      {
+        "id": "where-the-red-fern-grows",
+        "label": "Where the Red Fern Grows"
+      },
+      {
+        "id": "the-book-thief",
+        "label": "The Book Thief"
+      },
+      {
+        "id": "huckleberry-finn",
+        "label": "Huckleberry Finn"
+      }
+    ],
+    "group": "Culture and media"
+  },
+  {
+    "id": "cartoons",
+    "name": "Cartoons",
+    "group": "Culture and media",
+    "prompt": "Which one is already on?",
+    "items": [
+      {
+        "id": "looney-tunes",
+        "label": "Looney Tunes",
+        "blurb": "anvils, dynamite, no consequences"
+      },
+      {
+        "id": "tom-and-jerry",
+        "label": "Tom and Jerry",
+        "blurb": "chase, smash, repeat"
+      },
+      {
+        "id": "scooby-doo",
+        "label": "Scooby-Doo",
+        "blurb": "costume, trap, unmasking"
+      },
+      {
+        "id": "the-simpsons",
+        "label": "The Simpsons",
+        "blurb": "yellow, sharp, everywhere"
+      },
+      {
+        "id": "flintstones",
+        "label": "The Flintstones",
+        "blurb": "stone wheels, stone everything"
+      },
+      {
+        "id": "jetsons",
+        "label": "The Jetsons",
+        "blurb": "the future, with a robot maid"
+      },
+      {
+        "id": "popeye",
+        "label": "Popeye",
+        "blurb": "spinach, forearms, a song"
+      },
+      {
+        "id": "pink-panther",
+        "label": "The Pink Panther",
+        "blurb": "no dialogue, one theme song"
+      },
+      {
+        "id": "peanuts-specials",
+        "label": "Peanuts specials",
+        "blurb": "the tree, the piano, the sigh"
+      },
+      {
+        "id": "spongebob",
+        "label": "SpongeBob",
+        "blurb": "underwater, absurd, everywhere"
+      },
+      {
+        "id": "arthur",
+        "label": "Arthur",
+        "blurb": "aardvark, library, feelings"
+      },
+      {
+        "id": "inspector-gadget",
+        "label": "Inspector Gadget",
+        "blurb": "go go gadget everything"
+      },
+      {
+        "id": "he-man",
+        "label": "He-Man",
+        "blurb": "muscles, sword, toy commercial"
+      },
+      {
+        "id": "bluey",
+        "label": "Bluey",
+        "blurb": "six minutes, better than most"
+      }
+    ]
+  },
+  {
+    "id": "comic-strips",
+    "name": "Comic strips",
+    "group": "Culture and media",
+    "prompt": "Which page do you read first?",
+    "items": [
+      {
+        "id": "peanuts",
+        "label": "Peanuts",
+        "blurb": "one football, endless hope"
+      },
+      {
+        "id": "garfield",
+        "label": "Garfield",
+        "blurb": "lasagna, Monday, a smug cat"
+      },
+      {
+        "id": "calvin-and-hobbes",
+        "label": "Calvin and Hobbes",
+        "blurb": "tiger, wagon, deep thoughts"
+      },
+      {
+        "id": "for-better",
+        "label": "For Better or For Worse",
+        "blurb": "the family that aged with you"
+      },
+      {
+        "id": "blondie",
+        "label": "Blondie",
+        "blurb": "sandwiches and long marriages"
+      },
+      {
+        "id": "dennis-the-menace",
+        "label": "Dennis the Menace",
+        "blurb": "fence, slingshot, neighbour"
+      },
+      {
+        "id": "marmaduke",
+        "label": "Marmaduke",
+        "blurb": "enormous dog, small sofa"
+      },
+      {
+        "id": "family-circus",
+        "label": "The Family Circus",
+        "blurb": "dotted path, one kid's logic"
+      },
+      {
+        "id": "hagar",
+        "label": "Hagar the Horrible",
+        "blurb": "Viking, helmet, dinner"
+      },
+      {
+        "id": "wizard-of-id",
+        "label": "Wizard of Id",
+        "blurb": "dungeon jokes, one king"
+      },
+      {
+        "id": "bc",
+        "label": "B.C.",
+        "blurb": "cavemen, clams, puns"
+      },
+      {
+        "id": "doonesbury",
+        "label": "Doonesbury",
+        "blurb": "you skipped it as a kid"
+      },
+      {
+        "id": "dilbert",
+        "label": "Dilbert",
+        "blurb": "cubicle, tie, manager"
+      },
+      {
+        "id": "zits",
+        "label": "Zits",
+        "blurb": "teenager, fridge, phone"
+      }
+    ]
+  },
+  {
+    "id": "films",
+    "name": "Films",
+    "group": "Culture and media",
+    "prompt": "Which one do you put on again?",
+    "items": [
+      {
+        "id": "wizard-of-oz",
+        "label": "The Wizard of Oz",
+        "blurb": "ruby slippers, a witch, a song"
+      },
+      {
+        "id": "casablanca",
+        "label": "Casablanca",
+        "blurb": "fog, piano, the worst good decision"
+      },
+      {
+        "id": "jaws",
+        "label": "Jaws",
+        "blurb": "you will still go in the water"
+      },
+      {
+        "id": "star-wars",
+        "label": "Star Wars",
+        "blurb": "the one with the trench run"
+      },
+      {
+        "id": "et",
+        "label": "E.T.",
+        "blurb": "bikes, moon, everyone cries"
+      },
+      {
+        "id": "raiders",
+        "label": "Raiders of the Lost Ark",
+        "blurb": "boulder, whip, melting faces"
+      },
+      {
+        "id": "back-to-the-future",
+        "label": "Back to the Future",
+        "blurb": "DeLorean, lightning, 88 mph"
+      },
+      {
+        "id": "groundhog-day",
+        "label": "Groundhog Day",
+        "blurb": "same town until he gets it right"
+      },
+      {
+        "id": "jurassic-park",
+        "label": "Jurassic Park",
+        "blurb": "ripples in the water cup"
+      },
+      {
+        "id": "toy-story",
+        "label": "Toy Story",
+        "blurb": "the toys move when you leave"
+      },
+      {
+        "id": "princess-bride",
+        "label": "The Princess Bride",
+        "blurb": "sword fight, true love, a goat"
+      },
+      {
+        "id": "shawshank",
+        "label": "The Shawshank Redemption",
+        "blurb": "rain, a tunnel, a long wait"
+      },
+      {
+        "id": "home-alone",
+        "label": "Home Alone",
+        "blurb": "paint cans, tarantula, December"
+      },
+      {
+        "id": "apollo-13",
+        "label": "Apollo 13",
+        "blurb": "square peg, round hole, silence"
+      }
+    ]
+  },
+  {
+    "id": "music-instruments",
+    "name": "Instruments",
+    "group": "Culture and media",
+    "prompt": "Which one would you learn badly?",
+    "items": [
+      {
+        "id": "piano",
+        "label": "Piano",
+        "blurb": "one hand at a time, then together"
+      },
+      {
+        "id": "guitar",
+        "label": "Guitar",
+        "blurb": "four chords, every campfire"
+      },
+      {
+        "id": "drums",
+        "label": "Drums",
+        "blurb": "loud, physical, always wanted"
+      },
+      {
+        "id": "bass",
+        "label": "Bass",
+        "blurb": "nobody notices until it stops"
+      },
+      {
+        "id": "violin",
+        "label": "Violin",
+        "blurb": "beautiful, if you survive year one"
+      },
+      {
+        "id": "cello",
+        "label": "Cello",
+        "blurb": "low, warm, sits with you"
+      },
+      {
+        "id": "saxophone",
+        "label": "Saxophone",
+        "blurb": "a nightclub in a brass tube"
+      },
+      {
+        "id": "trumpet",
+        "label": "Trumpet",
+        "blurb": "three valves, no mercy"
+      },
+      {
+        "id": "banjo",
+        "label": "Banjo",
+        "blurb": "happy, twangy, hard to hide"
+      },
+      {
+        "id": "ukulele",
+        "label": "Ukulele",
+        "blurb": "four strings, instant camping"
+      },
+      {
+        "id": "harmonica",
+        "label": "Harmonica",
+        "blurb": "pocket-sized and bluesy"
+      },
+      {
+        "id": "accordion",
+        "label": "Accordion",
+        "blurb": "a whole party in a box"
+      },
+      {
+        "id": "fiddle",
+        "label": "Fiddle",
+        "blurb": "same as a violin, different party"
+      },
+      {
+        "id": "pedal-steel",
+        "label": "Pedal steel",
+        "blurb": "the crying sound in country"
+      }
     ]
   },
   {
@@ -578,7 +1820,8 @@
         "id": "elton-john",
         "label": "Elton John"
       }
-    ]
+    ],
+    "group": "Culture and media"
   },
   {
     "id": "tv-shows",
@@ -641,7 +1884,8 @@
         "id": "jeopardy",
         "label": "Jeopardy!"
       }
-    ]
+    ],
+    "group": "Culture and media"
   },
   {
     "id": "board-games",
@@ -703,6 +1947,241 @@
       {
         "id": "dominoes",
         "label": "Dominoes"
+      }
+    ],
+    "group": "Games and play"
+  },
+  {
+    "id": "card-games",
+    "name": "Card games",
+    "group": "Games and play",
+    "prompt": "Which deck comes out of the drawer?",
+    "items": [
+      {
+        "id": "euchre",
+        "label": "Euchre",
+        "blurb": "trump, partner, four tricks"
+      },
+      {
+        "id": "cribbage",
+        "label": "Cribbage",
+        "blurb": "pegs, fifteen two, the board"
+      },
+      {
+        "id": "crazy-eights",
+        "label": "Crazy Eights",
+        "blurb": "pick a suit, any suit"
+      },
+      {
+        "id": "go-fish",
+        "label": "Go Fish",
+        "blurb": "the first game you win"
+      },
+      {
+        "id": "rummy",
+        "label": "Rummy",
+        "blurb": "runs, sets, hoarding"
+      },
+      {
+        "id": "hearts",
+        "label": "Hearts",
+        "blurb": "avoid the queen, dump the spades"
+      },
+      {
+        "id": "spades",
+        "label": "Spades",
+        "blurb": "bid it, then make it"
+      },
+      {
+        "id": "poker",
+        "label": "Poker",
+        "blurb": "bluff, chips, no real money"
+      },
+      {
+        "id": "blackjack",
+        "label": "Blackjack",
+        "blurb": "hit or stand, that is it"
+      },
+      {
+        "id": "solitaire",
+        "label": "Solitaire",
+        "blurb": "one player, seven piles, hope"
+      },
+      {
+        "id": "uno",
+        "label": "Uno",
+        "blurb": "draw four, lose friends"
+      },
+      {
+        "id": "skip-bo",
+        "label": "Skip-Bo",
+        "blurb": "build the piles, hold the wilds"
+      },
+      {
+        "id": "war",
+        "label": "War",
+        "blurb": "flip, flip, flip, forever"
+      },
+      {
+        "id": "old-maid",
+        "label": "Old Maid",
+        "blurb": "avoid the last card"
+      }
+    ]
+  },
+  {
+    "id": "eras",
+    "name": "Eras",
+    "group": "Times and seasons",
+    "prompt": "Which one do you visit?",
+    "items": [
+      {
+        "id": "ancient-rome",
+        "label": "Ancient Rome",
+        "blurb": "baths, togas, very loud streets"
+      },
+      {
+        "id": "medieval",
+        "label": "Medieval village",
+        "blurb": "mud, bells, a long winter"
+      },
+      {
+        "id": "renaissance",
+        "label": "Renaissance Florence",
+        "blurb": "paint, marble, feuds"
+      },
+      {
+        "id": "wild-west",
+        "label": "The Wild West",
+        "blurb": "dust, saloon, no dentist"
+      },
+      {
+        "id": "1920s",
+        "label": "The 1920s",
+        "blurb": "jazz, tassels, motorcars"
+      },
+      {
+        "id": "1940s",
+        "label": "The 1940s",
+        "blurb": "radio, rationing, big bands"
+      },
+      {
+        "id": "1950s",
+        "label": "The 1950s",
+        "blurb": "chrome, diners, curfews"
+      },
+      {
+        "id": "1960s",
+        "label": "The 1960s",
+        "blurb": "guitars, protest, the moon"
+      },
+      {
+        "id": "1970s",
+        "label": "The 1970s",
+        "blurb": "wood panelling, orange, vinyl"
+      },
+      {
+        "id": "1980s",
+        "label": "The 1980s",
+        "blurb": "neon, cassettes, malls"
+      },
+      {
+        "id": "1990s",
+        "label": "The 1990s",
+        "blurb": "dial-up, flannel, the good TV"
+      },
+      {
+        "id": "2000s",
+        "label": "The 2000s",
+        "blurb": "flip phones and burned CDs"
+      },
+      {
+        "id": "2010s",
+        "label": "The 2010s",
+        "blurb": "apps, podcasts, food trucks"
+      },
+      {
+        "id": "now",
+        "label": "Right now",
+        "blurb": "everything at once, all the time"
+      }
+    ]
+  },
+  {
+    "id": "holidays",
+    "name": "Holidays",
+    "group": "Times and seasons",
+    "prompt": "Which day do you circle?",
+    "items": [
+      {
+        "id": "christmas-eve",
+        "label": "Christmas Eve",
+        "blurb": "the waiting beats the day"
+      },
+      {
+        "id": "christmas-morning",
+        "label": "Christmas morning",
+        "blurb": "coffee, paper, chaos"
+      },
+      {
+        "id": "new-years-eve",
+        "label": "New Year's Eve",
+        "blurb": "countdown, coats, a toast"
+      },
+      {
+        "id": "halloween",
+        "label": "Halloween",
+        "blurb": "costumes, porch lights, candy tax"
+      },
+      {
+        "id": "thanksgiving",
+        "label": "Thanksgiving",
+        "blurb": "turkey, pie, one argument"
+      },
+      {
+        "id": "easter",
+        "label": "Easter",
+        "blurb": "baskets, ham, chocolate"
+      },
+      {
+        "id": "canada-day",
+        "label": "Canada Day",
+        "blurb": "flags, fireworks, late sun"
+      },
+      {
+        "id": "july-fourth",
+        "label": "The Fourth of July",
+        "blurb": "grills, fireworks, heat"
+      },
+      {
+        "id": "labour-day",
+        "label": "Labour Day",
+        "blurb": "last swim, school looming"
+      },
+      {
+        "id": "may-long",
+        "label": "May long weekend",
+        "blurb": "first camping, still freezing"
+      },
+      {
+        "id": "boxing-day",
+        "label": "Boxing Day",
+        "blurb": "leftovers, sales, pyjamas"
+      },
+      {
+        "id": "birthday",
+        "label": "Your birthday",
+        "blurb": "cake, singing, all eyes on you"
+      },
+      {
+        "id": "last-day-school",
+        "label": "Last day of school",
+        "blurb": "empty desks, June light"
+      },
+      {
+        "id": "first-snow",
+        "label": "First real snow",
+        "blurb": "quiet, white, tires spinning"
       }
     ]
   },
@@ -767,68 +2246,708 @@
         "id": "spring-rain",
         "label": "Spring rain"
       }
+    ],
+    "group": "Times and seasons"
+  },
+  {
+    "id": "appliances",
+    "name": "Appliances",
+    "group": "Home and everyday",
+    "prompt": "Which one could you not lose?",
+    "items": [
+      {
+        "id": "fridge",
+        "label": "Fridge",
+        "blurb": "the quiet workhorse"
+      },
+      {
+        "id": "stove",
+        "label": "Stove",
+        "blurb": "four burners, one good one"
+      },
+      {
+        "id": "dishwasher",
+        "label": "Dishwasher",
+        "blurb": "the peace treaty"
+      },
+      {
+        "id": "washer",
+        "label": "Washer",
+        "blurb": "the machine you miss first"
+      },
+      {
+        "id": "dryer",
+        "label": "Dryer",
+        "blurb": "warm socks, lint trap"
+      },
+      {
+        "id": "microwave",
+        "label": "Microwave",
+        "blurb": "beep, done, no ceremony"
+      },
+      {
+        "id": "kettle",
+        "label": "Kettle",
+        "blurb": "the click that starts the day"
+      },
+      {
+        "id": "toaster",
+        "label": "Toaster",
+        "blurb": "one slot always broken"
+      },
+      {
+        "id": "coffee-maker",
+        "label": "Coffee maker",
+        "blurb": "the real alarm clock"
+      },
+      {
+        "id": "vacuum",
+        "label": "Vacuum",
+        "blurb": "loud, necessary, hated"
+      },
+      {
+        "id": "freezer",
+        "label": "Chest freezer",
+        "blurb": "mystery meat, labelled once"
+      },
+      {
+        "id": "slow-cooker",
+        "label": "Slow cooker",
+        "blurb": "leave it, come back to dinner"
+      },
+      {
+        "id": "stand-mixer",
+        "label": "Stand mixer",
+        "blurb": "flour cloud, December"
+      },
+      {
+        "id": "air-fryer",
+        "label": "Air fryer",
+        "blurb": "counter space sacrificed"
+      }
     ]
   },
   {
-    "id": "books",
-    "name": "Books",
-    "prompt": "Which would you reread?",
+    "id": "chores",
+    "name": "Chores",
+    "group": "Home and everyday",
+    "prompt": "Which one do you dodge?",
     "items": [
       {
-        "id": "to-kill-a-mockingbird",
-        "label": "To Kill a Mockingbird"
+        "id": "dishes",
+        "label": "Dishes",
+        "blurb": "warm water, wet sleeves"
       },
       {
-        "id": "anne-of-green-gables",
-        "label": "Anne of Green Gables"
+        "id": "laundry",
+        "label": "Laundry",
+        "blurb": "never actually finished"
       },
       {
-        "id": "little-women",
-        "label": "Little Women"
+        "id": "vacuuming",
+        "label": "Vacuuming",
+        "blurb": "cord, corners, the stairs"
       },
       {
-        "id": "charlottes-web",
-        "label": "Charlotte's Web"
+        "id": "dusting",
+        "label": "Dusting",
+        "blurb": "pointless, somehow mandatory"
       },
       {
-        "id": "the-outsiders",
-        "label": "The Outsiders"
+        "id": "mopping",
+        "label": "Mopping",
+        "blurb": "grey water, clean floor, sore back"
       },
       {
-        "id": "watership-down",
-        "label": "Watership Down"
+        "id": "garbage",
+        "label": "Taking out the garbage",
+        "blurb": "winter, boots, a raccoon"
       },
       {
-        "id": "pride-and-prejudice",
-        "label": "Pride and Prejudice"
+        "id": "mowing",
+        "label": "Mowing",
+        "blurb": "gas, noise, even stripes"
       },
       {
-        "id": "the-great-gatsby",
-        "label": "The Great Gatsby"
+        "id": "weeding",
+        "label": "Weeding",
+        "blurb": "backs, knees, quiet rage"
       },
       {
-        "id": "jane-eyre",
-        "label": "Jane Eyre"
+        "id": "shovelling",
+        "label": "Shovelling snow",
+        "blurb": "cold hands, warm after"
       },
       {
-        "id": "the-hobbit",
-        "label": "The Hobbit"
+        "id": "bathroom-clean",
+        "label": "Cleaning the bathroom",
+        "blurb": "gloves, bleach, regret"
       },
       {
-        "id": "matilda",
-        "label": "Matilda"
+        "id": "groceries",
+        "label": "Groceries",
+        "blurb": "list, cart, the long walk back"
       },
       {
-        "id": "where-the-red-fern-grows",
-        "label": "Where the Red Fern Grows"
+        "id": "cooking",
+        "label": "Cooking dinner",
+        "blurb": "every day, forever, no applause"
       },
       {
-        "id": "the-book-thief",
-        "label": "The Book Thief"
+        "id": "bed-making",
+        "label": "Making the bed",
+        "blurb": "five minutes, real payoff"
       },
       {
-        "id": "huckleberry-finn",
-        "label": "Huckleberry Finn"
+        "id": "windows",
+        "label": "Washing windows",
+        "blurb": "streaks, ladder, sunlight"
+      }
+    ]
+  },
+  {
+    "id": "rooms",
+    "name": "Rooms",
+    "group": "Home and everyday",
+    "prompt": "Which room do you actually live in?",
+    "items": [
+      {
+        "id": "kitchen",
+        "label": "Kitchen",
+        "blurb": "everyone ends up here anyway"
+      },
+      {
+        "id": "living-room",
+        "label": "Living room",
+        "blurb": "sofa, lamp, TV low"
+      },
+      {
+        "id": "porch",
+        "label": "Front porch",
+        "blurb": "a chair and the weather"
+      },
+      {
+        "id": "sunroom",
+        "label": "Sunroom",
+        "blurb": "too hot in July, perfect in May"
+      },
+      {
+        "id": "basement",
+        "label": "Basement",
+        "blurb": "cool, carpeted, a little damp"
+      },
+      {
+        "id": "garage",
+        "label": "Garage",
+        "blurb": "radio, sawdust, no one bothers you"
+      },
+      {
+        "id": "bedroom",
+        "label": "Bedroom",
+        "blurb": "door shut, phone face down"
+      },
+      {
+        "id": "bathroom",
+        "label": "Bathroom",
+        "blurb": "the only lock in the house"
+      },
+      {
+        "id": "dining-room",
+        "label": "Dining room",
+        "blurb": "used twice a year"
+      },
+      {
+        "id": "hallway",
+        "label": "Hallway",
+        "blurb": "photos, coats, traffic"
+      },
+      {
+        "id": "attic",
+        "label": "Attic",
+        "blurb": "boxes, heat, secrets"
+      },
+      {
+        "id": "mudroom",
+        "label": "Mudroom",
+        "blurb": "boots, gloves, a bench"
+      },
+      {
+        "id": "laundry-room",
+        "label": "Laundry room",
+        "blurb": "warm, humming, hidden"
+      },
+      {
+        "id": "back-step",
+        "label": "Back step",
+        "blurb": "coffee, dog, morning"
+      }
+    ]
+  },
+  {
+    "id": "smells",
+    "name": "Smells",
+    "group": "Home and everyday",
+    "prompt": "Which smell takes you back?",
+    "items": [
+      {
+        "id": "woodsmoke",
+        "label": "Woodsmoke",
+        "blurb": "cold air, chimney, October"
+      },
+      {
+        "id": "fresh-bread",
+        "label": "Fresh bread",
+        "blurb": "yeast and warm air"
+      },
+      {
+        "id": "gasoline",
+        "label": "Gasoline",
+        "blurb": "the gas station, oddly liked"
+      },
+      {
+        "id": "lilac",
+        "label": "Lilac",
+        "blurb": "one week in June"
+      },
+      {
+        "id": "old-books",
+        "label": "Old books",
+        "blurb": "glue, dust, paper"
+      },
+      {
+        "id": "chlorine",
+        "label": "Chlorine",
+        "blurb": "pool, summer, burned eyes"
+      },
+      {
+        "id": "coffee",
+        "label": "Coffee",
+        "blurb": "the first smell of the morning"
+      },
+      {
+        "id": "rain-on-pavement",
+        "label": "Rain on hot pavement",
+        "blurb": "July, after a long dry spell"
+      },
+      {
+        "id": "cut-grass",
+        "label": "Cut grass",
+        "blurb": "Saturday, outside, no school"
+      },
+      {
+        "id": "christmas-tree",
+        "label": "Christmas tree",
+        "blurb": "sap, needles, pine"
+      },
+      {
+        "id": "cinnamon",
+        "label": "Cinnamon",
+        "blurb": "toast, buns, December"
+      },
+      {
+        "id": "horse-barn",
+        "label": "Horse barn",
+        "blurb": "hay, leather, sweet feed"
+      },
+      {
+        "id": "diesel",
+        "label": "Diesel",
+        "blurb": "the truck idling outside"
+      },
+      {
+        "id": "sunscreen",
+        "label": "Sunscreen",
+        "blurb": "coconut, lake, everyone"
+      }
+    ]
+  },
+  {
+    "id": "tools",
+    "name": "Tools",
+    "group": "Home and everyday",
+    "prompt": "Which one is always missing?",
+    "items": [
+      {
+        "id": "hammer",
+        "label": "Hammer",
+        "blurb": "the first thing borrowed"
+      },
+      {
+        "id": "screwdriver",
+        "label": "Screwdriver",
+        "blurb": "never the right size"
+      },
+      {
+        "id": "drill",
+        "label": "Cordless drill",
+        "blurb": "two bits, one battery"
+      },
+      {
+        "id": "tape-measure",
+        "label": "Tape measure",
+        "blurb": "retracts like a threat"
+      },
+      {
+        "id": "level",
+        "label": "Level",
+        "blurb": "you will still hang it crooked"
+      },
+      {
+        "id": "wrench",
+        "label": "Wrench",
+        "blurb": "for the one pipe, once a year"
+      },
+      {
+        "id": "pliers",
+        "label": "Pliers",
+        "blurb": "wire, nut, emergency"
+      },
+      {
+        "id": "hand-saw",
+        "label": "Hand saw",
+        "blurb": "dust, patience, a crooked end"
+      },
+      {
+        "id": "ladder",
+        "label": "Ladder",
+        "blurb": "gutters, leaves, nerve"
+      },
+      {
+        "id": "utility-knife",
+        "label": "Utility knife",
+        "blurb": "dull blade, new blade, thumb"
+      },
+      {
+        "id": "duct-tape",
+        "label": "Duct tape",
+        "blurb": "fixes everything badly"
+      },
+      {
+        "id": "wd40",
+        "label": "WD-40",
+        "blurb": "the squeak ender"
+      },
+      {
+        "id": "paintbrush",
+        "label": "Paintbrush",
+        "blurb": "one good one, hidden"
+      },
+      {
+        "id": "caulking-gun",
+        "label": "Caulking gun",
+        "blurb": "a steady hand and a mess"
+      }
+    ]
+  },
+  {
+    "id": "first-jobs",
+    "name": "First jobs",
+    "group": "People and life",
+    "prompt": "Which one would you do again?",
+    "items": [
+      {
+        "id": "paper-route",
+        "label": "Paper route",
+        "blurb": "dark, cold, paid in coins"
+      },
+      {
+        "id": "babysitting",
+        "label": "Babysitting",
+        "blurb": "cash, cartoons, terror"
+      },
+      {
+        "id": "dish-pit",
+        "label": "Dish pit",
+        "blurb": "steam, gloves, the radio"
+      },
+      {
+        "id": "bagger",
+        "label": "Grocery bagger",
+        "blurb": "paper or plastic, small talk"
+      },
+      {
+        "id": "lifeguard",
+        "label": "Lifeguard",
+        "blurb": "whistle, sunburn, sitting"
+      },
+      {
+        "id": "camp-counsellor",
+        "label": "Camp counsellor",
+        "blurb": "songs, bug bites, glory"
+      },
+      {
+        "id": "farm-work",
+        "label": "Farm work",
+        "blurb": "early, dusty, honest"
+      },
+      {
+        "id": "cashier",
+        "label": "Retail cashier",
+        "blurb": "beep, small talk, break room"
+      },
+      {
+        "id": "fast-food",
+        "label": "Fast food",
+        "blurb": "grease, headset, closing shift"
+      },
+      {
+        "id": "telemarketing",
+        "label": "Telemarketing",
+        "blurb": "a script and a hang up"
+      },
+      {
+        "id": "moving-crew",
+        "label": "Moving crew",
+        "blurb": "stairs, couches, tips"
+      },
+      {
+        "id": "gas-station",
+        "label": "Gas station",
+        "blurb": "night shift, coffee, strangers"
+      },
+      {
+        "id": "receptionist",
+        "label": "Receptionist",
+        "blurb": "phone, plants, filing"
+      },
+      {
+        "id": "landscaping",
+        "label": "Landscaping",
+        "blurb": "sun, shovels, a good tan"
+      }
+    ]
+  },
+  {
+    "id": "pets",
+    "name": "Pets",
+    "group": "People and life",
+    "prompt": "Which one comes home?",
+    "items": [
+      {
+        "id": "dog",
+        "label": "A dog",
+        "blurb": "loyal, loud, needs walking"
+      },
+      {
+        "id": "cat",
+        "label": "A cat",
+        "blurb": "lives with you on its terms"
+      },
+      {
+        "id": "rabbit",
+        "label": "A rabbit",
+        "blurb": "soft, quiet, chews cables"
+      },
+      {
+        "id": "horse",
+        "label": "A horse",
+        "blurb": "expensive, enormous, worth it"
+      },
+      {
+        "id": "bird",
+        "label": "A bird",
+        "blurb": "talks, shrieks, lives forever"
+      },
+      {
+        "id": "goldfish",
+        "label": "A goldfish",
+        "blurb": "three weeks of responsibility"
+      },
+      {
+        "id": "hamster",
+        "label": "A hamster",
+        "blurb": "wheel at 2 a.m."
+      },
+      {
+        "id": "turtle",
+        "label": "A turtle",
+        "blurb": "slow, patient, unbothered"
+      },
+      {
+        "id": "snake",
+        "label": "A snake",
+        "blurb": "calm, quiet, clears a room"
+      },
+      {
+        "id": "ferret",
+        "label": "A ferret",
+        "blurb": "stolen keys, endless motion"
+      },
+      {
+        "id": "goat",
+        "label": "A goat",
+        "blurb": "eats anything, escapes always"
+      },
+      {
+        "id": "chickens",
+        "label": "Chickens",
+        "blurb": "eggs, gossip, a coop"
+      },
+      {
+        "id": "guinea-pig",
+        "label": "A guinea pig",
+        "blurb": "whistles when the fridge opens"
+      },
+      {
+        "id": "lizard",
+        "label": "A lizard",
+        "blurb": "heat lamp, stillness, cool factor"
+      }
+    ]
+  },
+  {
+    "id": "relatives",
+    "name": "Relatives",
+    "group": "People and life",
+    "prompt": "Who is at the table?",
+    "items": [
+      {
+        "id": "grandma",
+        "label": "Grandma",
+        "blurb": "the one who feeds everyone first"
+      },
+      {
+        "id": "grandpa",
+        "label": "Grandpa",
+        "blurb": "one story, told five times"
+      },
+      {
+        "id": "aunt",
+        "label": "An aunt",
+        "blurb": "asks the real questions"
+      },
+      {
+        "id": "uncle",
+        "label": "An uncle",
+        "blurb": "the one who ruins dessert"
+      },
+      {
+        "id": "cousin",
+        "label": "A cousin",
+        "blurb": "you were kids together once"
+      },
+      {
+        "id": "mother-in-law",
+        "label": "Mother-in-law",
+        "blurb": "opinions, freely offered"
+      },
+      {
+        "id": "father-in-law",
+        "label": "Father-in-law",
+        "blurb": "the grill, the garage, the silence"
+      },
+      {
+        "id": "nephew",
+        "label": "A nephew",
+        "blurb": "loud, sticky, adored"
+      },
+      {
+        "id": "niece",
+        "label": "A niece",
+        "blurb": "runs the room at four"
+      },
+      {
+        "id": "sibling",
+        "label": "A sibling",
+        "blurb": "the oldest grudge in the room"
+      },
+      {
+        "id": "historian",
+        "label": "The family historian",
+        "blurb": "names, dates, photographs"
+      },
+      {
+        "id": "dessert-bringer",
+        "label": "The one who brings dessert",
+        "blurb": "arrives late, forgiven"
+      },
+      {
+        "id": "early-leaver",
+        "label": "The one who leaves early",
+        "blurb": "coat on, keys out, goodbye"
+      },
+      {
+        "id": "arguer",
+        "label": "The one who argues",
+        "blurb": "any topic, any table"
+      }
+    ]
+  },
+  {
+    "id": "teachers",
+    "name": "Teachers",
+    "group": "People and life",
+    "prompt": "Which teacher do you still think about?",
+    "items": [
+      {
+        "id": "strict",
+        "label": "The strict one",
+        "blurb": "fair, terrifying, effective"
+      },
+      {
+        "id": "read-aloud",
+        "label": "The one who read aloud",
+        "blurb": "different voices, one chapter a day"
+      },
+      {
+        "id": "believed",
+        "label": "The one who believed you",
+        "blurb": "saw one thing nobody else did"
+      },
+      {
+        "id": "coach",
+        "label": "The coach",
+        "blurb": "whistle, van rides, life advice"
+      },
+      {
+        "id": "substitute",
+        "label": "The substitute",
+        "blurb": "a movie and a free period"
+      },
+      {
+        "id": "art",
+        "label": "The art teacher",
+        "blurb": "let the mess happen"
+      },
+      {
+        "id": "music",
+        "label": "The music teacher",
+        "blurb": "recorders, concerts, posture"
+      },
+      {
+        "id": "librarian",
+        "label": "The librarian",
+        "blurb": "knew the exact right book"
+      },
+      {
+        "id": "forgot",
+        "label": "The one who forgot your name",
+        "blurb": "all year, every year"
+      },
+      {
+        "id": "shop",
+        "label": "The shop teacher",
+        "blurb": "safety glasses, sawdust, respect"
+      },
+      {
+        "id": "young",
+        "label": "The brand new one",
+        "blurb": "nervous, hopeful, eight years older than you"
+      },
+      {
+        "id": "retiring",
+        "label": "The one near retirement",
+        "blurb": "seen it all, out of patience"
+      },
+      {
+        "id": "math",
+        "label": "The math teacher",
+        "blurb": "show your work, no shortcuts"
+      },
+      {
+        "id": "hallway",
+        "label": "The one who let you sit in the hall",
+        "blurb": "quiet, linoleum, understood"
       }
     ]
   }

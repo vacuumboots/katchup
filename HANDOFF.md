@@ -33,22 +33,29 @@ screen shortcut (no service worker, no offline mode, by decision).
   13 topics at 8+, 72% dilemma) and `app-random.js` plays them: shuffled pool from this
   mode's own filters, pick / skip / one-level undo, live count, empty and done states.
   Choices are 96px with 20px text, dropping to 17px rather than clipping.
-- **Phase 4 done:** `categories.json` is 13 decks of 14 (182 items) and
+- **Phase 4 done:** `categories.json` was 13 decks of 14 (182 items) and
   `app-categories.js` plays a bracket: picker with Play at random, champion on top,
   challenger below, duel N of 13, one-level undo, restart, champion trail, play again.
   Routes `#categories/<id>` and `#categories/<id>/done` are live.
-- **Headless suite: 105/105 checks pass** at 375x667, home + open + random + categories +
-  routing + the accessibility pass, plus a 390x844 fit check. Zero console errors, zero
-  network requests after load. `bash scripts/validate_all.sh` exits 0.
+- **Headless suite: 109/109 checks pass** at 375x667, home + open + random + categories +
+  routing + the accessibility pass + the 40-deck picker and its jump chips, plus a 390x844
+  fit check. Zero console errors, zero network requests after load.
+  `bash scripts/validate_all.sh` exits 0.
 - **Phase 5 done.** Focus moves on every screen swap (each `.screen` has `tabindex="-1"`
   and an `aria-label`; `show()` in `app-core.js` focuses it with `preventScroll`), the
   three undo buttons now read "Undo" instead of "Back", and the champion trail counter
   no longer uses `opacity: 0.7` — that dropped it to 3.04:1 light / 3.61:1 dark, so it is
   now 13px full-strength `--muted` at 5.74:1 / 5.90:1.
 - Fourteen commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
+- **Content pass, same day:** Categories went from 13 decks to **40** (27 authored, 560
+  items, 8 themes) and **50 of the 309 questions were rewritten** — every "Tell me about…"
+  imperative and every "Which thing did you…" template is gone, and the abstract prompts
+  ("what do you do that makes the time disappear?", "when did you feel properly grown up?")
+  were replaced with concrete asks. The deck still validates at exactly 309 with the same
+  light/medium/heavy split, so no rebalancing was needed.
 - **The live site matches `main` byte for byte** — verified 2026-10-17 by hashing all nine
-  shipped files against https://vacuumboots.github.io/katchup/. Pages status `built`,
-  Books deck included. Deploy at the end of a phase, as before.
+  shipped files against https://vacuumboots.github.io/katchup/. Pages status `built`.
+  Deploy at the end of a phase, as before.
 - Dev server was restarted on <http://127.0.0.1:8099> at handoff. If it is dead:
   `python3 -m http.server 8099` from the repo root.
 
@@ -86,10 +93,10 @@ names, state shapes, validator rules, build order, verification steps.
 - **Tone line for would-you-rather: death and loss are out.** Nothing about dying,
   killing, funerals, grief, or losing a person. Injuries and mishaps are allowed and
   wanted, 5-10 of the 200 pairs, nothing past a black eye or a broken arm.
-- Category count: **13 decks**, 14 items each. The plan said 12; **Books** was added on
-  request after phase 4 (14 titles, `Which would you reread?`), so the count is 13 and the
-  validator now treats 12 as a floor, not an exact target. Music artists still stays one
-  mixed-era deck; splitting it would make 14.
+- Category count: **40 decks**, 14 items each, 560 items, grouped into 8 themes
+  (`group` field). The validator treats 12 as a floor, never an exact target, so decks can
+  be added freely. The plan's original 12 became 13 when **Books** was added, then 40 in
+  the content pass of 2026-10-17. Music artists still stays one mixed-era deck.
 
 ### Phase 5, done
 
@@ -182,7 +189,8 @@ the whole random mode (ten distinct pairs, 11 of 200, undo, skip, filter counts 
 independent of open's, reload restarts the run but keeps filters, home count), the empty
 state, the done state, and the longest authored side rendering unclipped — the last three
 driven by a one-pair stub deck served through request interception on a second page, then
-the categories mode (thirteen picker rows at 76px, duel 1 of 13, undo rewinding one duel,
+the categories mode (forty picker rows at 76px in eight theme groups with matching jump
+chips, a chip scrolling its group to the top, duel 1 of 13, undo rewinding one duel,
 restart, a full 13-duel run, a 13-item unique trail, the champion route, Play again,
 Another category, a stale champion URL falling back to duel 1, and the home count), then
 the accessibility pass (focus on home at load, focus following the swap into open, random
@@ -202,11 +210,12 @@ app-core.js           244 lines: storage, JSON cache, fade, sheets, chips,
                       screen it reveals), home painting
 app-open.js           565 lines: everything the app used to do, moved into an IIFE
 app-random.js         323 lines: pair pool, shuffle, pick/skip/undo, its own filters
-app-categories.js     302 lines: picker, bracket, champion, restart, play at random
+app-categories.js     347 lines: grouped picker with jump chips, bracket, champion,
+                      restart, play at random
 styles.css            gruvbox light/dark, 76px actions, 96px choices, [hidden] override
 questions.json        309 questions, the deck
 wouldrather.json      200 pairs, 140 light / 60 medium
-categories.json       13 decks, 14 items each, 182 items
+categories.json       40 decks, 14 items each, 560 items, 8 theme groups
 scripts/validate_questions.py    validator + review.html emitter (449 lines)
 scripts/validate_wyr.py          pairs + review_wyr.html (373 lines)
 scripts/validate_categories.py   decks + review_categories.html (311 lines)
@@ -229,9 +238,9 @@ mvpspec.md            the brief, amended
 `app-random.js` anchors: `readPrefs` 56, `ensureDeck` 77, `buildOrder` 103, `render` 119,
 `pick` 176, `undo` 183, `skip` 191, `renderFilters` 202, `wire` 272, `enter` 298.
 
-`app-categories.js` anchors: `renderPicker` 72, `start` 98, `renderDuel` 128, `pick` 145,
-`undo` 167, `finish` 176, `renderChampion` 185, `enter` 206, `duel` 220, `done` 240,
-`wire` 270.
+`app-categories.js` anchors: `slug` 71, `renderPicker` 77 (builds theme blocks and jump
+chips), `start` 143, `renderDuel` 173, `pick` 190, `undo` 212, `finish` 221,
+`renderChampion` 230, `enter` 251, `duel` 265, `done` 285, `wire` 315.
 
 How a mode plugs in: the mode's file calls `Katchup.registerMode(name, { enter })` and
 `Katchup.registerCount(name, async () => "…")` at load. The router shows the screen and
@@ -247,6 +256,11 @@ Data model for a question: `id`, `text`, `era`, `topic`, `weight`, `kind`, `hook
 Questions:
 - Under ~100 chars, one sentence, ends in `?`, never yes/no, never starting Do / Can /
   Is / Are / Would / Have.
+- **Never open with "Tell me about"** or "Which thing did you…". Both were in the deck and
+  both read as a form to fill in rather than a question. A card gets one ask, a concrete
+  anchor (an object, a number, a place, a named person), and nothing that invites "not
+  much". The 2026-10-17 pass rewrote 50 cards against this rule; the review page is still
+  the human gate for whether the story is worth asking for.
 - No two-word opener above 15% of the deck (currently "What was" 12.0%, "What is" 11.0%).
 - At most 10 questions starting "What was the first"; at most 30 containing "first".
 - Exactly two follow-ups; no yes/no follow-ups; the two must not start with the same
@@ -265,9 +279,15 @@ no question mark, must not repeat "Would you rather", same grammatical shape bot
 death/loss blocklist as errors, politics/religion/money-status as warnings. Review page is
 the gate for "obviously better".
 
-Categories (validated, 13 decks written): kebab-case ids, 12-20 items per deck (target 14),
+Categories (validated, 40 decks written): kebab-case ids, 12-20 items per deck (target 14),
 labels unique ignoring case and punctuation, near-duplicate labels over 50% Jaccard fail,
 label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks minimum.
+
+Decks also carry a `group` (one of 8 themes) that the picker renders as a heading with a
+sticky jump chip. The prompt is the question the bracket answers, so write it as one
+(`Which pie gets the fork?`, not `Pies`). The blurb is where the joke goes: concrete,
+under 12 words, never a restatement of the label. Decks must be playable by someone who
+has never seen the list, so no hyper-local items and nothing that needs a footnote.
 
 ## Known issues / deliberately deferred
 
@@ -324,6 +344,12 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
   than sleeping.
 - The random pair card starts `hidden` in the markup and is only unhidden by `render()`,
   so a test that samples too early sees a blank screen, not an empty pair.
+- **`padding-top` on a scroll container leaves a band above a sticky child.** The picker's
+  jump bar is `position: sticky` inside `main.stage-scroll`; while `.stage` padded it 8px,
+  scrolled deck rows showed through that strip above the bar (smeared letters, looks
+  broken). `.stage-scroll` now has `padding-top: 0` and the bar carries its own 8px. If you
+  add padding back, the band returns — `test.js` asserts the bar's top equals the
+  scroller's top while stuck.
 - **New CSS goes at the END of `styles.css`.** `.stage` and `.card` live at line ~150 with
   single-class specificity; a block appended before them loses every tie silently. That is
   exactly how the category picker ended up vertically centred with its first rows above
@@ -339,7 +365,7 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
 3. `bash scripts/validate_all.sh` — expect all three green.
    `bash scripts/test_validators.sh` — expect 42/42.
 4. Dev server on 8099: curl it, do not assume. Restart if the reply is empty.
-5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 105/105 before you
+5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 109/109 before you
    change anything. That is your baseline.
 6. Everything is built and shipped. Pick up from "Next, if it is ever picked up again",
    or from Known issues.
