@@ -43,6 +43,8 @@ These are v2 candidates. Leave clean seams for them but write no code for them.
   index.html
   app-core.js      router, screens, sheets, shared helpers
   app-open.js      open ended mode
+  app-random.js    would you rather random
+  app-categories.js  would you rather Categories
   styles.css
   questions.json
   wouldrather.json (would you rather random pairs)

@@ -32,16 +32,22 @@ screen shortcut (no service worker, no offline mode, by decision).
   13 topics at 8+, 72% dilemma) and `app-random.js` plays them: shuffled pool from this
   mode's own filters, pick / skip / one-level undo, live count, empty and done states.
   Choices are 96px with 20px text, dropping to 17px rather than clipping.
-- **Headless suite: 76/76 checks pass** at 375x667, home + open + random + routing, plus
-  a 390x844 fit check. Zero console errors, zero network requests after load.
-- Ten commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
+- **Phase 4 done:** `categories.json` is 12 decks of 14 (168 items) and
+  `app-categories.js` plays a bracket: picker with Play at random, champion on top,
+  challenger below, duel N of 13, one-level undo, restart, champion trail, play again.
+  Routes `#categories/<id>` and `#categories/<id>/done` are live.
+- **Headless suite: 99/99 checks pass** at 375x667, home + open + random + categories +
+  routing, plus a 390x844 fit check. Zero console errors, zero network requests after
+  load. `bash scripts/validate_all.sh` exits 0.
+- Thirteen commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
 - Dev server was restarted on <http://127.0.0.1:8099> at handoff. If it is dead:
   `python3 -m http.server 8099` from the repo root.
 
-What ships today: a home screen with three cards, Open ended and Would you rather
-random both playable, Categories still a placeholder. Home shows live counts for open
-ended ("N questions left in this filter") and random ("N pairs"); the categories count
-line is blank until Phase 4 registers one.
+What ships today: all three modes are playable, each behind one tap from the home screen,
+with a live count on every card. Nothing since the split has been deployed; the live site
+is still the single-mode build.
+
+**Anything not yet done is Phase 5 polish, not missing features.**
 
 ## The work in flight: three game modes
 
@@ -73,24 +79,24 @@ names, state shapes, validator rules, build order, verification steps.
 - Category count: **12 decks**, 14 items each. Music artists stays one mixed-era deck
   for now; splitting it is a later one-file change that would make it 13.
 
-### Next step: Phase 4 — would you rather Categories
+### Next step: Phase 5 — polish, then ship
 
-1. **Content:** grow `categories.json` from 1 deck to 12, 14 items each (168 items), one
-   deck at a time, running `python3 scripts/validate_categories.py` after each and
-   reading `review_categories.html` for "would anybody defend this item". The ten decks
-   still to write: pizza toppings, fast food places, breakfast, desserts, road trip
-   snacks, vacation spots, cities, music artists, TV shows, board games, seasons.
-   Sandwiches is already done and is the shape to copy.
-2. **Code:** `app-categories.js` (picker, bracket, champion, undo, restart) registering
-   `Katchup.registerMode("categories", { enter })` and a count provider. Two new routes
-   have to be added to `app-core.js`: `#categories/<id>` and `#categories/<id>/done`, in
-   the same `routes` table, since only `#categories` exists today. Content comes from
-   `Katchup.fetchJSON("categories", "categories.json")`.
+All three modes are built and green. What is left is the pass the plan calls polish:
 
-Verify: a 14-item deck produces exactly 13 duels and one champion; the champion screen
-lists the 13 beaten items in order; undo rewinds one duel and restores the loser; entering
-the category again reshuffles and starts at duel 1. Then Phase 5: polish, a11y pass,
-README/spec, deploy, live verification.
+1. **Accessibility.** Focus has to move when screens swap (currently it stays wherever
+   it was, which strands keyboard and VoiceOver users on the old screen). `aria-live`
+   is already on the open card, the pair card and the duel card. Escape already closes
+   both sheets in the core. Check the new muted text: the champion trail runs at
+   `opacity: 0.7` over `--muted`, which likely dips under 4.5:1 — measure before
+   shipping, with `contrast.js` in the scratch dir or by hand.
+2. **The "Back" label.** On the open screen, "Back" means undo and sits beside
+   "← Modes", which means navigation. Renaming it to "Undo" is a one-word change and
+   makes the header honest.
+3. **Deploy and verify live.** Pages rebuilds on push to `main`. Then check the deployed
+   files, not just the push: `gh api repos/vacuumboots/katchup/pages --jq .status` until
+   `built`, then curl `questions.json`, `wouldrather.json`, `categories.json` for 309 /
+   200 / 12, and load `#random` and `#categories` on the live URL.
+4. Optionally commit the smoke test into `scripts/` (see the harness section).
 
 ## Commands
 
@@ -148,6 +154,9 @@ the whole random mode (ten distinct pairs, 11 of 200, undo, skip, filter counts 
 independent of open's, reload restarts the run but keeps filters, home count), the empty
 state, the done state, and the longest authored side rendering unclipped — the last three
 driven by a one-pair stub deck served through request interception on a second page, then
+the categories mode (twelve picker rows at 76px, duel 1 of 13, undo rewinding one duel,
+restart, a full 13-duel run, a 13-item unique trail, the champion route, Play again,
+Another category, a stale champion URL falling back to duel 1, and the home count), then
 a 390x844 fit check.
 
 Extend it as modes land. When the new modes are in, copy it into `scripts/` as a
@@ -161,10 +170,11 @@ app-core.js           227 lines: storage, JSON cache, fade, sheets, chips,
                       registerMode/registerCount, hash router, home painting
 app-open.js           565 lines: everything the app used to do, moved into an IIFE
 app-random.js         323 lines: pair pool, shuffle, pick/skip/undo, its own filters
+app-categories.js     302 lines: picker, bracket, champion, restart, play at random
 styles.css            gruvbox light/dark, 76px actions, 96px choices, [hidden] override
 questions.json        309 questions, the deck
 wouldrather.json      200 pairs, 140 light / 60 medium
-categories.json       STUB: 1 complete deck, sandwiches, 14 items
+categories.json       12 decks, 14 items each, 168 items
 scripts/validate_questions.py    validator + review.html emitter (449 lines)
 scripts/validate_wyr.py          pairs + review_wyr.html (373 lines)
 scripts/validate_categories.py   decks + review_categories.html (311 lines)
@@ -185,6 +195,10 @@ mvpspec.md            the brief, amended
 
 `app-random.js` anchors: `readPrefs` 56, `ensureDeck` 77, `buildOrder` 103, `render` 119,
 `pick` 176, `undo` 183, `skip` 191, `renderFilters` 202, `wire` 272, `enter` 298.
+
+`app-categories.js` anchors: `renderPicker` 72, `start` 98, `renderDuel` 128, `pick` 145,
+`undo` 167, `finish` 176, `renderChampion` 185, `enter` 206, `duel` 220, `done` 240,
+`wire` 270.
 
 How a mode plugs in: the mode's file calls `Katchup.registerMode(name, { enter })` and
 `Katchup.registerCount(name, async () => "…")` at load. The router shows the screen and
@@ -212,13 +226,13 @@ Questions:
   programme, cosy, nappy, pram. Canadian and US audiences both, so no local references.
 - No "biggest impact" or "most influential" phrasing.
 
-Would-you-rather (validated, content not written): `a`/`b` 3-60 chars, no end punctuation,
+Would-you-rather (validated, 200 pairs written): `a`/`b` 3-60 chars, no end punctuation,
 no question mark, must not repeat "Would you rather", same grammatical shape both sides
 (warned, not failed), light or medium only, no duplicate pair in either direction,
 death/loss blocklist as errors, politics/religion/money-status as warnings. Review page is
 the gate for "obviously better".
 
-Categories (validated, one deck written): kebab-case ids, 12-20 items per deck (target 14),
+Categories (validated, 12 decks written): kebab-case ids, 12-20 items per deck (target 14),
 labels unique ignoring case and punctuation, near-duplicate labels over 50% Jaccard fail,
 label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks minimum.
 
@@ -226,21 +240,19 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
 
 1. **"Back" and "← Modes" sit in the same header row** on the open screen, and "Back"
    there means undo, not navigation. The aria-label already says "Undo last action", but
-   the visible word is ambiguous now that ← Modes exists. Candidate rename in Phase 5
-   (to "Undo"), not done here because the plan locks the open-ended screen as unchanged.
-2. **The categories count line on home is blank** until Phase 4 registers a provider. The
-   line reserves its height, so nothing jumps.
-3. **`bash scripts/validate_all.sh` exits 1 right now**, by design: `categories.json` is
-   still a one-deck stub and fails the count rule. The fixture tests assert it fails for
-   the right reasons.
-4. `review.html`, `review_wyr.html`, `review_categories.html` are gitignored; regenerate
+   the visible word is ambiguous now that ← Modes exists. Rename to "Undo" in Phase 5.
+2. **No focus management on screen swaps.** Focus stays on the button or link that was
+   tapped, which is now hidden, so a keyboard or VoiceOver user is stranded. Needs a
+   focus target per screen in Phase 5.
+3. `review.html`, `review_wyr.html`, `review_categories.html` are gitignored; regenerate
    rather than commit them.
-5. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
+4. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
    10% rather than enforcing a strict 5% share; adding one heavy question would make the
    percentage literal.
-6. Debate is represented by a single question (the country song). Sparing was the rule,
+5. Debate is represented by a single question (the country song). Sparing was the rule,
    absent was not the intent. Add 6-8 debate pairs later if the mode feels flat.
-7. **Nothing since the split is deployed.** `main` is 2 commits ahead of the live site.
+6. **Nothing since the split is deployed.** `main` is several commits ahead of the live
+   site, which is still the single-mode build.
 
 ## Gotchas that cost time
 
@@ -272,18 +284,25 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
   than sleeping.
 - The random pair card starts `hidden` in the markup and is only unhidden by `render()`,
   so a test that samples too early sees a blank screen, not an empty pair.
+- **New CSS goes at the END of `styles.css`.** `.stage` and `.card` live at line ~150 with
+  single-class specificity; a block appended before them loses every tie silently. That is
+  exactly how the category picker ended up vertically centred with its first rows above
+  the viewport. The would-you-rather and categories blocks now sit at the end of the file.
+- A full-screen picker is allowed to scroll; the no-scroll invariant covers home, random,
+  duel and champion only.
 
 ## Session-start checklist
 
 1. Read this file, then the plan at `.hermes/plans/2026-10-17_174723-katchup-three-modes.md`.
 2. `cd ~/Git/katchup && git log --oneline -3 && git status --short` — clean apart from
    ignored files.
-3. `python3 scripts/validate_questions.py` — expect exit 0.
+3. `bash scripts/validate_all.sh` — expect all three green.
    `bash scripts/test_validators.sh` — expect 40/40.
 4. Dev server on 8099: curl it, do not assume. Restart if the reply is empty.
-5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 76/76 before you
+5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 99/99 before you
    change anything. That is your baseline.
-6. Then Phase 4: content first (one deck at a time, validate each), code second.
+6. Then Phase 5: focus management, the Back-to-Undo rename, contrast on the trail, then
+   deploy and verify the live site.
 
 ## Non-goals, still
 
