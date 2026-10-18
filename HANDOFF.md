@@ -52,6 +52,12 @@ screen shortcut (no service worker, no offline mode, by decision).
   imperative and every "Which thing did you…" template is gone, and the abstract prompts
   ("what do you do that makes the time disappear?", "when did you feel properly grown up?")
   were replaced with concrete asks.
+- **Read-through pass, same day (after warmth):** yes, the deck was read end to end
+  again, and it was worth it — three collision clusters and five vague leftovers had
+  survived both earlier passes. Fixed: `q0007` (three "first earnings" cards), `q0252`
+  (two sick-day cards once `q0336` landed), `q0329` (duplicate of `q0286`), plus
+  `q0004`, `q0015`, `q0034`, `q0083`, `q0098` rewritten from vague to concrete. Counts,
+  weights and caps unchanged.
 - **Warmth pass, same day:** the deck is a gift between family members, and the sharpening
   pass had made it colder — it asked for facts and named almost nobody. Fixed by adding
   **20 cards that are warm by construction** (gratitude, inherited habits, small kindnesses,
@@ -331,6 +337,12 @@ has never seen the list, so no hyper-local items and nothing that needs a footno
 - Light-mode muted text measured 4.29:1 against the body background but 5.74:1 against
   the card (`--muted` is `#665c54`); measure against the element's real painted
   background, not `body`. Do not lighten it.
+- **A near-duplicate scan cannot see two cards that ask the same thing in different
+  words.** `q0329` ("Who taught you something you still use every week?") and `q0286`
+  ("Which skill did a relative teach you that you still use?") share only ~30% of their
+  words, so neither the validator nor a 45% Jaccard sweep flags them. Only reading the
+  deck catches that class. After any two overlapping content passes, read it end to end
+  before shipping — the 2026-10-18 read found three such clusters.
 - **The two-word opener cap is a live constraint.** `What did` sits at 13.7% against a 15%
   cap, so almost any new card of that shape pushes the deck over. Check
   `python3 scripts/validate_questions.py` after adding cards and vary the opener (Which /

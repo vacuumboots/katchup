@@ -40,7 +40,7 @@
   },
   {
     "id": "q0004",
-    "text": "What do you remember about starting school?",
+    "text": "What did the classroom smell like on the first morning?",
     "era": "childhood",
     "topic": "school",
     "weight": "light",
@@ -49,7 +49,7 @@
       "What did you carry your lunch in?",
       "Who did you look for every morning?"
     ],
-    "hook": "plain"
+    "hook": "scene"
   },
   {
     "id": "q0005",
@@ -79,16 +79,16 @@
   },
   {
     "id": "q0007",
-    "text": "What did you buy with the first money you saved yourself?",
+    "text": "What was the first thing you ever won?",
     "era": "childhood",
     "topic": "firsts",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "How long did it take?",
-      "Where is it now?"
+      "What did you have to do?",
+      "Who was there when you did?"
     ],
-    "hook": "artifact"
+    "hook": "plain"
   },
   {
     "id": "q0008",
@@ -183,7 +183,7 @@
   },
   {
     "id": "q0015",
-    "text": "Which place did you get to arrange all by yourself?",
+    "text": "Which room did you get to arrange however you wanted?",
     "era": "young-adult",
     "topic": "places",
     "weight": "light",
@@ -417,14 +417,14 @@
   },
   {
     "id": "q0034",
-    "text": "What have you got better at over the last five years without trying?",
+    "text": "What do you do now that you swore you never would?",
     "era": "now",
     "topic": "hobbies",
     "weight": "light",
     "kind": "opinion",
     "followups": [
       "Who noticed first?",
-      "What would you still like to learn?"
+      "What do you say when someone points it out?"
     ],
     "hook": "plain"
   },
@@ -1054,13 +1054,13 @@
   },
   {
     "id": "q0083",
-    "text": "What have you done recently that was new to you?",
+    "text": "What is the last thing you learned from someone younger than you?",
     "era": "now",
     "topic": "firsts",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "What made you try it?",
+      "What did they show you?",
       "How did it go?"
     ],
     "hook": "plain"
@@ -1249,14 +1249,14 @@
   },
   {
     "id": "q0098",
-    "text": "What did school get right for you, and what did it get wrong?",
+    "text": "What did school teach you that had nothing to do with the subjects?",
     "era": "now",
     "topic": "school",
     "weight": "medium",
     "kind": "opinion",
     "followups": [
-      "Which teacher saw it?",
-      "What would you fix first?"
+      "Where did you use it?",
+      "Who would you thank for it?"
     ],
     "hook": "plain"
   },
@@ -3173,16 +3173,16 @@
   },
   {
     "id": "q0252",
-    "text": "What was the treat you got when you were ill?",
+    "text": "Which quilt or blanket in your house had a story?",
     "era": "childhood",
-    "topic": "food",
+    "topic": "home",
     "weight": "light",
     "kind": "memory",
     "followups": [
-      "Who brought it?",
-      "What made it the right thing?"
+      "Who made it?",
+      "Where did it end up?"
     ],
-    "hook": "plain"
+    "hook": "artifact"
   },
   {
     "id": "q0253",
@@ -4122,15 +4122,15 @@
   },
   {
     "id": "q0329",
-    "text": "Who taught you something you still use every week?",
-    "era": "career",
-    "topic": "work",
+    "text": "What did someone in your family always say when you left the house?",
+    "era": "childhood",
+    "topic": "people",
     "weight": "light",
     "kind": "memory",
     "hook": "relational",
     "followups": [
-      "How did they teach it?",
-      "What do they say about it now?"
+      "Who said it?",
+      "What do you say instead?"
     ]
   },
   {
