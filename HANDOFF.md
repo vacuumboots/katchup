@@ -1,7 +1,7 @@
 # katchup — handoff
 
-Written 2026-10-17 at the end of a long session. Read this first, then the plan it
-points at. It should take five minutes to be productive again.
+Written 2026-10-17 at the end of a long session, updated the same day after phases 1
+and 2 landed. Read this first, then the plan it points at. Five minutes to productive.
 
 ## What this is
 
@@ -17,35 +17,40 @@ screen shortcut (no service worker, no offline mode, by decision).
 
 ## Status right now
 
-- **309 questions**, all validated: 203 light / 91 medium / 15 heavy.
-- Eras: childhood 88, now 64, teens 53, young-adult 48, career 41, midlife 15.
-- Hooks: relational 58, scene 26, artifact 25, extreme 24, measure 9, debate 1,
-  plain 166. Strong-hook mix 46%, measurable extremes 10.7%.
-- `python3 scripts/validate_questions.py` exits 0, no errors, no warnings.
-- Six commits on `main`: spec, MVP, `.nojekyll`, README link, deck revision, hook
-  field + anchors.
-- Local dev server was running on <http://127.0.0.1:8099> at handoff. If it is dead:
+- **309 questions**, all validated: 203 light / 91 medium / 15 heavy. `validate_questions.py`
+  exits 0, no errors, no warnings. Unchanged by the three-mode work.
+- **Phase 1 done:** `scripts/validate_wyr.py`, `scripts/validate_categories.py`,
+  `scripts/validate_all.sh`, plus `scripts/test_validators.sh` (40 checks against broken
+  fixtures) and the two content stubs — `wouldrather.json` with 6 real pairs,
+  `categories.json` with 1 complete 14-item deck (sandwiches). The stubs fail on the
+  count rules only, which is the intended state.
+- **Phase 2 done:** `app.js` is gone, split into `app-core.js` (router, screens, sheets,
+  chips, storage, JSON cache) and `app-open.js` (the whole existing mode, moved not
+  rewritten). `index.html` now holds six `<section class="screen">` blocks: home, open,
+  random, categories, plus the two sheets. The mode picker is live; the two new modes
+  are placeholders ("This mode is not built yet").
+- **Headless suite: 45/45 checks pass** at 375x667, home + open + routing + the old
+  regression set, plus a 390x844 fit check. Zero console errors, zero network requests
+  after load.
+- Nine commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
+- Dev server was restarted on <http://127.0.0.1:8099> at handoff. If it is dead:
   `python3 -m http.server 8099` from the repo root.
 
-The app is one mode today: open-ended questions, with Asked it / Skip / Never, Back as
-one-level undo, filters, stats, export/import.
+What ships today: a home screen with three cards, and Open ended behind one of them.
+Home shows a live "N questions left in this filter" on the open card; the other two
+count lines are blank until phases 3 and 4 register providers.
 
 ## The work in flight: three game modes
 
-The next feature turns one game into three, chosen on a home screen:
-
-1. **Open ended** — what already ships.
+1. **Open ended** — done, behind `#open`.
 2. **Would you rather random** — dilemma pairs, two options, pick one, next.
 3. **Would you rather Categories** — a category deck where the winner stays on and
    faces the next item until one champion is left.
 
-**The plan is on disk at `.hermes/plans/2026-10-17_174723-katchup-three-modes.md`.**
-It is deliberately gitignored (`.hermes/` in `.gitignore`), so it does not travel with
-the repo, only with this machine. Read it before touching code: it has screen specs,
-data schemas, route names, state shapes, validator rules, the phase-by-phase build
-order, and the verification steps.
-
-Nothing of the three-mode work is built. No app code has been changed for it.
+**The plan is on disk at `.hermes/plans/2026-10-17_174723-katchup-three-modes.md`.** It is
+deliberately gitignored (`.hermes/` in `.gitignore`), so it does not travel with the repo,
+only with this machine. Read it before touching code: screen specs, data schemas, route
+names, state shapes, validator rules, build order, verification steps.
 
 ### Decisions already locked (do not re-litigate)
 
@@ -56,26 +61,30 @@ Nothing of the three-mode work is built. No app code has been changed for it.
   visits are fine because one tap skips. Persisted state is only the open-ended deck's
   asked/never/history, plus two independent filter sets.
 - **No scoring.** No points, streaks, or pick history.
-- Filters exist in both question modes, with **independent settings** (`Filters` in each
-  header); the random mode stores only `katchup_random_v1` = its filters.
+- Filters exist in both question modes, with **independent settings**; the random mode
+  stores only `katchup_random_v1` = its filters.
 - Content is generic for **Canada and the US**. No local decks, no single-country chains.
 - **Tone line for would-you-rather: death and loss are out.** Nothing about dying,
   killing, funerals, grief, or losing a person. Injuries and mishaps are allowed and
   wanted, 5-10 of the 200 pairs, nothing past a black eye or a broken arm.
 - Category count: **12 decks**, 14 items each. Music artists stays one mixed-era deck
-  for now; splitting it into 60s-80s and 90s-now is a later one-file change that would
-  make it 13.
+  for now; splitting it is a later one-file change that would make it 13.
 
-### Next step
+### Next step: Phase 3
 
-Phase 1 of the plan: write `scripts/validate_wyr.py`,
-`scripts/validate_categories.py`, and `scripts/validate_all.sh`, plus a 6-pair and a
-1-deck stub to prove the validators fail on the right rules. Do not touch `app.js` in
-Phase 1.
+1. **Content:** write `wouldrather.json` from 6 pairs to 200 in batches of 50, running
+   `python3 scripts/validate_wyr.py` after each batch. 140 light / 60 medium, all 13
+   topics at 8+ pairs, dilemma 70%+. Write them from the topic list, not by padding
+   the stub. Then read `review_wyr.html` end to end: "is one side obviously better"
+   and "would this land badly at a family table" are the two rules no script checks.
+2. **Code:** `app-random.js` registering with `Katchup.registerMode("random", { enter })`
+   and `Katchup.registerCount("random", …)`, plus its own filters sheet and
+   `katchup_random_v1`. Filters reuse `Katchup.makeChip` and `Katchup.openSheet`. The
+   route handler already exists in `app-core.js` and calls `enter` if it is registered,
+   so Phase 3 only adds the file and a `<script>` tag.
 
-After that, Phase 2 is the only risky step: split `app.js` into `app-core.js` +
-`app-open.js`, add the router and home screen, and prove the existing mode still passes
-the harness below before adding any new screen.
+After that, Phase 4 is `app-categories.js` (picker, bracket, champion, undo, restart) and
+the 12 decks. Phase 5 is polish, a11y, README/spec, deploy, live verification.
 
 ## Commands
 
@@ -85,9 +94,13 @@ cd ~/Git/katchup
 # local server (leave running in a background terminal)
 python3 -m http.server 8099
 
-# content gate, run before every commit that touches content
+# content gates
 python3 scripts/validate_questions.py     # also writes review.html
-# (later) bash scripts/validate_all.sh
+bash scripts/validate_all.sh              # all three files, exits 1 until content lands
+bash scripts/test_validators.sh           # proves each validator rule actually fires
+
+# headless regression run (see harness below)
+cd ~/.hermes/cache/scratch/katchup-test && node test.js
 
 # ship: Pages rebuilds on push to main
 git add -A && git commit -m "..." && git push origin main
@@ -101,47 +114,69 @@ curl -s https://vacuumboots.github.io/katchup/questions.json | python3 -c "impor
 root path, with `.nojekyll` in place. The first build after adding Pages errored once
 and the rebuild came back clean, so a single `errored` status is not necessarily fatal.
 
+Nothing is deployed since the split: `main` is ahead of the live site. Deploy at the end
+of a phase, not mid-split, or the live site breaks.
+
 ## Verification harness
 
-There is no test suite in the repo. The checks live in a scratch directory that shares
-the same machine, using puppeteer-core pointed at the Playwright chromium that is
-already downloaded:
+No test suite in the repo. The checks live in a scratch directory on this machine, using
+puppeteer-core pointed at the Playwright chromium that is already downloaded:
 
-- Scripts: `~/.hermes/cache/scratch/katchup-test/` (`test.js` is the main one;
-  `verify.js` does worst-case layout, `contrast.js` does colour ratios, `shots.js` and
-  `live.js` do screenshots and the deployed-site check).
+- Scripts: `~/.hermes/cache/scratch/katchup-test/` — `test.js` is the main one (45
+  checks, exits non-zero on failure, prints JSON with a `failures` array); `verify.js`
+  does worst-case layout, `contrast.js` does colour ratios, `shots.js` and `live.js` do
+  screenshots and the deployed-site check.
 - Browser: `~/Library/Caches/ms-playwright/chromium_headless_shell-1217/chrome-headless-shell-mac-arm64/chrome-headless-shell`
 - Run: `cd ~/.hermes/cache/scratch/katchup-test && node test.js`
 - Note: the browser tool refuses localhost URLs, which is why this is puppeteer over the
   CLI instead.
 
-What `test.js` currently proves: layout at 375x667 (question font 28px, no scroll, the
-three actions inside the bottom quarter), ask three / undo restores the card and drops
-it from `asked`, skip and never and their undo, follow-ups toggle, filters narrow to
-heavy with an accurate count, reload keeps `asked` and the current card, empty state
-when everything is asked, export/import round trip, zero network requests after load,
-zero console errors, plus dark/light screenshots.
+`test.js` covers, in order: home layout (three 112px cards, live count, no scroll),
+routing to `#open`, ← Modes present at 44px, question font 28px, no layout scroll,
+three actions inside the bottom quarter, ask three / undo restores the card and drops it
+from `asked`, skip, never and their undo, follow-ups toggle, era chips include `midlife`
+and drop `family`, filtering to heavy with an accurate count, reload keeps asked/never
+and the current card and stays on `#open`, empty state, export/import round trip,
+no network requests after load, ← Modes returns home, `#random` placeholder, unknown
+hash falls back home, 390x844 fit, zero console errors.
 
-Extend that harness (or copy it into `scripts/` as a committed smoke test) when the new
-modes land. It is the only thing that has caught real bugs here.
+Extend it as modes land. When the new modes are in, copy it into `scripts/` as a
+committed smoke test (it will need `NODE_PATH` set to the scratch `node_modules`).
 
 ## Code map
 
 ```
-index.html            one screen: header, card, 3 actions, filters sheet, stats sheet
-app.js                564 lines, everything: state, selection, undo, filters, export
-styles.css            gruvbox light/dark, 76px actions, [hidden] override
+index.html            six screens as sections, shared header, two sheets
+app-core.js           227 lines: storage, JSON cache, fade, sheets, chips,
+                      registerMode/registerCount, hash router, home painting
+app-open.js           565 lines: everything the app used to do, moved into an IIFE
+styles.css            gruvbox light/dark, 76px actions, 112px mode cards, [hidden] override
 questions.json        309 questions, the deck
-scripts/validate_questions.py   validator + review.html emitter (449 lines)
+wouldrather.json      STUB: 6 pairs (real content, candidates to keep)
+categories.json       STUB: 1 complete deck, sandwiches, 14 items
+scripts/validate_questions.py    validator + review.html emitter (449 lines)
+scripts/validate_wyr.py          pairs + review_wyr.html (373 lines)
+scripts/validate_categories.py   decks + review_categories.html (311 lines)
+scripts/validate_all.sh          runs all three, one summary line
+scripts/test_validators.sh       40 assertions against fixtures/
+scripts/fixtures/                deliberately broken content, for the tests above
 manifest.webmanifest  home-screen shortcut only
 icons/                192 and 512 placeholder PNGs
 mvpspec.md            the brief, amended
-review.html           generated by the validator, gitignored
 ```
 
-Key app.js anchors: `defaultState()` 63, `migrate()` 76, `pickNext()` 152,
-`showCard()` 173, `advance()` 230, `act()` 246, `undo()` 267, `openSheet()` 300,
-`renderFilters()` 318, `wire()` 449, `boot()` at the bottom.
+`app-core.js` anchors: `readStore` 21, `writeStore` 29, `fetchJSON` 43, `fadeTo` 65,
+`openSheet` 79, `closeSheets` 88, `makeChip` 106, `registerMode` 118, `registerCount` 122,
+`show` 130, `paintHome` 146, `enterMode` 158, `render` 168, `start` 183.
+
+`app-open.js` anchors: `defaultState` 67, `migrate` 80, `pickNext` 153, `showCard` 174,
+`advance` 222, `act` 238, `undo` 259, `renderFilters` 292, `enter` 432, `wire` 464.
+
+How a mode plugs in: the mode's file calls `Katchup.registerMode(name, { enter })` and
+`Katchup.registerCount(name, async () => "…")` at load. The router shows the screen and
+awaits `enter`. Nothing else in core knows about any mode. Content is fetched through
+`Katchup.fetchJSON(key, url)`, which caches the promise so two callers share one request
+and a failure clears the cache for a retry.
 
 Data model for a question: `id`, `text`, `era`, `topic`, `weight`, `kind`, `hook`,
 `followups` (exactly two, ending in `?`).
@@ -163,31 +198,41 @@ Questions:
   programme, cosy, nappy, pram. Canadian and US audiences both, so no local references.
 - No "biggest impact" or "most influential" phrasing.
 
-Would-you-rather (not written yet): `a`/`b` 3-60 chars, no end punctuation, same
-grammatical shape both sides, light or medium only, death/loss blocklist, no
-obviously-better pair, no duplicate pair in either direction.
+Would-you-rather (validated, content not written): `a`/`b` 3-60 chars, no end punctuation,
+no question mark, must not repeat "Would you rather", same grammatical shape both sides
+(warned, not failed), light or medium only, no duplicate pair in either direction,
+death/loss blocklist as errors, politics/religion/money-status as warnings. Review page is
+the gate for "obviously better".
+
+Categories (validated, one deck written): kebab-case ids, 12-20 items per deck (target 14),
+labels unique ignoring case and punctuation, near-duplicate labels over 50% Jaccard fail,
+label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks minimum.
 
 ## Known issues / deliberately deferred
 
-1. **Era chips in the app are stale.** `app.js` still hardcodes
-   `["childhood","teens","young-adult","career","family","now"]`, so the Filters sheet
-   shows a `family` chip that matches nothing and has no `midlife` chip; the 15 midlife
-   questions are only reachable under `All`. The fix is one line in `VALUES.era`. It was
-   left alone because the instruction at the time was "do not change the app code". Fix
-   it in Phase 2 when `app.js` is being split anyway.
-2. `review.html` and the two planned review pages are gitignored; regenerate rather than
-   commit them.
-3. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
+1. **"Back" and "← Modes" sit in the same header row** on the open screen, and "Back"
+   there means undo, not navigation. The aria-label already says "Undo last action", but
+   the visible word is ambiguous now that ← Modes exists. Candidate rename in Phase 5
+   (to "Undo"), not done here because the plan locks the open-ended screen as unchanged.
+2. **Home counts are blank for the two new modes** until phases 3 and 4 register count
+   providers. The lines reserve their height, so nothing jumps.
+3. **`bash scripts/validate_all.sh` exits 1 right now**, by design: the two content files
+   are stubs and fail the count rules. The fixture tests assert it fails for the right
+   reasons.
+4. `review.html`, `review_wyr.html`, `review_categories.html` are gitignored; regenerate
+   rather than commit them.
+5. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
    10% rather than enforcing a strict 5% share; adding one heavy question would make the
    percentage literal.
-4. Debate is represented by a single question (the country song). Sparing was the rule,
+6. Debate is represented by a single question (the country song). Sparing was the rule,
    absent was not the intent. Add 6-8 debate pairs later if the mode feels flat.
+7. **Nothing since the split is deployed.** `main` is 2 commits ahead of the live site.
 
-## Gotchas that cost time last session
+## Gotchas that cost time
 
 - Author CSS with `display: flex` beats the `hidden` attribute, so both sheets were
   invisible but swallowing every tap. `[hidden] { display: none !important; }` in
-  `styles.css` must stay.
+  `styles.css` must stay. The same rule is what makes `.screen` switching work.
 - Light-mode muted text measured 4.29:1; `--muted` is `#665c54` for that reason. Do not
   lighten it.
 - Filter chips: when a group is empty (= all), tapping one chip narrows to just that
@@ -198,16 +243,26 @@ obviously-better pair, no duplicate pair in either direction.
   distributions and writes the review page.
 - `.hermes/` is gitignored, so the plan is not in git. If this machine dies, the plan
   dies with it. Worth copying into `docs/` if you want it durable.
+- **The dev server wedges.** A `python3 -m http.server` that is still listening can return
+  an empty reply (curl: `Empty reply from server`, puppeteer: `ERR_EMPTY_RESPONSE`).
+  Kill it, start a fresh one, and curl `/index.html` before blaming the app.
+- **The harness must navigate with `#open`.** Home is the entry point now, so a bare
+  `index.html` load lands on the mode picker and every `#question` wait times out.
+- `node --check` on the two app files is a two-second syntax gate before the browser run.
+- Home counts paint asynchronously; tests must `waitForFunction` on the count text rather
+  than sleeping.
 
 ## Session-start checklist
 
 1. Read this file, then the plan at `.hermes/plans/2026-10-17_174723-katchup-three-modes.md`.
-2. `cd ~/Git/katchup && git log --oneline -3 && git status --short` — the tree should be
-   clean apart from ignored files.
+2. `cd ~/Git/katchup && git log --oneline -3 && git status --short` — clean apart from
+   ignored files.
 3. `python3 scripts/validate_questions.py` — expect exit 0.
-4. Start the dev server on 8099 if it is not up.
-5. Decide: Phase 1 (validators and schema) or fix the era chips first. Phase 1 is the
-   plan's order; the era chips are a five-minute detour if it annoys you.
+   `bash scripts/test_validators.sh` — expect 40/40.
+4. Dev server on 8099: curl it, do not assume. Restart if the reply is empty.
+5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 45/45 before you
+   change anything. That is your baseline.
+6. Then Phase 3: content first (batches of 50, validate each), code second.
 
 ## Non-goals, still
 
