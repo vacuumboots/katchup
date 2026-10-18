@@ -193,7 +193,7 @@ app-categories.js       categories: picker, bracket, champion, restart
 styles.css              gruvbox light and dark, system font stack
 questions.json          the deck
 wouldrather.json        the 200 pairs
-categories.json         the 12 decks, 14 items each
+categories.json         the 13 decks, 14 items each
 manifest.webmanifest    home screen shortcut (no service worker, so no offline)
 icons/                  placeholder PNGs, 192 and 512
 scripts/validate_questions.py    question validator and review.html generator

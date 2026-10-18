@@ -205,7 +205,12 @@ def main(argv: list[str] | None = None) -> int:
         errors.append(f"only {len(data)} {noun}, minimum {MIN_DECKS}")
 
     # distribution report
-    lines = [f"Total decks: {len(data)}/{MIN_DECKS}", f"Total items: {total_items}", "", "Items per deck"]
+    lines = [
+        f"Total decks: {len(data)}  minimum {MIN_DECKS}",
+        f"Total items: {total_items}",
+        "",
+        "Items per deck",
+    ]
     for key, count in item_counts.items():
         flag = "" if count == TARGET_ITEMS else f"  (target {TARGET_ITEMS})"
         lines.append(f"  {key:24} {count:3}{flag}")
@@ -216,13 +221,11 @@ def main(argv: list[str] | None = None) -> int:
     print("\n".join(lines))
 
     target_problems: list[str] = []
-    if len(data) != MIN_DECKS:
-        target_problems.append(f"deck count is {len(data)}, want {MIN_DECKS}")
     if short_decks:
         target_problems.append("decks off the 14-item target: " + ", ".join(short_decks))
 
     if target_problems:
-        status = "INCOMPLETE" if len(data) < MIN_DECKS else "FAILED"
+        status = "FAILED" if len(data) >= MIN_DECKS else "INCOMPLETE"
         print(f"\nDistribution targets {status}:")
         for problem in target_problems:
             print(f"  - {problem}")

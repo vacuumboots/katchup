@@ -32,7 +32,7 @@ screen shortcut (no service worker, no offline mode, by decision).
   13 topics at 8+, 72% dilemma) and `app-random.js` plays them: shuffled pool from this
   mode's own filters, pick / skip / one-level undo, live count, empty and done states.
   Choices are 96px with 20px text, dropping to 17px rather than clipping.
-- **Phase 4 done:** `categories.json` is 12 decks of 14 (168 items) and
+- **Phase 4 done:** `categories.json` is 13 decks of 14 (182 items) and
   `app-categories.js` plays a bracket: picker with Play at random, champion on top,
   challenger below, duel N of 13, one-level undo, restart, champion trail, play again.
   Routes `#categories/<id>` and `#categories/<id>/done` are live.
@@ -76,8 +76,10 @@ names, state shapes, validator rules, build order, verification steps.
 - **Tone line for would-you-rather: death and loss are out.** Nothing about dying,
   killing, funerals, grief, or losing a person. Injuries and mishaps are allowed and
   wanted, 5-10 of the 200 pairs, nothing past a black eye or a broken arm.
-- Category count: **12 decks**, 14 items each. Music artists stays one mixed-era deck
-  for now; splitting it is a later one-file change that would make it 13.
+- Category count: **13 decks**, 14 items each. The plan said 12; **Books** was added on
+  request after phase 4 (14 titles, `Which would you reread?`), so the count is 13 and the
+  validator now treats 12 as a floor, not an exact target. Music artists still stays one
+  mixed-era deck; splitting it would make 14.
 
 ### Next step: Phase 5 — polish, then ship
 
@@ -154,7 +156,7 @@ the whole random mode (ten distinct pairs, 11 of 200, undo, skip, filter counts 
 independent of open's, reload restarts the run but keeps filters, home count), the empty
 state, the done state, and the longest authored side rendering unclipped — the last three
 driven by a one-pair stub deck served through request interception on a second page, then
-the categories mode (twelve picker rows at 76px, duel 1 of 13, undo rewinding one duel,
+the categories mode (thirteen picker rows at 76px, duel 1 of 13, undo rewinding one duel,
 restart, a full 13-duel run, a 13-item unique trail, the champion route, Play again,
 Another category, a stale champion URL falling back to duel 1, and the home count), then
 a 390x844 fit check.
@@ -174,7 +176,7 @@ app-categories.js     302 lines: picker, bracket, champion, restart, play at ran
 styles.css            gruvbox light/dark, 76px actions, 96px choices, [hidden] override
 questions.json        309 questions, the deck
 wouldrather.json      200 pairs, 140 light / 60 medium
-categories.json       12 decks, 14 items each, 168 items
+categories.json       13 decks, 14 items each, 182 items
 scripts/validate_questions.py    validator + review.html emitter (449 lines)
 scripts/validate_wyr.py          pairs + review_wyr.html (373 lines)
 scripts/validate_categories.py   decks + review_categories.html (311 lines)
@@ -232,7 +234,7 @@ no question mark, must not repeat "Would you rather", same grammatical shape bot
 death/loss blocklist as errors, politics/religion/money-status as warnings. Review page is
 the gate for "obviously better".
 
-Categories (validated, 12 decks written): kebab-case ids, 12-20 items per deck (target 14),
+Categories (validated, 13 decks written): kebab-case ids, 12-20 items per deck (target 14),
 labels unique ignoring case and punctuation, near-duplicate labels over 50% Jaccard fail,
 label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks minimum.
 

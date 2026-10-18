@@ -768,5 +768,68 @@
         "label": "Spring rain"
       }
     ]
+  },
+  {
+    "id": "books",
+    "name": "Books",
+    "prompt": "Which would you reread?",
+    "items": [
+      {
+        "id": "to-kill-a-mockingbird",
+        "label": "To Kill a Mockingbird"
+      },
+      {
+        "id": "anne-of-green-gables",
+        "label": "Anne of Green Gables"
+      },
+      {
+        "id": "little-women",
+        "label": "Little Women"
+      },
+      {
+        "id": "charlottes-web",
+        "label": "Charlotte's Web"
+      },
+      {
+        "id": "the-outsiders",
+        "label": "The Outsiders"
+      },
+      {
+        "id": "watership-down",
+        "label": "Watership Down"
+      },
+      {
+        "id": "pride-and-prejudice",
+        "label": "Pride and Prejudice"
+      },
+      {
+        "id": "the-great-gatsby",
+        "label": "The Great Gatsby"
+      },
+      {
+        "id": "jane-eyre",
+        "label": "Jane Eyre"
+      },
+      {
+        "id": "the-hobbit",
+        "label": "The Hobbit"
+      },
+      {
+        "id": "matilda",
+        "label": "Matilda"
+      },
+      {
+        "id": "where-the-red-fern-grows",
+        "label": "Where the Red Fern Grows"
+      },
+      {
+        "id": "the-book-thief",
+        "label": "The Book Thief"
+      },
+      {
+        "id": "huckleberry-finn",
+        "label": "Huckleberry Finn"
+      }
+    ]
   }
 ]
