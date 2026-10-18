@@ -21,7 +21,7 @@
   </div>
   <div class="bar-right">
     <div class="bar-group" data-for="open" hidden>
-      <button type="button" class="ghost" id="undoBtn" disabled aria-label="Undo last action">Back</button>
+      <button type="button" class="ghost" id="undoBtn" disabled aria-label="Undo last action">Undo</button>
       <button type="button" class="ghost" id="filtersBtn" aria-haspopup="dialog">Filters</button>
       <button type="button" class="ghost" id="statsBtn" aria-haspopup="dialog">Stats</button>
     </div>
@@ -34,7 +34,7 @@
   </div>
 </header>
 
-<section class="screen" data-screen="home" hidden>
+<section class="screen" data-screen="home" tabindex="-1" aria-label="Mode picker" hidden>
   <main class="stage">
     <div class="home">
       <h1 class="home-title">katchup</h1>
@@ -65,7 +65,7 @@
   </main>
 </section>
 
-<section class="screen" data-screen="open" hidden>
+<section class="screen" data-screen="open" tabindex="-1" aria-label="Open ended" hidden>
   <main class="stage">
     <section class="card" id="card" aria-live="polite" aria-atomic="true">
       <h1 class="question" id="question" tabindex="-1">Loading</h1>
@@ -97,7 +97,7 @@
   </footer>
 </section>
 
-<section class="screen" data-screen="random" hidden>
+<section class="screen" data-screen="random" tabindex="-1" aria-label="Would you rather random" hidden>
   <main class="stage">
     <section class="card pair" id="randomCard" aria-live="polite" aria-atomic="true" hidden>
       <p class="pair-title">Would you rather</p>
@@ -130,13 +130,13 @@
   </main>
 
   <footer class="actions pair-actions" id="randomFooter">
-    <button type="button" class="action" id="randomUndoBtn" disabled>Back</button>
+    <button type="button" class="action" id="randomUndoBtn" disabled>Undo</button>
     <button type="button" class="action" id="randomSkipBtn">Skip</button>
     <p class="progress" id="randomProgress"></p>
   </footer>
 </section>
 
-<section class="screen" data-screen="categories" hidden>
+<section class="screen" data-screen="categories" tabindex="-1" aria-label="Would you rather Categories" hidden>
   <main class="stage stage-scroll">
     <section class="card picker" id="categoryPicker">
       <p class="pair-title">Would you rather</p>
@@ -152,7 +152,7 @@
   </main>
 </section>
 
-<section class="screen" data-screen="duel" hidden>
+<section class="screen" data-screen="duel" tabindex="-1" aria-label="Category duel" hidden>
   <main class="stage">
     <section class="card pair" id="duelCard" aria-live="polite" aria-atomic="true" hidden>
       <p class="pair-title" id="duelMeta"></p>
@@ -170,11 +170,11 @@
   </main>
 
   <footer class="actions single-actions" id="duelFooter" hidden>
-    <button type="button" class="action" id="duelUndoBtn" disabled>Back</button>
+    <button type="button" class="action" id="duelUndoBtn" disabled>Undo</button>
   </footer>
 </section>
 
-<section class="screen" data-screen="champion" hidden>
+<section class="screen" data-screen="champion" tabindex="-1" aria-label="Champion" hidden>
   <main class="stage">
     <section class="card champion" id="championCard">
       <p class="pair-title">Champion</p>

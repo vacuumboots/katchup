@@ -1,7 +1,8 @@
 # katchup — handoff
 
-Written 2026-10-17 at the end of a long session, updated the same day after phases 1
-and 2 landed. Read this first, then the plan it points at. Five minutes to productive.
+Written 2026-10-17 at the end of a long session, updated the same day after phases 1, 2,
+3, 4 and the phase 5 polish pass landed. Read this first, then the plan it points at.
+Five minutes to productive.
 
 ## What this is
 
@@ -36,18 +37,27 @@ screen shortcut (no service worker, no offline mode, by decision).
   `app-categories.js` plays a bracket: picker with Play at random, champion on top,
   challenger below, duel N of 13, one-level undo, restart, champion trail, play again.
   Routes `#categories/<id>` and `#categories/<id>/done` are live.
-- **Headless suite: 99/99 checks pass** at 375x667, home + open + random + categories +
-  routing, plus a 390x844 fit check. Zero console errors, zero network requests after
-  load. `bash scripts/validate_all.sh` exits 0.
-- Thirteen commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
+- **Headless suite: 105/105 checks pass** at 375x667, home + open + random + categories +
+  routing + the accessibility pass, plus a 390x844 fit check. Zero console errors, zero
+  network requests after load. `bash scripts/validate_all.sh` exits 0.
+- **Phase 5 done.** Focus moves on every screen swap (each `.screen` has `tabindex="-1"`
+  and an `aria-label`; `show()` in `app-core.js` focuses it with `preventScroll`), the
+  three undo buttons now read "Undo" instead of "Back", and the champion trail counter
+  no longer uses `opacity: 0.7` — that dropped it to 3.04:1 light / 3.61:1 dark, so it is
+  now 13px full-strength `--muted` at 5.74:1 / 5.90:1.
+- Fourteen commits on `main`. Tree clean; `review*.html` and `.hermes/` are ignored.
+- **The live site matches `main` byte for byte** — verified 2026-10-17 by hashing all nine
+  shipped files against https://vacuumboots.github.io/katchup/. Pages status `built`,
+  Books deck included. Deploy at the end of a phase, as before.
 - Dev server was restarted on <http://127.0.0.1:8099> at handoff. If it is dead:
   `python3 -m http.server 8099` from the repo root.
 
 What ships today: all three modes are playable, each behind one tap from the home screen,
-with a live count on every card. Nothing since the split has been deployed; the live site
-is still the single-mode build.
+with a live count on every card. The live site carries all of it — the three-mode build
+plus the Books deck — and matches `main` exactly.
 
-**Anything not yet done is Phase 5 polish, not missing features.**
+**All five phases are done.** What is left is optional content work and the deferred
+items in "Known issues", not missing features.
 
 ## The work in flight: three game modes
 
@@ -81,24 +91,37 @@ names, state shapes, validator rules, build order, verification steps.
   validator now treats 12 as a floor, not an exact target. Music artists still stays one
   mixed-era deck; splitting it would make 14.
 
-### Next step: Phase 5 — polish, then ship
+### Phase 5, done
 
-All three modes are built and green. What is left is the pass the plan calls polish:
+The polish pass landed on 2026-10-17. All three items, verified in the headless suite:
 
-1. **Accessibility.** Focus has to move when screens swap (currently it stays wherever
-   it was, which strands keyboard and VoiceOver users on the old screen). `aria-live`
-   is already on the open card, the pair card and the duel card. Escape already closes
-   both sheets in the core. Check the new muted text: the champion trail runs at
-   `opacity: 0.7` over `--muted`, which likely dips under 4.5:1 — measure before
-   shipping, with `contrast.js` in the scratch dir or by hand.
-2. **The "Back" label.** On the open screen, "Back" means undo and sits beside
-   "← Modes", which means navigation. Renaming it to "Undo" is a one-word change and
-   makes the header honest.
-3. **Deploy and verify live.** Pages rebuilds on push to `main`. Then check the deployed
-   files, not just the push: `gh api repos/vacuumboots/katchup/pages --jq .status` until
-   `built`, then curl `questions.json`, `wouldrather.json`, `categories.json` for 309 /
-   200 / 12, and load `#random` and `#categories` on the live URL.
-4. Optionally commit the smoke test into `scripts/` (see the harness section).
+1. **Accessibility.** Every `.screen` now has `tabindex="-1"` and an `aria-label`
+   ("Mode picker", "Open ended", "Would you rather random", "Would you rather Categories",
+   "Category duel", "Champion"), and `show()` in `app-core.js` moves focus onto the
+   screen it just revealed, with `preventScroll`. `.screen:focus` has its outline
+   suppressed the same way `.sheet` does. Confirmed by keyboard smoke: Tab from the
+   focused screen reaches Follow-ups → Asked it → Skip → Never → ← Modes, no hidden
+   stops, and "u" still undoes. Worth knowing: the old symptom was focus falling to
+   `BODY` (the browser drops focus when the activated node is hidden), not focus sitting
+   inside a hidden element.
+2. **"Back" is now "Undo"** in all three places (`undoBtn`, `randomUndoBtn`,
+   `duelUndoBtn`). `undoBtn` keeps `aria-label="Undo last action"`; the visible word is
+   contained in the accessible name, so label-in-name still holds.
+3. **Trail contrast.** `.trail-duel` was `opacity: 0.7`, which blends `--muted` toward
+   the card: 3.04:1 light, 3.61:1 dark. Opacity is gone; the counter is 13px
+   full-strength `--muted` with tabular numerals, 5.74:1 / 5.90:1. Size, not alpha, does
+   the de-emphasis.
+
+### Next, if it is ever picked up again
+
+Nothing is queued. The candidates, in rough order of value:
+
+1. Copy the headless suite into `scripts/` if you want CI-able verification in-repo. It
+   is 800 lines and needs `NODE_PATH` pointing at the scratch `node_modules`, so it is
+   not free — that is why it is still out-of-repo.
+2. Add 6-8 debate-flavoured pairs (see Known issues 5).
+3. Copy this handoff's plan (`.hermes/plans/…`, gitignored) into `docs/` so it survives
+   this machine.
 
 ## Commands
 
@@ -128,18 +151,21 @@ curl -s https://vacuumboots.github.io/katchup/questions.json | python3 -c "impor
 root path, with `.nojekyll` in place. The first build after adding Pages errored once
 and the rebuild came back clean, so a single `errored` status is not necessarily fatal.
 
-Nothing is deployed since the split: `main` is ahead of the live site. Deploy at the end
-of a phase, not mid-split, or the live site breaks.
+`main` and the live site are in sync (checked by hashing the deployed files, not by eye).
+Deploy at the end of a phase, not mid-split, or the live site breaks mid-refactor.
 
 ## Verification harness
 
 No test suite in the repo. The checks live in a scratch directory on this machine, using
 puppeteer-core pointed at the Playwright chromium that is already downloaded:
 
-- Scripts: `~/.hermes/cache/scratch/katchup-test/` — `test.js` is the main one (45
+- Scripts: `~/.hermes/cache/scratch/katchup-test/` — `test.js` is the main one (105
   checks, exits non-zero on failure, prints JSON with a `failures` array); `verify.js`
-  does worst-case layout, `contrast.js` does colour ratios, `shots.js` and `live.js` do
-  screenshots and the deployed-site check.
+  does worst-case layout, `contrast.js` does colour ratios, `contrast-trail.js` measures
+  the champion trail in both colour schemes, `keyboard-smoke.js` walks Tab order and the
+  "u" undo shortcut, `falsify-focus.js` re-runs the focus assertion against a doctored
+  `app-core.js` (served by request interception) to prove the check actually bites, and
+  `shots.js` / `live.js` do screenshots and the deployed-site check.
 - Browser: `~/Library/Caches/ms-playwright/chromium_headless_shell-1217/chrome-headless-shell-mac-arm64/chrome-headless-shell`
 - Run: `cd ~/.hermes/cache/scratch/katchup-test && node test.js`
 - Note: the browser tool refuses localhost URLs, which is why this is puppeteer over the
@@ -159,7 +185,9 @@ driven by a one-pair stub deck served through request interception on a second p
 the categories mode (thirteen picker rows at 76px, duel 1 of 13, undo rewinding one duel,
 restart, a full 13-duel run, a 13-item unique trail, the champion route, Play again,
 Another category, a stale champion URL falling back to duel 1, and the home count), then
-a 390x844 fit check.
+the accessibility pass (focus on home at load, focus following the swap into open, random
+and champion, no focus left inside `[hidden]`, the three buttons reading "Undo", and the
+trail counter's measured ratio ≥ 4.5), then a 390x844 fit check.
 
 Extend it as modes land. When the new modes are in, copy it into `scripts/` as a
 committed smoke test (it will need `NODE_PATH` set to the scratch `node_modules`).
@@ -167,9 +195,11 @@ committed smoke test (it will need `NODE_PATH` set to the scratch `node_modules`
 ## Code map
 
 ```
-index.html            six screens as sections, shared header, three sheets
-app-core.js           227 lines: storage, JSON cache, fade, sheets, chips,
-                      registerMode/registerCount, hash router, home painting
+index.html            six screens as sections (each tabindex -1 + labelled),
+                      shared header, three sheets
+app-core.js           244 lines: storage, JSON cache, fade, sheets, chips,
+                      registerMode/registerCount, hash router (focuses the
+                      screen it reveals), home painting
 app-open.js           565 lines: everything the app used to do, moved into an IIFE
 app-random.js         323 lines: pair pool, shuffle, pick/skip/undo, its own filters
 app-categories.js     302 lines: picker, bracket, champion, restart, play at random
@@ -190,7 +220,8 @@ mvpspec.md            the brief, amended
 
 `app-core.js` anchors: `readStore` 21, `writeStore` 29, `fetchJSON` 43, `fadeTo` 65,
 `openSheet` 79, `closeSheets` 88, `makeChip` 106, `registerMode` 118, `registerCount` 122,
-`show` 130, `paintHome` 146, `enterMode` 158, `render` 168, `start` 183.
+`show` 130 (focus move at 147), `isScreen` 151, `paintHome` 155, `enterMode` 167,
+`render` 183, `start` 198.
 
 `app-open.js` anchors: `defaultState` 67, `migrate` 80, `pickNext` 153, `showCard` 174,
 `advance` 222, `act` 238, `undo` 259, `renderFilters` 292, `enter` 432, `wire` 464.
@@ -240,12 +271,12 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
 
 ## Known issues / deliberately deferred
 
-1. **"Back" and "← Modes" sit in the same header row** on the open screen, and "Back"
-   there means undo, not navigation. The aria-label already says "Undo last action", but
-   the visible word is ambiguous now that ← Modes exists. Rename to "Undo" in Phase 5.
-2. **No focus management on screen swaps.** Focus stays on the button or link that was
-   tapped, which is now hidden, so a keyboard or VoiceOver user is stranded. Needs a
-   focus target per screen in Phase 5.
+1. ~~"Back" and "← Modes" in the same header row~~ — **fixed in Phase 5**: all three
+   undo buttons read "Undo".
+2. ~~No focus management on screen swaps~~ — **fixed in Phase 5**: `show()` focuses the
+   revealed screen. If you add a screen, give its `<section class="screen">` a
+   `tabindex="-1"` and an `aria-label`, or it will not be focusable and the swap will
+   fall back to `BODY`.
 3. `review.html`, `review_wyr.html`, `review_categories.html` are gitignored; regenerate
    rather than commit them.
 4. Heavy is 15 questions = 4.9% of 309. The validator floors at 15 questions and caps at
@@ -253,16 +284,19 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
    percentage literal.
 5. Debate is represented by a single question (the country song). Sparing was the rule,
    absent was not the intent. Add 6-8 debate pairs later if the mode feels flat.
-6. **Nothing since the split is deployed.** `main` is several commits ahead of the live
-   site, which is still the single-mode build.
+6. ~~Nothing since the split is deployed~~ — **resolved**: the live site matches `main`.
 
 ## Gotchas that cost time
 
 - Author CSS with `display: flex` beats the `hidden` attribute, so both sheets were
   invisible but swallowing every tap. `[hidden] { display: none !important; }` in
   `styles.css` must stay. The same rule is what makes `.screen` switching work.
-- Light-mode muted text measured 4.29:1; `--muted` is `#665c54` for that reason. Do not
-  lighten it.
+- Light-mode muted text measured 4.29:1 against the body background but 5.74:1 against
+  the card (`--muted` is `#665c54`); measure against the element's real painted
+  background, not `body`. Do not lighten it.
+- **Never dim text with `opacity`** here: alpha blends toward the background and silently
+  breaks contrast (`opacity: 0.7` on the trail counter cost 2.7 points of ratio). Use
+  size, weight or spacing to de-emphasise.
 - Filter chips: when a group is empty (= all), tapping one chip narrows to just that
   chip. Every group also gets an explicit `All` chip. This was a real bug once.
 - The "All" chip looked selected in screenshots because the sheet focused its first
@@ -273,7 +307,11 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
   dies with it. Worth copying into `docs/` if you want it durable.
 - **The dev server wedges.** A `python3 -m http.server` that is still listening can return
   an empty reply (curl: `Empty reply from server`, puppeteer: `ERR_EMPTY_RESPONSE`).
-  Kill it, start a fresh one, and curl `/index.html` before blaming the app.
+  Kill it, start a fresh one, and curl `/index.html` before blaming the app. It can also
+  wedge *and stay bound*: on 2026-10-17 a dead server held `127.0.0.1:8099` (IPv4) while a
+  fresh one bound `*:8099` (IPv6), so `curl 127.0.0.1:8099` kept hitting the corpse and
+  every test failed at `goto`. Check with `lsof -nP -iTCP:8099 -sTCP:LISTEN` — if you see
+  two PIDs, kill the IPv4 one. The port looking "listening" proves nothing.
 - **Stub content in the harness needs `setRequestInterception` + `setCacheEnabled(false)`
   on that page, armed before its first navigation.** `evaluateOnNewDocument` silently did
   not run, and without cache disabled Chromium served the real JSON from disk cache, so
@@ -301,10 +339,10 @@ label 40 chars, blurb 12 words, prompt ends in `?` and under 40 chars, 12 decks 
 3. `bash scripts/validate_all.sh` — expect all three green.
    `bash scripts/test_validators.sh` — expect 42/42.
 4. Dev server on 8099: curl it, do not assume. Restart if the reply is empty.
-5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 99/99 before you
+5. `cd ~/.hermes/cache/scratch/katchup-test && node test.js` — expect 105/105 before you
    change anything. That is your baseline.
-6. Then Phase 5: focus management, the Back-to-Undo rename, contrast on the trail, then
-   deploy and verify the live site.
+6. Everything is built and shipped. Pick up from "Next, if it is ever picked up again",
+   or from Known issues.
 
 ## Non-goals, still
 

@@ -317,6 +317,7 @@ body {
 }
 
 .sheet:focus, .sheet:focus-visible { outline: none; }
+.screen:focus, .screen:focus-visible { outline: none; }
 
 .sheet h2 {
   margin: 0;
@@ -562,7 +563,7 @@ body {
 }
 
 .trail li { display: flex; justify-content: space-between; gap: 12px; }
-.trail-duel { font-variant-numeric: tabular-nums; opacity: 0.7; }
+.trail-duel { font-variant-numeric: tabular-nums; font-size: 13px; letter-spacing: 0.02em; }
 
 .single-actions { grid-template-columns: 1fr; }
 .two-actions { grid-template-columns: 1fr 1fr; }

@@ -137,6 +137,15 @@ const Katchup = (() => {
     }
     activeScreen = name;
     if (name === "home") paintHome();
+
+    // A screen swap hides the element the user just activated, which would strand
+    // keyboard and screen-reader users on a hidden node. Move focus onto the screen
+    // itself (tabindex="-1", labelled in the markup); the card's aria-live region
+    // still announces whatever content renders.
+    const screen = document.querySelector(`.screen[data-screen="${name}"]`);
+    if (screen && document.activeElement !== screen) {
+      screen.focus({ preventScroll: true });
+    }
   }
 
   function isScreen(name) {
