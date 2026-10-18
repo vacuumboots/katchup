@@ -161,6 +161,12 @@ const Katchup = (() => {
     if (handlers && typeof handlers.enter === "function") await handlers.enter();
   }
 
+  function runMode(name, hook, ...args) {
+    const handlers = modes.get(name);
+    if (handlers && typeof handlers[hook] === "function") handlers[hook](...args);
+    else show("home");
+  }
+
   function route(pattern, handler) {
     routes.push([pattern, handler]);
   }
@@ -184,6 +190,8 @@ const Katchup = (() => {
     route(/^$/, () => show("home"));
     route(/^open$/, () => enterMode("open"));
     route(/^random$/, () => enterMode("random"));
+    route(/^categories\/([\w-]+)\/done$/, (match) => runMode("categories", "done", match[1]));
+    route(/^categories\/([\w-]+)$/, (match) => runMode("categories", "duel", match[1]));
     route(/^categories$/, () => enterMode("categories"));
 
     $("modesBtn").addEventListener("click", () => {

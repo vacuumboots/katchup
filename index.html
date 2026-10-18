@@ -28,6 +28,9 @@
     <div class="bar-group" data-for="random" hidden>
       <button type="button" class="ghost" id="randomFiltersBtn" aria-haspopup="dialog">Filters</button>
     </div>
+    <div class="bar-group" data-for="duel" hidden>
+      <button type="button" class="ghost" id="duelRestartBtn">Restart</button>
+    </div>
   </div>
 </header>
 
@@ -134,13 +137,57 @@
 </section>
 
 <section class="screen" data-screen="categories" hidden>
-  <main class="stage">
-    <section class="card placeholder">
-      <h1 class="question">Would you rather Categories</h1>
-      <p class="tags">One category, last one standing</p>
-      <p class="placeholder-note">This mode is not built yet.</p>
+  <main class="stage stage-scroll">
+    <section class="card picker" id="categoryPicker">
+      <p class="pair-title">Would you rather</p>
+      <p class="picker-lede">One category, last one standing.</p>
+      <button type="button" class="picker-random" id="playRandom">Play at random</button>
+      <ul class="deck-list" id="deckList"></ul>
+    </section>
+
+    <section class="card empty" id="categoryError" hidden>
+      <h1 class="question">Could not load the categories.</h1>
+      <p class="tags">Check your connection, then reload the page.</p>
     </section>
   </main>
+</section>
+
+<section class="screen" data-screen="duel" hidden>
+  <main class="stage">
+    <section class="card pair" id="duelCard" aria-live="polite" aria-atomic="true" hidden>
+      <p class="pair-title" id="duelMeta"></p>
+      <p class="duel-prompt" id="duelPrompt"></p>
+      <button type="button" class="choice" id="champBtn">
+        <span id="champText"></span>
+        <span class="choice-blurb" id="champBlurb" hidden></span>
+      </button>
+      <p class="pair-or" aria-hidden="true">or</p>
+      <button type="button" class="choice" id="challBtn">
+        <span id="challText"></span>
+        <span class="choice-blurb" id="challBlurb" hidden></span>
+      </button>
+    </section>
+  </main>
+
+  <footer class="actions single-actions" id="duelFooter" hidden>
+    <button type="button" class="action" id="duelUndoBtn" disabled>Back</button>
+  </footer>
+</section>
+
+<section class="screen" data-screen="champion" hidden>
+  <main class="stage">
+    <section class="card champion" id="championCard">
+      <p class="pair-title">Champion</p>
+      <h1 class="champion-name" id="championName"></h1>
+      <p class="tags" id="championMeta"></p>
+      <ol class="trail" id="trailList"></ol>
+    </section>
+  </main>
+
+  <footer class="actions two-actions">
+    <button type="button" class="action ask" id="championAgain">Play again</button>
+    <button type="button" class="action" id="championAnother">Another category</button>
+  </footer>
 </section>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -178,5 +225,6 @@
 <script src="app-core.js"></script>
 <script src="app-open.js"></script>
 <script src="app-random.js"></script>
+<script src="app-categories.js"></script>
 </body>
 </html>

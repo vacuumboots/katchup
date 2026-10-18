@@ -128,68 +128,6 @@ body {
 .placeholder .question { font-size: clamp(24px, 5.5vw, 30px); }
 .placeholder-note { margin: 0; font-size: 15px; color: var(--muted); }
 
-/* ---------- would you rather ---------- */
-
-.pair { gap: 12px; }
-
-.pair-title {
-  margin: 0;
-  font-size: 13px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.pair-topic {
-  margin: 0 0 4px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 3px 12px;
-}
-
-.choice {
-  appearance: none;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--ink);
-  font: inherit;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  width: 100%;
-  min-height: 96px;
-  padding: 14px 18px;
-  border-radius: 16px;
-  cursor: pointer;
-  touch-action: manipulation;
-  text-wrap: balance;
-}
-
-.choice.is-long { font-size: 17px; }
-.choice:active { transform: translateY(1px); }
-
-.pair-or {
-  margin: 0;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.pair-actions { grid-template-columns: 1fr 1fr auto; align-items: center; }
-
-.progress {
-  margin: 0;
-  padding-right: 4px;
-  font-size: 14px;
-  color: var(--muted);
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-}
 
 .ghost {
   appearance: none;
@@ -464,3 +402,167 @@ body {
   .sheet { max-width: 34rem; margin: 0 auto; border-radius: 20px; bottom: 12px; }
   .scrim { backdrop-filter: blur(1px); }
 }
+
+/* ---------- would you rather ---------- */
+
+.pair { gap: 12px; }
+
+.pair-title {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pair-topic {
+  margin: 0 0 4px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+.choice {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  width: 100%;
+  min-height: 96px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-wrap: balance;
+}
+
+.choice.is-long { font-size: 17px; }
+.choice:active { transform: translateY(1px); }
+
+.pair-or {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pair-actions { grid-template-columns: 1fr 1fr auto; align-items: center; }
+
+.progress {
+  margin: 0;
+  padding-right: 4px;
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- categories ---------- */
+
+.stage-scroll { justify-content: flex-start; overflow-y: auto; }
+
+.picker {
+  align-items: stretch;
+  text-align: left;
+  gap: 10px;
+}
+
+.picker-lede { margin: 0 0 2px; font-size: 15px; color: var(--muted); }
+
+.picker-random {
+  appearance: none;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  min-height: 76px;
+  border-radius: 14px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.deck-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.deck-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-height: 76px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.deck-row:active { transform: translateY(1px); }
+
+.deck-name { font-size: 17px; font-weight: 600; }
+.deck-prompt { font-size: 13px; color: var(--muted); }
+
+.duel-prompt {
+  margin: 0;
+  font-size: clamp(20px, 5.5vw, 26px);
+  font-weight: 600;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.choice-blurb {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.champion { gap: 6px; }
+
+.champion-name {
+  margin: 0;
+  font-size: clamp(30px, 9vw, 44px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.trail {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 15px;
+  color: var(--muted);
+  text-align: left;
+}
+
+.trail li { display: flex; justify-content: space-between; gap: 12px; }
+.trail-duel { font-variant-numeric: tabular-nums; opacity: 0.7; }
+
+.single-actions { grid-template-columns: 1fr; }
+.two-actions { grid-template-columns: 1fr 1fr; }

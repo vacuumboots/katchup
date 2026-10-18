@@ -11,7 +11,8 @@ last action. Follow-up prompts are one tap away if the answer starts a story.
 
 The home screen offers three modes: **Open ended** (the deck above), **Would you
 rather random** (200 dilemma pairs, pick one and move on), and **Would you rather
-Categories** (a category bracket, still a placeholder for now).
+Categories** (pick a deck, two items go head to head, the winner stays on until one
+champion is left).
 
 No accounts, no backend, no analytics, no network calls after the page loads.
 
@@ -20,8 +21,7 @@ No accounts, no backend, no analytics, no network calls after the page loads.
 Hash routing, no library, so browser back works and every screen is linkable.
 
 `#` home · `#open` open ended · `#random` would you rather · `#categories` category
-picker (and, once built, `#categories/<id>` for a duel and
-`#categories/<id>/done` for the champion).
+picker · `#categories/<id>` a duel in that deck · `#categories/<id>/done` the champion.
 
 ## Run it locally
 
@@ -35,9 +35,9 @@ browsers, but the local server is closer to what a host will serve.
 ## Deploy
 
 The whole app is static: `index.html`, `app-core.js`, `app-open.js`, `app-random.js`,
-`styles.css`, `questions.json`, `wouldrather.json`, `manifest.webmanifest`, and `icons/`.
-Any static host will do. Serve over HTTPS if you want "Add to Home Screen" to give you a
-proper shortcut.
+`app-categories.js`, `styles.css`, `questions.json`, `wouldrather.json`, `categories.json`,
+`manifest.webmanifest`, and `icons/`. Any static host will do. Serve over HTTPS if you
+want "Add to Home Screen" to give you a proper shortcut.
 
 - **GitHub Pages**: push the repo, then Settings -> Pages -> Deploy from branch,
   root folder. The site lands on the repo URL.
@@ -132,6 +132,35 @@ scripts/validate_wyr.py` enforces the shape, the duplicates, and the death wordi
 and writes `review_wyr.html`, which is the real gate: for every pair, ask whether
 one side is obviously better and whether it lands badly at a family table.
 
+## Adding or editing category decks
+
+`categories.json` is an array of decks. One deck is one bracket:
+
+```json
+{
+  "id": "sandwiches",
+  "name": "Sandwiches",
+  "prompt": "Which sandwich?",
+  "items": [
+    { "id": "tuna-salad", "label": "Tuna salad" },
+    { "id": "reuben", "label": "Reuben", "blurb": "corned beef, kraut, Russian dressing" }
+  ]
+}
+```
+
+- `id`: kebab-case, unique across decks. It is also the URL: `#categories/<id>`.
+- `name`: up to 20 characters, shown on the picker row and in the duel header.
+- `prompt`: ends in `?`, under 40 characters. The question every duel asks.
+- `items`: 12 to 20 per deck (14 is the house number). Under 12 the bracket ends
+  too fast; over 20 it drags.
+- `label`: up to 40 characters, unique within the deck ignoring case and
+  punctuation. `blurb` is optional, 12 words at most.
+
+`python3 scripts/validate_categories.py` enforces all of that, plus duplicate ids,
+near-duplicate labels (50% word overlap), and the 12-deck minimum, and writes
+`review_categories.html`. That page is the real gate: an item nobody would defend is
+a dud, and a deck of near-synonyms has no duels in it.
+
 ## What is stored, and where
 
 Everything lives in `localStorage` under `katchup_state_v1`: which ids have been
@@ -160,10 +189,11 @@ index.html              six screens as sections, plus the shared header and thre
 app-core.js             state storage, hash router, screen show/hide, sheets, chips
 app-open.js             open ended: selection, undo, filters, stats, export/import
 app-random.js           would you rather: shuffled pool, pick, skip, undo, filters
+app-categories.js       categories: picker, bracket, champion, restart
 styles.css              gruvbox light and dark, system font stack
 questions.json          the deck
 wouldrather.json        the 200 pairs
-categories.json         category decks (stub)
+categories.json         the 12 decks, 14 items each
 manifest.webmanifest    home screen shortcut (no service worker, so no offline)
 icons/                  placeholder PNGs, 192 and 512
 scripts/validate_questions.py    question validator and review.html generator

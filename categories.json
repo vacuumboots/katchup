@@ -4,20 +4,769 @@
     "name": "Sandwiches",
     "prompt": "Which sandwich?",
     "items": [
-      { "id": "tuna-salad", "label": "Tuna salad", "blurb": "tuna, celery, too much mayo" },
-      { "id": "reuben", "label": "Reuben", "blurb": "corned beef, kraut, Russian dressing" },
-      { "id": "philly-cheesesteak", "label": "Philly cheesesteak", "blurb": "shaved ribeye, onion, provolone" },
-      { "id": "grilled-cheese", "label": "Grilled cheese", "blurb": "cheddar, butter, white bread" },
-      { "id": "blt", "label": "BLT", "blurb": "bacon, lettuce, tomato, mayo" },
-      { "id": "banh-mi", "label": "Banh mi", "blurb": "pork, pickled carrot, cilantro" },
-      { "id": "club", "label": "Club sandwich", "blurb": "turkey, bacon, three layers, toothpick" },
-      { "id": "egg-salad", "label": "Egg salad", "blurb": "egg, mayo, a little mustard" },
-      { "id": "pbj", "label": "Peanut butter and jam", "blurb": "squishy bread, cold milk" },
-      { "id": "chicken-salad", "label": "Chicken salad", "blurb": "chicken, grapes, celery" },
-      { "id": "meatball-sub", "label": "Meatball sub", "blurb": "meatballs, marinara, mozzarella, napkins" },
-      { "id": "pastrami-rye", "label": "Pastrami on rye", "blurb": "pastrami, mustard, rye" },
-      { "id": "falafel-wrap", "label": "Falafel wrap", "blurb": "falafel, hummus, pickled turnip" },
-      { "id": "pulled-pork", "label": "Pulled pork", "blurb": "slaw, pickle, brioche bun" }
+      {
+        "id": "tuna-salad",
+        "label": "Tuna salad",
+        "blurb": "tuna, celery, too much mayo"
+      },
+      {
+        "id": "reuben",
+        "label": "Reuben",
+        "blurb": "corned beef, kraut, Russian dressing"
+      },
+      {
+        "id": "philly-cheesesteak",
+        "label": "Philly cheesesteak",
+        "blurb": "shaved ribeye, onion, provolone"
+      },
+      {
+        "id": "grilled-cheese",
+        "label": "Grilled cheese",
+        "blurb": "cheddar, butter, white bread"
+      },
+      {
+        "id": "blt",
+        "label": "BLT",
+        "blurb": "bacon, lettuce, tomato, mayo"
+      },
+      {
+        "id": "banh-mi",
+        "label": "Banh mi",
+        "blurb": "pork, pickled carrot, cilantro"
+      },
+      {
+        "id": "club",
+        "label": "Club sandwich",
+        "blurb": "turkey, bacon, three layers, toothpick"
+      },
+      {
+        "id": "egg-salad",
+        "label": "Egg salad",
+        "blurb": "egg, mayo, a little mustard"
+      },
+      {
+        "id": "pbj",
+        "label": "Peanut butter and jam",
+        "blurb": "squishy bread, cold milk"
+      },
+      {
+        "id": "chicken-salad",
+        "label": "Chicken salad",
+        "blurb": "chicken, grapes, celery"
+      },
+      {
+        "id": "meatball-sub",
+        "label": "Meatball sub",
+        "blurb": "meatballs, marinara, mozzarella, napkins"
+      },
+      {
+        "id": "pastrami-rye",
+        "label": "Pastrami on rye",
+        "blurb": "pastrami, mustard, rye"
+      },
+      {
+        "id": "falafel-wrap",
+        "label": "Falafel wrap",
+        "blurb": "falafel, hummus, pickled turnip"
+      },
+      {
+        "id": "pulled-pork",
+        "label": "Pulled pork",
+        "blurb": "slaw, pickle, brioche bun"
+      }
+    ]
+  },
+  {
+    "id": "pizza-toppings",
+    "name": "Pizza toppings",
+    "prompt": "Which topping?",
+    "items": [
+      {
+        "id": "pepperoni",
+        "label": "Pepperoni"
+      },
+      {
+        "id": "mushrooms",
+        "label": "Mushrooms"
+      },
+      {
+        "id": "italian-sausage",
+        "label": "Italian sausage"
+      },
+      {
+        "id": "bacon",
+        "label": "Bacon"
+      },
+      {
+        "id": "green-peppers",
+        "label": "Green peppers"
+      },
+      {
+        "id": "onions",
+        "label": "Onions"
+      },
+      {
+        "id": "black-olives",
+        "label": "Black olives"
+      },
+      {
+        "id": "pineapple",
+        "label": "Pineapple"
+      },
+      {
+        "id": "anchovies",
+        "label": "Anchovies"
+      },
+      {
+        "id": "ham",
+        "label": "Ham"
+      },
+      {
+        "id": "extra-cheese",
+        "label": "Extra cheese"
+      },
+      {
+        "id": "hot-peppers",
+        "label": "Hot peppers"
+      },
+      {
+        "id": "spinach",
+        "label": "Spinach"
+      },
+      {
+        "id": "artichoke-hearts",
+        "label": "Artichoke hearts"
+      }
+    ]
+  },
+  {
+    "id": "fast-food",
+    "name": "Fast food places",
+    "prompt": "Which one?",
+    "items": [
+      {
+        "id": "burger-place",
+        "label": "Burger place"
+      },
+      {
+        "id": "taco-place",
+        "label": "Taco place"
+      },
+      {
+        "id": "fried-chicken-place",
+        "label": "Fried chicken place"
+      },
+      {
+        "id": "pizza-slice",
+        "label": "Pizza slice"
+      },
+      {
+        "id": "noodle-bar",
+        "label": "Noodle bar"
+      },
+      {
+        "id": "sandwich-shop",
+        "label": "Sandwich shop"
+      },
+      {
+        "id": "diner",
+        "label": "Diner"
+      },
+      {
+        "id": "drive-in",
+        "label": "Drive-in"
+      },
+      {
+        "id": "gyro-stand",
+        "label": "Gyro stand"
+      },
+      {
+        "id": "hot-dog-stand",
+        "label": "Hot dog stand"
+      },
+      {
+        "id": "sushi-counter",
+        "label": "Sushi counter"
+      },
+      {
+        "id": "burrito-place",
+        "label": "Burrito place"
+      },
+      {
+        "id": "ice-cream-stand",
+        "label": "Ice cream stand"
+      },
+      {
+        "id": "fish-and-chips",
+        "label": "Fish and chips"
+      }
+    ]
+  },
+  {
+    "id": "breakfast",
+    "name": "Breakfast",
+    "prompt": "Which breakfast?",
+    "items": [
+      {
+        "id": "pancakes",
+        "label": "Pancakes"
+      },
+      {
+        "id": "waffles",
+        "label": "Waffles"
+      },
+      {
+        "id": "french-toast",
+        "label": "French toast"
+      },
+      {
+        "id": "eggs-benedict",
+        "label": "Eggs Benedict"
+      },
+      {
+        "id": "bacon-and-eggs",
+        "label": "Bacon and eggs"
+      },
+      {
+        "id": "oatmeal",
+        "label": "Oatmeal"
+      },
+      {
+        "id": "granola-and-yogurt",
+        "label": "Granola and yogurt"
+      },
+      {
+        "id": "bagel-and-cream-cheese",
+        "label": "Bagel and cream cheese"
+      },
+      {
+        "id": "breakfast-burrito",
+        "label": "Breakfast burrito"
+      },
+      {
+        "id": "hash-browns",
+        "label": "Hash browns"
+      },
+      {
+        "id": "smoothie-bowl",
+        "label": "Smoothie bowl"
+      },
+      {
+        "id": "toast-and-jam",
+        "label": "Toast and jam"
+      },
+      {
+        "id": "croissant",
+        "label": "Croissant"
+      },
+      {
+        "id": "big-cooked-breakfast",
+        "label": "Big cooked breakfast"
+      }
+    ]
+  },
+  {
+    "id": "desserts",
+    "name": "Desserts",
+    "prompt": "Which dessert?",
+    "items": [
+      {
+        "id": "apple-pie",
+        "label": "Apple pie"
+      },
+      {
+        "id": "cheesecake",
+        "label": "Cheesecake"
+      },
+      {
+        "id": "chocolate-cake",
+        "label": "Chocolate cake"
+      },
+      {
+        "id": "ice-cream",
+        "label": "Ice cream"
+      },
+      {
+        "id": "tiramisu",
+        "label": "Tiramisu"
+      },
+      {
+        "id": "brownies",
+        "label": "Brownies"
+      },
+      {
+        "id": "carrot-cake",
+        "label": "Carrot cake"
+      },
+      {
+        "id": "bread-pudding",
+        "label": "Bread pudding"
+      },
+      {
+        "id": "fruit-crumble",
+        "label": "Fruit crumble"
+      },
+      {
+        "id": "rice-pudding",
+        "label": "Rice pudding"
+      },
+      {
+        "id": "lemon-tart",
+        "label": "Lemon tart"
+      },
+      {
+        "id": "doughnuts",
+        "label": "Doughnuts"
+      },
+      {
+        "id": "pumpkin-pie",
+        "label": "Pumpkin pie"
+      },
+      {
+        "id": "smores",
+        "label": "S'mores"
+      }
+    ]
+  },
+  {
+    "id": "road-snacks",
+    "name": "Road trip snacks",
+    "prompt": "Which snack?",
+    "items": [
+      {
+        "id": "beef-jerky",
+        "label": "Beef jerky"
+      },
+      {
+        "id": "trail-mix",
+        "label": "Trail mix"
+      },
+      {
+        "id": "chips",
+        "label": "Chips"
+      },
+      {
+        "id": "chocolate-bar",
+        "label": "Chocolate bar"
+      },
+      {
+        "id": "licorice",
+        "label": "Licorice"
+      },
+      {
+        "id": "pretzels",
+        "label": "Pretzels"
+      },
+      {
+        "id": "granola-bars",
+        "label": "Granola bars"
+      },
+      {
+        "id": "apples",
+        "label": "Apples"
+      },
+      {
+        "id": "sunflower-seeds",
+        "label": "Sunflower seeds"
+      },
+      {
+        "id": "cheese-sticks",
+        "label": "Cheese sticks"
+      },
+      {
+        "id": "popcorn",
+        "label": "Popcorn"
+      },
+      {
+        "id": "cookies",
+        "label": "Cookies"
+      },
+      {
+        "id": "soda",
+        "label": "Soda"
+      },
+      {
+        "id": "coffee",
+        "label": "Coffee"
+      }
+    ]
+  },
+  {
+    "id": "vacations",
+    "name": "Vacation spots",
+    "prompt": "Where would you go?",
+    "items": [
+      {
+        "id": "beach-town",
+        "label": "Beach town"
+      },
+      {
+        "id": "mountain-cabin",
+        "label": "Mountain cabin"
+      },
+      {
+        "id": "big-city",
+        "label": "Big city"
+      },
+      {
+        "id": "cabin-on-a-lake",
+        "label": "Cabin on a lake"
+      },
+      {
+        "id": "desert-road-trip",
+        "label": "Desert road trip"
+      },
+      {
+        "id": "island",
+        "label": "Island"
+      },
+      {
+        "id": "national-park",
+        "label": "National park"
+      },
+      {
+        "id": "ski-hill",
+        "label": "Ski hill"
+      },
+      {
+        "id": "farm-stay",
+        "label": "Farm stay"
+      },
+      {
+        "id": "long-train-ride",
+        "label": "Long train ride"
+      },
+      {
+        "id": "camping",
+        "label": "Camping"
+      },
+      {
+        "id": "coastal-drive",
+        "label": "Coastal drive"
+      },
+      {
+        "id": "old-town",
+        "label": "Old town"
+      },
+      {
+        "id": "hot-springs",
+        "label": "Hot springs"
+      }
+    ]
+  },
+  {
+    "id": "cities",
+    "name": "Cities",
+    "prompt": "Where is better?",
+    "items": [
+      {
+        "id": "toronto",
+        "label": "Toronto"
+      },
+      {
+        "id": "montreal",
+        "label": "Montreal"
+      },
+      {
+        "id": "vancouver",
+        "label": "Vancouver"
+      },
+      {
+        "id": "calgary",
+        "label": "Calgary"
+      },
+      {
+        "id": "halifax",
+        "label": "Halifax"
+      },
+      {
+        "id": "quebec-city",
+        "label": "Quebec City"
+      },
+      {
+        "id": "new-york",
+        "label": "New York"
+      },
+      {
+        "id": "chicago",
+        "label": "Chicago"
+      },
+      {
+        "id": "boston",
+        "label": "Boston"
+      },
+      {
+        "id": "seattle",
+        "label": "Seattle"
+      },
+      {
+        "id": "san-francisco",
+        "label": "San Francisco"
+      },
+      {
+        "id": "new-orleans",
+        "label": "New Orleans"
+      },
+      {
+        "id": "austin",
+        "label": "Austin"
+      },
+      {
+        "id": "denver",
+        "label": "Denver"
+      }
+    ]
+  },
+  {
+    "id": "music-artists",
+    "name": "Music artists",
+    "prompt": "Who would you see live?",
+    "items": [
+      {
+        "id": "the-beatles",
+        "label": "The Beatles"
+      },
+      {
+        "id": "the-rolling-stones",
+        "label": "The Rolling Stones"
+      },
+      {
+        "id": "fleetwood-mac",
+        "label": "Fleetwood Mac"
+      },
+      {
+        "id": "abba",
+        "label": "ABBA"
+      },
+      {
+        "id": "queen",
+        "label": "Queen"
+      },
+      {
+        "id": "david-bowie",
+        "label": "David Bowie"
+      },
+      {
+        "id": "prince",
+        "label": "Prince"
+      },
+      {
+        "id": "michael-jackson",
+        "label": "Michael Jackson"
+      },
+      {
+        "id": "dolly-parton",
+        "label": "Dolly Parton"
+      },
+      {
+        "id": "johnny-cash",
+        "label": "Johnny Cash"
+      },
+      {
+        "id": "stevie-wonder",
+        "label": "Stevie Wonder"
+      },
+      {
+        "id": "bruce-springsteen",
+        "label": "Bruce Springsteen"
+      },
+      {
+        "id": "u2",
+        "label": "U2"
+      },
+      {
+        "id": "elton-john",
+        "label": "Elton John"
+      }
+    ]
+  },
+  {
+    "id": "tv-shows",
+    "name": "TV shows",
+    "prompt": "Which would you rewatch?",
+    "items": [
+      {
+        "id": "the-office",
+        "label": "The Office"
+      },
+      {
+        "id": "seinfeld",
+        "label": "Seinfeld"
+      },
+      {
+        "id": "friends",
+        "label": "Friends"
+      },
+      {
+        "id": "cheers",
+        "label": "Cheers"
+      },
+      {
+        "id": "frasier",
+        "label": "Frasier"
+      },
+      {
+        "id": "mash",
+        "label": "M*A*S*H"
+      },
+      {
+        "id": "the-simpsons",
+        "label": "The Simpsons"
+      },
+      {
+        "id": "star-trek",
+        "label": "Star Trek"
+      },
+      {
+        "id": "breaking-bad",
+        "label": "Breaking Bad"
+      },
+      {
+        "id": "the-wire",
+        "label": "The Wire"
+      },
+      {
+        "id": "twin-peaks",
+        "label": "Twin Peaks"
+      },
+      {
+        "id": "gilmore-girls",
+        "label": "Gilmore Girls"
+      },
+      {
+        "id": "schitts-creek",
+        "label": "Schitt's Creek"
+      },
+      {
+        "id": "jeopardy",
+        "label": "Jeopardy!"
+      }
+    ]
+  },
+  {
+    "id": "board-games",
+    "name": "Board games",
+    "prompt": "Which one?",
+    "items": [
+      {
+        "id": "monopoly",
+        "label": "Monopoly"
+      },
+      {
+        "id": "scrabble",
+        "label": "Scrabble"
+      },
+      {
+        "id": "catan",
+        "label": "Catan"
+      },
+      {
+        "id": "ticket-to-ride",
+        "label": "Ticket to Ride"
+      },
+      {
+        "id": "clue",
+        "label": "Clue"
+      },
+      {
+        "id": "risk",
+        "label": "Risk"
+      },
+      {
+        "id": "chess",
+        "label": "Chess"
+      },
+      {
+        "id": "jenga",
+        "label": "Jenga"
+      },
+      {
+        "id": "boggle",
+        "label": "Boggle"
+      },
+      {
+        "id": "cribbage",
+        "label": "Cribbage"
+      },
+      {
+        "id": "backgammon",
+        "label": "Backgammon"
+      },
+      {
+        "id": "pictionary",
+        "label": "Pictionary"
+      },
+      {
+        "id": "uno",
+        "label": "Uno"
+      },
+      {
+        "id": "dominoes",
+        "label": "Dominoes"
+      }
+    ]
+  },
+  {
+    "id": "parts-of-year",
+    "name": "Parts of the year",
+    "prompt": "Which moment?",
+    "items": [
+      {
+        "id": "first-warm-day",
+        "label": "First warm day"
+      },
+      {
+        "id": "long-june-evenings",
+        "label": "Long June evenings"
+      },
+      {
+        "id": "autumn-colours",
+        "label": "Autumn colours"
+      },
+      {
+        "id": "first-snowfall",
+        "label": "First snowfall"
+      },
+      {
+        "id": "the-march-thaw",
+        "label": "The March thaw"
+      },
+      {
+        "id": "summer-holidays",
+        "label": "Summer holidays"
+      },
+      {
+        "id": "harvest-time",
+        "label": "Harvest time"
+      },
+      {
+        "id": "long-weekends",
+        "label": "Long weekends"
+      },
+      {
+        "id": "the-first-frost",
+        "label": "The first frost"
+      },
+      {
+        "id": "birds-coming-back",
+        "label": "Birds coming back"
+      },
+      {
+        "id": "firepit-nights",
+        "label": "Firepit nights"
+      },
+      {
+        "id": "late-sunsets",
+        "label": "Late sunsets"
+      },
+      {
+        "id": "snow-days",
+        "label": "Snow days"
+      },
+      {
+        "id": "spring-rain",
+        "label": "Spring rain"
+      }
     ]
   }
 ]
